@@ -23,7 +23,7 @@ class TestSchemas(unittest.TestCase):
         """
         for f in listdir(schemas_dir):
             with open(join(schemas_dir, f)) as sf:
-                schema = json.load(sf)
+                json.load(sf)
 
     def test_schema_filename(self):
         """Ensures that schema filenames are parsed properly."""
@@ -56,7 +56,6 @@ class TestSchemas(unittest.TestCase):
                     data = json.load(df)
                     with self.assertRaises(ValidationError):
                         is_valid(data, object_type)
-
 
     def test_input(self):
         """Checks exception raised when input data is not a dict."""

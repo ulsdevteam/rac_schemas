@@ -10,7 +10,6 @@ base_path = dirname(dirname(abspath(__file__)))
 
 schemas_dir = join(base_path, "schemas")
 fixtures_dir = join(base_path, "fixtures")
-# TODO: schema dir
 
 
 class TestSchemas(unittest.TestCase):
@@ -58,5 +57,8 @@ class TestSchemas(unittest.TestCase):
                         is_valid(data, object_type)
 
     def test_input(self):
-        """Checks exception raised when input data is not a dict."""
-        pass
+        """Checks TypeError exception is raised when input data is not a dict."""
+        for data in ["string", ["this", "is", "a", "list"]]:
+            for schema in listdir(schemas_dir):
+                with self.assertRaises(TypeError):
+                    is_valid(data, schema)

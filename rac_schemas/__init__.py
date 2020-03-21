@@ -1,7 +1,7 @@
 import json
 from os.path import abspath, dirname, join
 
-import jsonschema
+from jsonschema import Draft7Validator, RefResolver
 
 base_path = dirname(dirname(abspath(__file__)))
 
@@ -26,8 +26,8 @@ def is_valid(data, schema_name):
         base_schema = json.load(bf)
         with open(join(base_path, "schemas", filename), "r") as sf:
             object_schema = json.load(sf)
-            resolver = jsonschema.RefResolver.from_schema(base_schema)
-            validator = jsonschema.Draft7Validator(
+            resolver = RefResolver.from_schema(base_schema)
+            validator = Draft7Validator(
                 object_schema, resolver=resolver)
             validator.validate(data)
             return True

@@ -1,5 +1,4 @@
 {
-  "index": 8,
   "dates": [
     {
       "begin": "1959-12-16",
@@ -249,6 +248,5 @@
       ]
     }
   ],
-  "type": "object",
-  "id": "5e164dbc01da72ffd828c3ca"
+  "type": "object"
 }

@@ -1,5 +1,4 @@
 {
-  "index": 24,
   "dates": [
     {
       "begin": "1914-09-25",
@@ -190,6 +189,5 @@
     }
   ],
   "terms": [],
-  "type": "object",
-  "id": "5e164dbc0f36cd59491a231f"
+  "type": "object"
 }

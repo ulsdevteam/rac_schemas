@@ -1,5 +1,4 @@
 {
-  "index": 22,
   "dates": [
     {
       "begin": "1926-06-04",
@@ -237,6 +236,5 @@
       ]
     }
   ],
-  "type": "collection",
-  "id": "5e16514c00b13f54a1a0592b"
+  "type": "collection"
 }

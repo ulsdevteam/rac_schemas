@@ -1,5 +1,4 @@
 {
-  "index": 18,
   "dates": [
     {
       "begin": "1955-12-07",
@@ -272,6 +271,5 @@
   ],
   "agents": [],
   "terms": [],
-  "type": "object",
-  "id": "5e164dbc1aee795fbc75953c"
+  "type": "object"
 }

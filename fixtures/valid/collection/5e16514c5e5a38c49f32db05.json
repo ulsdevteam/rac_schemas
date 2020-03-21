@@ -1,5 +1,4 @@
 {
-  "index": 19,
   "dates": [
     {
       "begin": "1945-03-24",
@@ -258,6 +257,5 @@
       ]
     }
   ],
-  "type": "collection",
-  "id": "5e16514c5e5a38c49f32db05"
+  "type": "collection"
 }

@@ -1,5 +1,4 @@
 {
-  "index": 36,
   "dates": [
     {
       "begin": "1957-12-18",
@@ -72,6 +71,5 @@
     }
   ],
   "agent_type": "person",
-  "type": "agent",
-  "id": "5e162b2c0a09165b63f9cbcd"
+  "type": "agent"
 }

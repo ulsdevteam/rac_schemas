@@ -1,5 +1,4 @@
 {
-  "index": 15,
   "dates": [
     {
       "begin": "1913-03-01",
@@ -89,6 +88,5 @@
     }
   ],
   "agent_type": "organization",
-  "type": "agent",
-  "id": "5e162cb71ab94260e8f149fa"
+  "type": "agent"
 }

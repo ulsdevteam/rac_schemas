@@ -1,5 +1,4 @@
 {
-  "index": 7,
   "dates": [
     {
       "begin": "1958-04-28",
@@ -58,6 +57,5 @@
     }
   ],
   "agent_type": "family",
-  "type": "agent",
-  "id": "5e1628f02059510bac920201"
+  "type": "agent"
 }

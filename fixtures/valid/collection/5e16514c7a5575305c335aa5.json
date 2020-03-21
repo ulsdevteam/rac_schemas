@@ -1,5 +1,4 @@
 {
-  "index": 36,
   "dates": [
     {
       "begin": "1948-12-16",
@@ -208,6 +207,5 @@
       ]
     }
   ],
-  "type": "collection",
-  "id": "5e16514c7a5575305c335aa5"
+  "type": "collection"
 }

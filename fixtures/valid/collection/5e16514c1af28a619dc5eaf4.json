@@ -1,5 +1,4 @@
 {
-  "index": 42,
   "dates": [
     {
       "begin": "1914-08-25",
@@ -160,6 +159,5 @@
       ]
     }
   ],
-  "type": "collection",
-  "id": "5e16514c1af28a619dc5eaf4"
+  "type": "collection"
 }

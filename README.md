@@ -1,10 +1,8 @@
 # rac_schemas
 
-JSON schemas and validation helpers
+JSON schemas and validation helpers.
 
-## To Use
-
-### Requirements
+## Requirements
 *   Python 3.4 or higher
 *   [jsonschema](https://python-jsonschema.readthedocs.io/en/stable/)
 *   [tox](https://tox.readthedocs.io/) (for running tests)
@@ -15,7 +13,7 @@ JSON schemas and validation helpers
     $ pre-commit install
     ```
 
-### Installation
+## Installation
 
 The recommended way to install this package is using `pip`:
 
@@ -23,9 +21,22 @@ The recommended way to install this package is using `pip`:
 pip install rac_schemas
 ```
 
-### Usage
+## Usage
 
-*Write usage instructions, including configuration details, settings or arguments available.*
+This library has one main public method, `is_valid()`, which takes a dict as the first argument and a schema filename as the second.
+
+```
+data = {...}
+is_valid(data, "object.json")
+```
+
+`rac_schemas` will attempt to add an appropriate extension to schema filenames in cases where it is either missing or incorrect. For example, if either `schema` and `schema.org` as schema filenames, `rac_schemas` will attempt to open `schema.json`.
+
+Invalid data will raise a `jsonschema.exceptions.ValidationError`, and an invalid schema filename will raise a `FileNotFoundError`.
+
+### Available schemas
+
+All schemas are located in the `/schemas/` directory at the root of this repository.
 
 #### Tests
 
@@ -33,4 +44,4 @@ pip install rac_schemas
 
 ### License
 
-See`LICENSE.md`.
+Code is released under an MIT license. See`LICENSE.md`.

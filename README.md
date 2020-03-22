@@ -26,7 +26,9 @@ pip install rac_schemas
 This library has one main public method, `is_valid()`, which takes a dict as the first argument and a schema filename as the second.
 
 ```
-data = {...}
+from rac_schemas import is_valid
+
+data = {"key": "value" ... }
 is_valid(data, "object.json")
 ```
 
@@ -40,7 +42,7 @@ All schemas are located in the `/schemas/` directory at the root of this reposit
 
 #### Tests
 
-`rac_schemas` comes with unit tests as well as linting. The easiest way to make sure all tests pass is to run `tox` from the root of the repository. This will execute all tests, and will also run `autopep8` and `flake8` linters against the codebase.s
+`rac_schemas` comes with unit tests as well as linting. The easiest way to make sure all tests pass is to run `tox` from the root of the repository. This will execute all tests, and will also run `autopep8` and `flake8` linters against the codebase.
 
 ### License
 

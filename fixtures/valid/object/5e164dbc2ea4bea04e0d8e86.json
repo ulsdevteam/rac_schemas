@@ -56,7 +56,7 @@
             "excepteur incididunt proident excepteur velit et",
             "enim pariatur eu nisi fugiat in"
           ],
-          "type": "orderedlist"
+          "type": "text"
         }
       ],
       "title": "consectetur id et"
@@ -73,7 +73,7 @@
             "quis tempor aliqua magna ut sunt",
             "ullamco cillum officia id reprehenderit ullamco"
           ],
-          "type": "orderedlist"
+          "type": "text"
         },
         {
           "content": [
@@ -82,7 +82,7 @@
             "consectetur duis magna nulla magna nisi",
             "amet ullamco proident ut tempor dolor"
           ],
-          "type": "definedlist"
+          "type": "text"
         }
       ],
       "title": "dolor adipisicing duis"
@@ -101,7 +101,7 @@
           "content": [
             "enim incididunt non nisi ad commodo"
           ],
-          "type": "definedlist"
+          "type": "text"
         },
         {
           "content": [

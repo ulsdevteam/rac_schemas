@@ -32,7 +32,7 @@
             "tempor aute deserunt nisi labore ipsum",
             "ex voluptate sint veniam Lorem occaecat"
           ],
-          "type": "definedlist"
+          "type": "text"
         },
         {
           "content": [
@@ -58,7 +58,7 @@
             "id consequat id non laboris culpa",
             "dolore sint officia fugiat et commodo"
           ],
-          "type": "orderedlist"
+          "type": "text"
         }
       ],
       "title": "consequat id commodo"

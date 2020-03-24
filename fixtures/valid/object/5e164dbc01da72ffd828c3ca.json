@@ -48,7 +48,7 @@
             "pariatur excepteur magna nulla anim sit",
             "ea adipisicing ullamco consequat nulla nulla"
           ],
-          "type": "orderedlist"
+          "type": "text"
         },
         {
           "content": [
@@ -56,13 +56,13 @@
             "aliquip duis dolor proident esse officia",
             "exercitation nisi sunt officia eiusmod sunt"
           ],
-          "type": "orderedlist"
+          "type": "text"
         },
         {
           "content": [
             "occaecat tempor reprehenderit ut eu ut"
           ],
-          "type": "definedlist"
+          "type": "text"
         }
       ],
       "title": "fugiat id irure"
@@ -84,7 +84,7 @@
             "velit dolor sunt incididunt commodo ullamco",
             "amet eu amet ullamco mollit irure"
           ],
-          "type": "orderedlist"
+          "type": "text"
         },
         {
           "content": [
@@ -105,7 +105,7 @@
           "content": [
             "dolore minim est et enim aliquip"
           ],
-          "type": "orderedlist"
+          "type": "text"
         }
       ],
       "title": "reprehenderit Lorem cupidatat"
@@ -139,7 +139,7 @@
                 "mollit quis laborum labore ad tempor",
                 "anim duis incididunt nostrud nostrud ipsum"
               ],
-              "type": "orderedlist"
+              "type": "text"
             }
           ],
           "title": "ut labore eiusmod"
@@ -158,12 +158,12 @@
               "type": "type_note",
               "subnotes": [
                 {
-                  "content": [
-                    "esse mollit labore esse cupidatat anim",
-                    "aliqua velit ad amet voluptate eiusmod",
-                    "ut dolor velit ex aliquip ad",
-                    "ex anim est eu non irure",
-                    "cillum eiusmod minim nulla est duis"
+                  "items": [
+                    {"label": "esse mollit", "value": "labore esse cupidatat anim"},
+                    {"label": "aliqua", "value": "velit ad amet voluptate eiusmod"},
+                    {"label": "ut dolor velit", "value": "ex aliquip ad"},
+                    {"label": "ex anim", "value": "est eu non irure"},
+                    {"label": "cillum", "value": "eiusmod minim nulla est duis"}
                   ],
                   "type": "orderedlist"
                 },
@@ -172,7 +172,7 @@
                     "dolore quis in excepteur anim eu",
                     "veniam reprehenderit officia fugiat sunt in"
                   ],
-                  "type": "definedlist"
+                  "type": "text"
                 }
               ],
               "title": "ad tempor officia"

@@ -58,11 +58,11 @@
           "type": "permissions",
           "subnotes": [
             {
-              "content": [
-                "esse ipsum veniam anim quis ipsum",
-                "consectetur proident minim fugiat laborum cillum",
-                "minim sint id eiusmod officia duis",
-                "Lorem ut proident quis elit eu"
+              "items": [
+                {"label": "esse ipsum", "value": "veniam anim quis ipsum"},
+                {"label": "consectetur", "value": "proident minim fugiat laborum cillum"},
+                {"label": "minim sint", "value": "id eiusmod officia duis"},
+                {"label": "Lorem ut", "value": "proident quis elit eu"}
               ],
               "type": "definedlist"
             }
@@ -96,7 +96,7 @@
                     "nisi enim elit officia culpa fugiat",
                     "laborum enim labore dolor nulla voluptate"
                   ],
-                  "type": "orderedlist"
+                  "type": "text"
                 },
                 {
                   "content": [
@@ -124,7 +124,7 @@
                     "occaecat ex consectetur sint velit Lorem",
                     "velit ut occaecat exercitation reprehenderit do"
                   ],
-                  "type": "orderedlist"
+                  "type": "text"
                 }
               ],
               "title": "Lorem sit consequat"

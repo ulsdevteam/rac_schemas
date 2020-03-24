@@ -23,7 +23,7 @@
             "nostrud anim minim cillum excepteur deserunt",
             "aliquip in tempor duis velit nostrud"
           ],
-          "type": "orderedlist"
+          "type": "text"
         },
         {
           "content": [
@@ -41,7 +41,7 @@
             "irure proident nulla enim laboris et",
             "veniam Lorem sit eu fugiat fugiat"
           ],
-          "type": "definedlist"
+          "type": "text"
         }
       ],
       "title": "fugiat ea tempor"

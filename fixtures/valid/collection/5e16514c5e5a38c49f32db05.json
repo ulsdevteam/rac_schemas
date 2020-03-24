@@ -48,10 +48,10 @@
       "type": "userestrict",
       "subnotes": [
         {
-          "content": [
-            "esse esse non Lorem incididunt elit",
-            "id minim adipisicing aute elit eiusmod",
-            "exercitation ut non cupidatat do eu"
+          "items": [
+            {"label": "esse esse", "value": "non Lorem incididunt elit"},
+            {"label": "id minim", "value": "adipisicing aute elit eiusmod"},
+            {"label": "exercitation", "value": "ut non cupidatat do eu"}
           ],
           "type": "orderedlist"
         },
@@ -59,7 +59,7 @@
           "content": [
             "labore consequat consequat ex deserunt Lorem"
           ],
-          "type": "definedlist"
+          "type": "text"
         },
         {
           "content": [
@@ -69,7 +69,7 @@
             "commodo incididunt velit consectetur ea commodo",
             "ad enim dolore tempor esse id"
           ],
-          "type": "orderedlist"
+          "type": "text"
         }
       ],
       "title": "nostrud enim nisi"
@@ -82,7 +82,7 @@
           "content": [
             "deserunt esse adipisicing est mollit enim"
           ],
-          "type": "definedlist"
+          "type": "text"
         },
         {
           "content": [
@@ -96,7 +96,7 @@
             "adipisicing ipsum ad cillum ea incididunt",
             "sit veniam veniam commodo mollit Lorem"
           ],
-          "type": "orderedlist"
+          "type": "text"
         }
       ],
       "title": "duis consectetur sint"
@@ -133,13 +133,13 @@
             "commodo tempor excepteur cupidatat in adipisicing",
             "pariatur commodo eiusmod pariatur dolore quis"
           ],
-          "type": "definedlist"
+          "type": "text"
         },
         {
           "content": [
             "culpa veniam mollit anim eu occaecat"
           ],
-          "type": "definedlist"
+          "type": "text"
         }
       ],
       "title": "aliquip incididunt voluptate"
@@ -196,8 +196,8 @@
               "subnotes": [
                 {
                   "content": [
-                    "officia proident sint eu enim exercitation",
-                    "voluptate labore labore officia do sunt"
+                    {"label": "officia", "value": "proident sint eu enim exercitation"},
+                    {"label": "voluptate labore", "value": "labore officia do sunt"}
                   ],
                   "type": "orderedlist"
                 },

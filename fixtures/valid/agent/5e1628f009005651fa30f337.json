@@ -31,7 +31,7 @@
             "eiusmod enim nisi dolor veniam deserunt",
             "et sunt anim velit veniam sint"
           ],
-          "type": "definedlist"
+          "type": "text"
         },
         {
           "content": [
@@ -40,7 +40,7 @@
             "ea non tempor consectetur cillum ex",
             "amet do veniam ad nisi do"
           ],
-          "type": "definedlist"
+          "type": "text"
         }
       ],
       "title": "ea voluptate ullamco"

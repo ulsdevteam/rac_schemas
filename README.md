@@ -38,7 +38,7 @@ Invalid data will raise a `jsonschema.exceptions.ValidationError`, and an invali
 
 ### Available schemas
 
-All schemas are located in the `/schemas/` directory at the root of this repository.
+All schemas are located in the `schemas/` subdirectory of the `rac_schemas/` directory.
 
 #### Tests
 

@@ -20,14 +20,14 @@
           "content": [
             "elit cillum laboris nisi est culpa"
           ],
-          "type": "definedlist"
+          "type": "text"
         },
         {
           "content": [
             "qui do anim eu cupidatat consectetur",
             "ad sunt magna Lorem velit exercitation"
           ],
-          "type": "definedlist"
+          "type": "text"
         }
       ],
       "title": "est est eiusmod"
@@ -44,7 +44,7 @@
             "et irure sunt sunt laborum dolor",
             "et ipsum nisi sunt sint aute"
           ],
-          "type": "definedlist"
+          "type": "text"
         }
       ],
       "title": "ad labore mollit"

@@ -123,7 +123,7 @@
                     "irure ut exercitation ad laborum cupidatat",
                     "dolor laborum nostrud voluptate duis aute"
                   ],
-                  "type": "definedlist"
+                  "type": "text"
                 },
                 {
                   "content": [
@@ -133,7 +133,7 @@
                     "dolor sit ad est consequat nostrud",
                     "esse quis labore Lorem eiusmod anim"
                   ],
-                  "type": "orderedlist"
+                  "type": "text"
                 }
               ],
               "title": "consequat exercitation labore"

@@ -54,13 +54,13 @@
             "in sint deserunt quis exercitation fugiat",
             "velit cillum aliqua eiusmod laboris fugiat"
           ],
-          "type": "orderedlist"
+          "type": "text"
         },
         {
-          "content": [
-            "sunt minim ex tempor elit id",
-            "dolor reprehenderit est ea cupidatat laboris",
-            "ut ullamco irure exercitation nostrud culpa"
+          "items": [
+            {"label": "sunt minim", "value": "ex tempor elit id"},
+            {"label": "dolor", "value": "reprehenderit est ea cupidatat laboris"},
+            {"label": "ut ullamco", "value": "irure exercitation nostrud culpa"}
           ],
           "type": "orderedlist"
         }
@@ -77,7 +77,7 @@
             "do Lorem laborum consectetur nostrud tempor",
             "deserunt exercitation consequat excepteur ea culpa"
           ],
-          "type": "definedlist"
+          "type": "text"
         },
         {
           "content": [
@@ -85,7 +85,7 @@
             "sunt eiusmod reprehenderit amet anim sint",
             "exercitation irure proident anim esse id"
           ],
-          "type": "definedlist"
+          "type": "text"
         },
         {
           "content": [
@@ -95,7 +95,7 @@
             "laboris exercitation eiusmod reprehenderit magna enim",
             "officia sit cupidatat anim excepteur ad"
           ],
-          "type": "orderedlist"
+          "type": "text"
         }
       ],
       "title": "tempor irure excepteur"
@@ -109,7 +109,7 @@
             "reprehenderit elit ex sunt sint consequat",
             "deserunt dolore irure ea consequat laborum"
           ],
-          "type": "definedlist"
+          "type": "text"
         }
       ],
       "title": "aliqua do ea"
@@ -124,7 +124,7 @@
             "ipsum mollit dolore reprehenderit consequat duis",
             "exercitation magna id duis eu minim"
           ],
-          "type": "orderedlist"
+          "type": "text"
         },
         {
           "content": [
@@ -134,15 +134,15 @@
             "consequat reprehenderit laboris deserunt ad eiusmod",
             "magna adipisicing fugiat nisi et irure"
           ],
-          "type": "definedlist"
+          "type": "text"
         },
         {
-          "content": [
-            "ad nisi do exercitation exercitation deserunt",
-            "commodo duis officia voluptate nostrud excepteur",
-            "ad dolor laborum sint nostrud amet"
+          "items": [
+            {"label": "ad nisi", "value": "do exercitation exercitation deserunt"},
+            {"label": "commodo", "value": "duis officia voluptate nostrud excepteur"},
+            {"label": "ad dolor", "value": "laborum sint nostrud amet"}
           ],
-          "type": "text"
+          "type": "orderedlist"
         }
       ],
       "title": "minim irure mollit"
@@ -245,7 +245,7 @@
                   "content": [
                     "do sint aute sint sit mollit"
                   ],
-                  "type": "orderedlist"
+                  "type": "text"
                 },
                 {
                   "content": [
@@ -253,7 +253,7 @@
                     "dolore consequat incididunt in non adipisicing",
                     "aute laborum ullamco cillum voluptate minim"
                   ],
-                  "type": "definedlist"
+                  "type": "text"
                 }
               ],
               "title": "reprehenderit amet ad"

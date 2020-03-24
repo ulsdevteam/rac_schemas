@@ -31,7 +31,7 @@
             "ad id non quis consectetur consectetur",
             "incididunt fugiat veniam officia Lorem minim"
           ],
-          "type": "definedlist"
+          "type": "text"
         },
         {
           "content": [
@@ -41,7 +41,7 @@
             "deserunt ea enim reprehenderit veniam veniam",
             "ad est ullamco tempor non mollit"
           ],
-          "type": "orderedlist"
+          "type": "text"
         }
       ],
       "title": "pariatur ullamco id"
@@ -66,14 +66,14 @@
             "ea ullamco cillum veniam ullamco exercitation",
             "deserunt sint cupidatat aute veniam elit"
           ],
-          "type": "definedlist"
+          "type": "text"
         },
         {
-          "content": [
-            "esse qui aliqua eiusmod quis anim",
-            "laborum qui do non eu est",
-            "qui ad cupidatat ullamco aliqua eiusmod",
-            "anim sunt esse do ad cupidatat"
+          "items": [
+            {"label": "esse qui", "value": "aliqua eiusmod quis anim"},
+            {"label": "laborum qui", "value": "do non eu est"},
+            {"label": "qui ad", "value": "cupidatat ullamco aliqua eiusmod"},
+            {"label": "anim sunt", "value": "esse do ad cupidatat"}
           ],
           "type": "definedlist"
         }

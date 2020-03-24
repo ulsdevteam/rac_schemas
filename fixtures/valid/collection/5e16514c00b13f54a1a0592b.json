@@ -40,8 +40,8 @@
       "type": "extent",
       "subnotes": [
         {
-          "content": [
-            "nulla proident fugiat mollit voluptate nostrud"
+          "items": [
+            {"label": "nulla proident", "value": "nulla proident fugiat mollit voluptate nostrud"}
           ],
           "type": "orderedlist"
         },
@@ -72,21 +72,18 @@
       "type": "physfacet",
       "subnotes": [
         {
-          "content": [
-            "ea reprehenderit ad laboris proident magna",
-            "deserunt consequat quis ex ut aliquip",
-            "aliqua reprehenderit dolore dolore esse adipisicing",
-            "est voluptate qui proident amet ut",
-            "fugiat minim velit dolore dolor duis"
+          "items": [
+            {"label": "ea reprehenderit", "value": "ad laboris proident magna"},
+            {"label": "deserunt consequat", "value": "quis ex ut aliquip"},
+            {"label": "aliqua", "value": "reprehenderit dolore dolore esse adipisicing"},
+            {"label": "est voluptate qui", "value": "proident amet ut"},
+            {"label": "fugiat", "value": "minim velit dolore dolor duis"}
           ],
           "type": "definedlist"
         },
         {
-          "content": [
-            "nostrud mollit consequat amet do commodo",
-            "tempor adipisicing pariatur excepteur dolore officia",
-            "ut velit duis commodo ipsum duis",
-            "aliquip tempor eu mollit voluptate ipsum"
+          "items": [
+            {"label": "nostrud", "value": "mollit consequat amet do commodo"}
           ],
           "type": "orderedlist"
         }
@@ -105,7 +102,7 @@
             "dolore ullamco mollit velit magna velit",
             "cupidatat duis voluptate ea culpa dolor"
           ],
-          "type": "orderedlist"
+          "type": "text"
         }
       ],
       "title": "occaecat velit duis"
@@ -120,7 +117,7 @@
             "proident commodo laboris sint esse duis",
             "sint adipisicing do anim dolor consequat"
           ],
-          "type": "orderedlist"
+          "type": "text"
         },
         {
           "content": [

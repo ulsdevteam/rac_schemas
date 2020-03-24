@@ -51,6 +51,7 @@ class TestSchemas(unittest.TestCase):
         for object_type in listdir(join(fixtures_dir, "valid")):
             for f in listdir(join(fixtures_dir, "valid", object_type)):
                 with open(join(fixtures_dir, "valid", object_type, f), "r") as df:
+                    print(object_type, f)
                     data = json.load(df)
                     is_valid(data, object_type)
         for object_type in listdir(join(fixtures_dir, "invalid")):

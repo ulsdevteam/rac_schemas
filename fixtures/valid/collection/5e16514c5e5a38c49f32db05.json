@@ -176,7 +176,7 @@
       "expression": "Esperanto"
     }
   ],
-  "rights_statements": [
+  "rights": [
     {
       "begin": "1949-05-30",
       "end": "1967-03-29",
@@ -195,7 +195,7 @@
               "type": "permissions",
               "subnotes": [
                 {
-                  "content": [
+                  "items": [
                     {"label": "officia", "value": "proident sint eu enim exercitation"},
                     {"label": "voluptate labore", "value": "labore officia do sunt"}
                   ],

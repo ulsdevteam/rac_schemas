@@ -102,7 +102,7 @@
     "origin": "aurora",
     "parents": [],
     "process_status": 80,
-    "rights_statements": [
+    "rights": [
         {
             "determination_date": "2018-09-18",
             "end_date": "2042-06-21",

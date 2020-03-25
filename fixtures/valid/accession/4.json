@@ -33,7 +33,7 @@
         }
     ],
     "organization": "Test Organization",
-    "rights_statements": [
+    "rights": [
         {
             "note": "Records embargoed for 10 years after date of creation.",
             "other_rights_basis": "Donor",

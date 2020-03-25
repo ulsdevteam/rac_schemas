@@ -608,7 +608,7 @@
 				},
 				"other_basis": {
 					"$id": "#/definitions/rights_statement/properties/other_basis",
-					"type": "string",
+					"type": ["string", "null"],
 					"title": "Other Basis",
 					"minLength": 1,
 					"examples": [

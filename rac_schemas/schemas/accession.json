@@ -36,7 +36,7 @@
 				"title": "Organization",
 				"type": "string"
 			},
-			"rights_statements": {
+			"rights": {
 				"type": "array"
 			},
 			"language": {

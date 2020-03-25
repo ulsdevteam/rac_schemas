@@ -452,7 +452,7 @@
 			],
 			"properties": {
 				"act": {
-					"$id": "#/definitions/rights_statement/properties/rights_granted/items/properties/act",
+					"$id": "#/definitions/rights_granted/items/properties/act",
 					"type": "string",
 					"items": {
 						"type": "string",
@@ -473,7 +473,7 @@
 					"pattern": "^(.*)$"
 				},
 				"begin": {
-					"$id": "#/definitions/rights_statement/properties/rights_granted/items/properties/begin",
+					"$id": "#/definitions/rights_granted/items/properties/begin",
 					"type": "string",
 					"title": "Rights Granted Begin Date",
 					"minLength": 1,
@@ -483,7 +483,7 @@
 					"pattern": "^(.*)$"
 				},
 				"end": {
-					"$id": "#/definitions/rights_statement/properties/rights_granted/items/properties/end",
+					"$id": "#/definitions/rights_granted/items/properties/end",
 					"type": "string",
 					"title": "Rights Granted End Date",
 					"minLength": 1,
@@ -493,7 +493,7 @@
 					"pattern": "^(.*)$"
 				},
 				"restriction": {
-					"$id": "#/definitions/rights_statement/properties/rights_granted/items/properties/restriction",
+					"$id": "#/definitions/rights_granted/items/properties/restriction",
 					"type": "string",
 					"minLength": 1,
 					"items": {
@@ -512,9 +512,11 @@
 				},
 				"notes": {
 					"type": "array",
-					"allOf": [{
-						"$ref": "#/definitions/note"
-					}]
+					"items": {
+						"allOf": [{
+							"$ref": "#/definitions/note"
+						}]
+					}
 				}
 			}
 		},
@@ -636,15 +638,19 @@
 				},
 				"rights_notes": {
 					"type": "array",
-					"allOf": [{
-						"$ref": "#/definitions/note"
-					}]
+					"items": {
+						"allOf": [{
+							"$ref": "#/definitions/note"
+						}]
+					}
 				},
 				"rights_granted": {
 					"type": "array",
-					"allOf": [{
-						"$ref": "#/definitions/rights_granted"
-					}]
+					"items": {
+						"allOf": [{
+							"$ref": "#/definitions/rights_granted"
+						}]
+					}
 				}
 			}
 		},

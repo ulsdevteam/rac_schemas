@@ -105,6 +105,7 @@
             "jurisdiction": "us",
             "note": "Work for hire, under copyright until 40 years after creation.",
             "rights_basis": "Copyright",
+            "other_rights_basis": null,
             "rights_granted": [
                 {
                     "act": "publish",

@@ -20,9 +20,9 @@ def is_valid(data, schema_name):
             "Data to be validated must be a dict, got {} instead".format(
                 type(data)))
     filename = handle_schema_filename(schema_name)
-    with open(join("schemas", "base.json"), "r") as bf:
+    with open(join("rac_schemas", "schemas", "base.json"), "r") as bf:
         base_schema = json.load(bf)
-        with open(join("schemas", filename), "r") as sf:
+        with open(join("rac_schemas", "schemas", filename), "r") as sf:
             object_schema = json.load(sf)
             resolver = RefResolver.from_schema(base_schema)
             validator = Draft7Validator(

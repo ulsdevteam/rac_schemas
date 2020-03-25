@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(name='rac_schemas',
-      version='0.3',
+      version='0.3.1',
       description='RAC JSON Schemas and validators',
       url='http://github.com/RockefellerArchiveCenter/rac_schemas',
       author='Rockefeller Archive Center',
@@ -14,6 +14,8 @@ setup(name='rac_schemas',
       install_requires=['jsonschema'],
       license='MIT',
       packages=['rac_schemas'],
+      package_dir={'rac_schemas': 'rac_schemas'},
+      package_data={'rac_schemas': ['schemas/*.json']},
       test_suite='nose.collector',
       tests_require=['nose', 'jsonschema'],
       zip_safe=False,

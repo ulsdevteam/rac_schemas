@@ -9,7 +9,7 @@ from rac_schemas import handle_schema_filename, is_valid
 
 base_path = dirname(dirname(abspath(__file__)))
 
-schemas_dir = join(base_path, "schemas")
+schemas_dir = join(base_path, "rac_schemas", "schemas")
 fixtures_dir = join(base_path, "fixtures")
 
 

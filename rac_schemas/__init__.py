@@ -1,7 +1,8 @@
 import json
+import jsonschema
 from pathlib import Path
 
-from jsonschema import Draft7Validator, RefResolver
+from .exceptions import ValidationError
 
 schemas_dir = Path(__file__).parent / "schemas"
 
@@ -17,6 +18,17 @@ def handle_schema_filename(filename):
 
 
 def is_valid(data, schema_name):
+    """Main method to validate data against a JSON schema.
+
+    Args:
+        data (dict): data to be validated.
+        schema_name (str): the schema against which the data should be validated.
+
+    Raises:
+        TypeError: if data is not a dict
+        FileNotFoundError: if a schema file cannot be found
+        rac_schemas.exceptions.ValidationError: if the validation fails
+    """
     if not isinstance(data, dict):
         raise TypeError(
             "Data to be validated must be a dict, got {} instead".format(
@@ -26,8 +38,11 @@ def is_valid(data, schema_name):
         base_schema = json.load(bf)
         with open(Path(schemas_dir) / filename, "r") as sf:
             object_schema = json.load(sf)
-            resolver = RefResolver.from_schema(base_schema)
-            validator = Draft7Validator(
+            resolver = jsonschema.RefResolver.from_schema(base_schema)
+            validator = jsonschema.Draft7Validator(
                 object_schema, resolver=resolver)
-            validator.validate(data)
+            try:
+                validator.validate(data)
+            except jsonschema.exceptions.ValidationError as e:
+                raise ValidationError(e)
             return True

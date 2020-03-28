@@ -3,9 +3,9 @@ import unittest
 from os import listdir
 from os.path import abspath, dirname, join
 
-from jsonschema.exceptions import ValidationError
 from jsonschema.validators import validator_for
 from rac_schemas import handle_schema_filename, is_valid
+from rac_schemas.exceptions import ValidationError
 
 base_path = dirname(dirname(abspath(__file__)))
 

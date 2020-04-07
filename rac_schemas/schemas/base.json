@@ -396,7 +396,7 @@
 				},
 				"title": {
 					"$id": "#/definitions/reference/properties/title",
-					"type": "string",
+					"type": ["string", "null"],
 					"title": "Title",
 					"description": "Reference title",
 					"examples": [

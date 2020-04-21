@@ -10,8 +10,7 @@
 		"required": [
 			"organization",
 			"bag_it_name",
-			"identifier",
-			"origin"],
+			"identifier"],
 		"properties": {
 			"url": {
 				"type": "string"

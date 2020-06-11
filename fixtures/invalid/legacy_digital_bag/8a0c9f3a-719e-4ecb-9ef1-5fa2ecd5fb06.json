@@ -1,0 +1,48 @@
+{
+    "identifier": "8a0c9f3a-719e-4ecb-9ef1-5fa2ecd5fb06",
+    "origin": null,
+    "rights_statements": [
+        {
+            "determination_date": "2018-09-18",
+            "end_date": "2047-06-29",
+            "jurisdiction": "us",
+            "note": "Work for hire, under copyright until 40 years after creation.",
+            "rights_basis": "Copyright",
+            "other_rights_basis": null,
+            "rights_granted": [
+                {
+                    "act": "publish",
+                    "end_date": "2047-06-29",
+                    "note": "Records under copyright may not be republished without permission from the copyright holder.",
+                    "restriction": "disallow",
+                    "start_date": "2006-07-01"
+                }
+            ],
+            "start_date": "2006-07-01",
+            "status": "copyrighted"
+        },
+        {
+            "end_date": "2017-06-30",
+            "note": "Records embargoed for 10 years after date of creation.",
+            "other_rights_basis": "Donor",
+            "rights_basis": "Other",
+            "rights_granted": [
+                {
+                    "act": "disseminate",
+                    "end_date": "2007-06-30",
+                    "note": "Records are open for research after expiration of embargo period.",
+                    "restriction": "allow",
+                    "start_date": "2016-07-01"
+                },
+                {
+                    "act": "disseminate",
+                    "end_date": "2017-06-30",
+                    "note": "Records are open for research after expiration of embargo period.",
+                    "restriction": "disallow",
+                    "start_date": "2006-07-01"
+                }
+            ],
+            "start_date": "2006-07-01"
+        }
+    ]
+}

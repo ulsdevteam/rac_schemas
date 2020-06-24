@@ -132,29 +132,6 @@
 				"type": {
 					"$id": "#definitions/extents/properties/type",
 					"type": "string",
-					"items": {
-						"type": "string",
-						"enum": [
-							"box(es)",
-							"cassettes",
-							"cubic_feet",
-							"document box(es)",
-							"files",
-							"folders",
-							"gigabytes",
-							"leaves",
-							"linear_feet",
-							"megabytes",
-							"microform reels",
-							"photographic_prints",
-							"photographic_slides",
-							"record cartons",
-							"reels",
-							"sheets",
-							"terabytes",
-							"volumes"
-						]
-					},
 					"title": "Extent Type",
 					"description": "Records the type of the extent value",
 					"minLength": 1,

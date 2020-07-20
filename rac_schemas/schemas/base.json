@@ -504,7 +504,6 @@
 			"title": "Rights Statements",
 			"required": [
 				"begin",
-				"determination_date",
 				"end",
 				"rights_granted",
 				"rights_type",

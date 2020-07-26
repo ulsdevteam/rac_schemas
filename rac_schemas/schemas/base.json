@@ -520,7 +520,7 @@
 				},
 				"determination_date": {
 					"$id": "#/definitions/rights_statement/properties/determination_date",
-					"type": "string",
+					"type": ["string", "null"],
 					"title": "Rights Statement Determination Date",
 					"minLength": 1,
 					"examples": [

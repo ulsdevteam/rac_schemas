@@ -39,8 +39,9 @@ def is_valid(data, schema_name):
         with open(Path(schemas_dir) / filename, "r") as sf:
             object_schema = json.load(sf)
             resolver = jsonschema.RefResolver.from_schema(base_schema)
+            format_checker = jsonschema.FormatChecker()
             validator = jsonschema.Draft7Validator(
-                object_schema, resolver=resolver)
+                object_schema, resolver=resolver, format_checker=format_checker)
             try:
                 validator.validate(data)
             except jsonschema.exceptions.ValidationError as e:

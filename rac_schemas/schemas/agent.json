@@ -70,6 +70,30 @@
 					}]
 				}
 			},
+			"people": {
+				"type": "array",
+				"items": {
+					"allOf": [{
+						"$ref": "base.json#/definitions/reference"
+					}]
+				}
+			},
+			"organizations": {
+				"type": "array",
+				"items": {
+					"allOf": [{
+						"$ref": "base.json#/definitions/reference"
+					}]
+				}
+			},
+			"families": {
+				"type": "array",
+				"items": {
+					"allOf": [{
+						"$ref": "base.json#/definitions/reference"
+					}]
+				}
+			},
 			"external_identifiers": {
 				"type": "array",
 				"minItems": 1,

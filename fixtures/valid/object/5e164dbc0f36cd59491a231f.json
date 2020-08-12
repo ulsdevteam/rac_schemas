@@ -162,7 +162,17 @@
       "rights_type": "other"
     }
   ],
-  "agents": [
+  "people": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/36"
+        }
+      ]
+    }
+  ],
+  "organizations": [
     {
       "external_identifiers": [
         {
@@ -175,19 +185,15 @@
       "external_identifiers": [
         {
           "source": "archivesspace",
-          "identifier": "/agents_person/36"
-        }
-      ]
-    },
-    {
-      "external_identifiers": [
-        {
-          "source": "archivesspace",
           "identifier": "/agents_organization/20"
         }
       ]
     }
   ],
+  "families": [],
   "terms": [],
-  "type": "object"
+  "type": "object",
+  "formats": ["documents"],
+  "online": true,
+  "top_collection": "/repositories/2/resources/40"
 }

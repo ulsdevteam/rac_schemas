@@ -183,7 +183,7 @@
       "rights_type": "other"
     }
   ],
-  "agents": [
+  "people": [
     {
       "external_identifiers": [
         {
@@ -191,7 +191,10 @@
           "identifier": "/agents_person/13"
         }
       ]
-    },
+    }
+  ],
+  "organizations": [],
+  "families": [
     {
       "external_identifiers": [
         {
@@ -221,5 +224,8 @@
       ]
     }
   ],
-  "type": "collection"
+  "type": "collection",
+  "formats": ["audio"],
+  "online": false,
+  "top_collection": "/repositories/2/resources/49"
 }

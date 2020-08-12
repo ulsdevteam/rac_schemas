@@ -47,6 +47,16 @@
       "title": "fugiat ea tempor"
     }
   ],
+  "people": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/36"
+        }
+      ]
+    }
+  ],
   "external_identifiers": [
     {
       "source": "archivesspace",

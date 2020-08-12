@@ -105,7 +105,7 @@
     }
   ],
   "rights": [],
-  "agents": [
+  "people": [
     {
       "external_identifiers": [
         {
@@ -113,16 +113,19 @@
           "identifier": "/agents_organization/18"
         }
       ]
-    },
+    }
+  ],
+  "organizations": [
     {
       "external_identifiers": [
         {
           "source": "archivesspace",
-          "identifier": "/agents_person/7"
+          "identifier": "/agents_organization/18"
         }
       ]
     }
   ],
+  "families": [],
   "terms": [
     {
       "external_identifiers": [
@@ -159,5 +162,8 @@
       ]
     }
   ],
-  "type": "collection"
+  "type": "collection",
+  "formats": ["documents", "moving image"],
+  "online": true,
+  "top_collection": "/repositories/2/resources/49"
 }

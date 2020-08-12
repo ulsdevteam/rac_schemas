@@ -50,6 +50,16 @@
       "title": "ad labore mollit"
     }
   ],
+  "families": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/7"
+        }
+      ]
+    }
+  ],
   "external_identifiers": [
     {
       "source": "archivesspace",

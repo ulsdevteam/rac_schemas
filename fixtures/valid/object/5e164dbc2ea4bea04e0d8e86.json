@@ -130,7 +130,9 @@
     }
   ],
   "rights": [],
-  "agents": [],
+  "people": [],
+  "organizations": [],
+  "families": [],
   "terms": [
     {
       "external_identifiers": [
@@ -141,5 +143,8 @@
       ]
     }
   ],
-  "type": "object"
+  "type": "object",
+  "formats": ["documents"],
+  "online": false,
+  "top_collection": "/repositories/2/resources/40"
 }

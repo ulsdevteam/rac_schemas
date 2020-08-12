@@ -64,6 +64,26 @@
       "title": "consequat id commodo"
     }
   ],
+  "organizations": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/38"
+        }
+      ]
+    }
+  ],
+  "people": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/36"
+        }
+      ]
+    }
+  ],
   "external_identifiers": [
     {
       "source": "archivesspace",

@@ -81,6 +81,16 @@
       "title": "consequat ipsum et"
     }
   ],
+  "organizations": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/15"
+        }
+      ]
+    }
+  ],
   "external_identifiers": [
     {
       "source": "archivesspace",

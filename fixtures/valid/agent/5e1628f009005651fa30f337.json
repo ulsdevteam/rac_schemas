@@ -67,6 +67,16 @@
       "title": "dolore fugiat minim"
     }
   ],
+  "families": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/28"
+        }
+      ]
+    }
+  ],
   "external_identifiers": [
     {
       "source": "archivesspace",

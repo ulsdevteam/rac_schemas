@@ -228,7 +228,7 @@
       "rights_type": "license"
     }
   ],
-  "agents": [
+  "people": [
     {
       "external_identifiers": [
         {
@@ -236,7 +236,10 @@
           "identifier": "/agents_person/6"
         }
       ]
-    },
+    }
+  ],
+  "organizations": [],
+  "families": [
     {
       "external_identifiers": [
         {
@@ -257,5 +260,8 @@
       ]
     }
   ],
-  "type": "collection"
+  "type": "collection",
+  "formats": ["photographs", "documents"],
+  "online": true,
+  "top_collection": "/repositories/2/resources/49"
 }

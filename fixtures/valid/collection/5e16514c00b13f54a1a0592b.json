@@ -171,15 +171,7 @@
     }
   ],
   "rights": [],
-  "agents": [
-    {
-      "external_identifiers": [
-        {
-          "source": "archivesspace",
-          "identifier": "/agents_organization/38"
-        }
-      ]
-    },
+  "people": [
     {
       "external_identifiers": [
         {
@@ -187,12 +179,14 @@
           "identifier": "/agents_person/19"
         }
       ]
-    },
+    }
+  ],
+  "organizations": [
     {
       "external_identifiers": [
         {
           "source": "archivesspace",
-          "identifier": "/agents_family/24"
+          "identifier": "/agents_organization/38"
         }
       ]
     },
@@ -209,6 +203,16 @@
         {
           "source": "archivesspace",
           "identifier": "/agents_organization/22"
+        }
+      ]
+    }
+  ],
+  "families": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/24"
         }
       ]
     }
@@ -233,5 +237,8 @@
       ]
     }
   ],
-  "type": "collection"
+  "type": "collection",
+  "formats": ["documents"],
+  "online": false,
+  "top_collection": "/repositories/2/resources/49"
 }

@@ -11,7 +11,10 @@
 			"dates",
 			"extents",
 			"external_identifiers",
+			"formats",
+			"online",
 			"title",
+			"top_collection",
 			"type"
 		],
 		"properties": {
@@ -33,7 +36,7 @@
 				]
 			},
 			"dates": {
-				"type": ["array", "null"],
+				"type": ["array"],
 				"minItems": 1,
 				"items": {
 					"allOf": [{
@@ -42,7 +45,8 @@
 				}
 			},
 			"extents": {
-				"type": ["array", "null"],
+				"type": ["array"],
+				"minItems": 1,
 				"items": {
 					"allOf": [{
 						"$ref": "base.json#/definitions/extent"
@@ -65,7 +69,23 @@
 					}]
 				}
 			},
-			"agents": {
+			"people": {
+				"type": "array",
+				"items": {
+					"allOf": [{
+						"$ref": "base.json#/definitions/reference"
+					}]
+				}
+			},
+			"organizations": {
+				"type": "array",
+				"items": {
+					"allOf": [{
+						"$ref": "base.json#/definitions/reference"
+					}]
+				}
+			},
+			"families": {
 				"type": "array",
 				"items": {
 					"allOf": [{
@@ -96,6 +116,28 @@
 						"$ref": "base.json#/definitions/reference"
 					}]
 				}
+			},
+			"formats": {
+				"type": "array",
+				"items": {
+						"oneOf": [
+							{
+								"type": "string",
+								"enum": [
+									"documents",
+									"audio",
+									"photographs",
+									"moving image"
+								]
+							}
+						]
+					}
+			},
+			"online": {
+				"type": "boolean"
+			},
+			"top_collection": {
+				"type": ["string", "null"]
 			},
 			"external_identifiers": {
 				"type": "array",

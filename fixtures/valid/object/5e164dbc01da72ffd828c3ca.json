@@ -188,7 +188,8 @@
       "rights_type": "copyright"
     }
   ],
-  "agents": [
+  "people": [],
+  "organizations": [
     {
       "external_identifiers": [
         {
@@ -206,6 +207,7 @@
       ]
     }
   ],
+  "families": [],
   "terms": [
     {
       "external_identifiers": [
@@ -248,5 +250,8 @@
       ]
     }
   ],
-  "type": "object"
+  "type": "object",
+  "formats": ["moving image", "audio"],
+  "online": false,
+  "top_collection": "/repositories/2/resources/40"
 }

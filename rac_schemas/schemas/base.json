@@ -21,6 +21,7 @@
 					"title": "Begin Date",
 					"description": "Begin date of the objects described",
 					"minLength": 1,
+					"format": "date",
 					"examples": [
 						"1939-06-03"
 					]
@@ -31,6 +32,7 @@
 					"title": "End Date",
 					"description": "End date of the objects described",
 					"minLength": 1,
+					"format": "date",
 					"examples": [
 						"1991-05-23"
 					]
@@ -523,6 +525,7 @@
 					"type": ["string", "null"],
 					"title": "Rights Statement Determination Date",
 					"minLength": 1,
+					"format": "date",
 					"examples": [
 						"2019-08-23"
 					],
@@ -552,20 +555,20 @@
 					"type": "string",
 					"title": "Rights Begin Date",
 					"minLength": 1,
+					"format": "date",
 					"examples": [
 						"2019-08-23"
-					],
-					"pattern": "^(.*)$"
+					]
 				},
 				"end": {
 					"$id": "#/definitions/rights_statement/properties/end",
 					"type": "string",
 					"title": "Rights End Date",
 					"minLength": 1,
+					"format": "date",
 					"examples": [
 						"2019-08-23"
-					],
-					"pattern": "^(.*)$"
+					]
 				},
 				"copyright_status": {
 					"$id": "#/definitions/rights_statement/properties/copyright_status",
@@ -714,16 +717,19 @@
 						"type": "string"
 					},
 					"determination_date": {
-						"type": ["string", "null"]
+						"type": ["string", "null"],
+						"format": "date"
 					},
 					"jurisdiction": {
 						"type": ["string", "null"]
 					},
 					"start_date": {
-						"type": "string"
+						"type": "string",
+						"format": "date"
 					},
 					"end_date": {
-						"type": "string"
+						"type": "string",
+						"format": "date"
 					},
 					"note": {
 						"type": "string"
@@ -759,7 +765,8 @@
 									"format": "date"
 								},
 								"end_date": {
-									"type": "string"
+									"type": "string",
+									"format": "date"
 								},
 								"note": {
 									"type": "string"

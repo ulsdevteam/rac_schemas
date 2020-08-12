@@ -156,7 +156,12 @@
       "rights_type": "copyright"
     }
   ],
-  "agents": [],
+  "people": [],
+  "organizations": [],
+  "families": [],
   "terms": [],
-  "type": "object"
+  "type": "object",
+  "formats": ["photographs"],
+  "online": true,
+  "top_collection": "/repositories/2/resources/40"
 }

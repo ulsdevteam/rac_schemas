@@ -1,7 +1,7 @@
 {
   "dates": [
     {
-      "begin": "1957-12-18",
+      "begin": "1957-12-118",
       "end": "2002-10-21",
       "type": "inclusive",
       "label": "record_keeping",
@@ -62,26 +62,6 @@
         }
       ],
       "title": "consequat id commodo"
-    }
-  ],
-  "organizations": [
-    {
-      "external_identifiers": [
-        {
-          "source": "archivesspace",
-          "identifier": "/agents_organization/38"
-        }
-      ]
-    }
-  ],
-  "people": [
-    {
-      "external_identifiers": [
-        {
-          "source": "archivesspace",
-          "identifier": "/agents_person/36"
-        }
-      ]
     }
   ],
   "external_identifiers": [

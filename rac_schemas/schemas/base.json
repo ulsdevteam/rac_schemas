@@ -18,10 +18,9 @@
 			"properties": {
 				"begin": {
 					"$id": "#/definitions/date/properties/begin",
+					"type": ["date", "null"],
 					"title": "Begin Date",
 					"description": "Begin date of the objects described",
-					"minLength": 1,
-					"type": "date",
 					"examples": [
 						"1939-06-03"
 					]
@@ -31,7 +30,6 @@
 					"type": ["date", "null"],
 					"title": "End Date",
 					"description": "End date of the objects described",
-					"minLength": 1,
 					"examples": [
 						"1991-05-23"
 					]

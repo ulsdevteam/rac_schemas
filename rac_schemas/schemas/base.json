@@ -521,7 +521,7 @@
 				},
 				"determination_date": {
 					"$id": "#/definitions/rights_statement/properties/determination_date",
-					"type": "date",
+					"type": ["date", "null"],
 					"title": "Rights Statement Determination Date",
 					"examples": [
 						"2019-08-23"

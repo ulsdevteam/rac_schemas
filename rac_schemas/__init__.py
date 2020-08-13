@@ -28,16 +28,6 @@ def is_date(value, instance):
     return pattern.match(instance)
 
 
-type_checker = jsonschema.Draft7Validator.TYPE_CHECKER.redefine(
-    "date", is_date)
-validators = jsonschema.Draft7Validator.VALIDATORS
-validators["date"] = is_date
-CustomValidator = jsonschema.validators.extend(
-    jsonschema.Draft7Validator,
-    type_checker=type_checker,
-    validators=validators)
-
-
 def is_valid(data, schema_name):
     """Main method to validate data against a JSON schema.
 
@@ -60,6 +50,14 @@ def is_valid(data, schema_name):
         with open(Path(schemas_dir) / filename, "r") as sf:
             object_schema = json.load(sf)
             resolver = jsonschema.RefResolver.from_schema(base_schema)
+            type_checker = jsonschema.Draft7Validator.TYPE_CHECKER.redefine(
+                "date", is_date)
+            validators = jsonschema.Draft7Validator.VALIDATORS
+            validators["date"] = is_date
+            CustomValidator = jsonschema.validators.extend(
+                jsonschema.Draft7Validator,
+                type_checker=type_checker,
+                validators=validators)
             validator = CustomValidator(object_schema, resolver=resolver)
             try:
                 validator.validate(data)

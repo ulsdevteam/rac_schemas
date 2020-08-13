@@ -21,18 +21,17 @@
 					"title": "Begin Date",
 					"description": "Begin date of the objects described",
 					"minLength": 1,
-					"format": "date",
+					"type": "date",
 					"examples": [
 						"1939-06-03"
 					]
 				},
 				"end": {
 					"$id": "#/definitions/date/properties/end",
-					"type": ["string", "null"],
+					"type": ["date", "null"],
 					"title": "End Date",
 					"description": "End date of the objects described",
 					"minLength": 1,
-					"format": "date",
 					"examples": [
 						"1991-05-23"
 					]
@@ -522,10 +521,8 @@
 				},
 				"determination_date": {
 					"$id": "#/definitions/rights_statement/properties/determination_date",
-					"type": ["string", "null"],
+					"type": ["date", "null"],
 					"title": "Rights Statement Determination Date",
-					"minLength": 1,
-					"format": "date",
 					"examples": [
 						"2019-08-23"
 					],
@@ -552,20 +549,16 @@
 				},
 				"begin": {
 					"$id": "#/definitions/rights_statement/properties/begin",
-					"type": "string",
+					"type": "date",
 					"title": "Rights Begin Date",
-					"minLength": 1,
-					"format": "date",
 					"examples": [
 						"2019-08-23"
 					]
 				},
 				"end": {
 					"$id": "#/definitions/rights_statement/properties/end",
-					"type": "string",
+					"type": "date",
 					"title": "Rights End Date",
-					"minLength": 1,
-					"format": "date",
 					"examples": [
 						"2019-08-23"
 					]
@@ -717,19 +710,16 @@
 						"type": "string"
 					},
 					"determination_date": {
-						"type": ["string", "null"],
-						"format": "date"
+						"type": ["date", "null"]
 					},
 					"jurisdiction": {
 						"type": ["string", "null"]
 					},
 					"start_date": {
-						"type": "string",
-						"format": "date"
+						"type": "date"
 					},
 					"end_date": {
-						"type": "string",
-						"format": "date"
+						"type": "date"
 					},
 					"note": {
 						"type": "string"
@@ -761,12 +751,10 @@
 										"delete"]
 								},
 								"start_date": {
-									"type": ["string", "null"],
-									"format": "date"
+									"type": ["date", "null"]
 								},
 								"end_date": {
-									"type": "string",
-									"format": "date"
+									"type": "date"
 								},
 								"note": {
 									"type": "string"

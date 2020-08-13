@@ -3,7 +3,6 @@ import unittest
 from os import listdir
 from os.path import abspath, dirname, join
 
-from jsonschema.validators import validator_for
 from rac_schemas import handle_schema_filename, is_valid
 from rac_schemas.exceptions import ValidationError
 
@@ -16,17 +15,14 @@ fixtures_dir = join(base_path, "fixtures")
 class TestSchemas(unittest.TestCase):
 
     def test_schemas_valid(self):
-        """Ensures all schemas are valid.
+        """Ensures all schemas are valid JSON.
 
         Attempts to load each of the schemas using the json library. If any of
         them are invalid JSON a json.JSONDecodeError exception will be thrown.
-        Also uses jsonschema's `check_schema` method to check schemas.
         """
         for f in listdir(schemas_dir):
             with open(join(schemas_dir, f)) as sf:
-                schema = json.load(sf)
-                cls = validator_for(schema)
-                cls.check_schema(schema)
+                json.load(sf)
 
     def test_schema_filename(self):
         """Ensures that schema filenames are parsed properly."""
@@ -51,7 +47,6 @@ class TestSchemas(unittest.TestCase):
         for object_type in listdir(join(fixtures_dir, "valid")):
             for f in listdir(join(fixtures_dir, "valid", object_type)):
                 with open(join(fixtures_dir, "valid", object_type, f), "r") as df:
-                    print(object_type, f)
                     data = json.load(df)
                     is_valid(data, object_type)
         for object_type in listdir(join(fixtures_dir, "invalid")):

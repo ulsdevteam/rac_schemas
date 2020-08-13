@@ -1,8 +1,8 @@
 {
   "dates": [
     {
-      "begin": "1926-06-04",
-      "end": "2012-09-17",
+      "begin": "1926-06",
+      "end": "2012",
       "type": "single",
       "label": "modified",
       "source": "archivesspace",

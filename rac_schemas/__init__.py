@@ -19,6 +19,8 @@ def handle_schema_filename(filename):
 
 
 def is_date(value, instance):
+    if not isinstance(instance, str):
+        return False
     if instance.count("-") == 2:
         pattern = re.compile("^[0-9]{4}-[0-9]{2}-[0-9]{2}$")
     elif instance.count("-") == 1:

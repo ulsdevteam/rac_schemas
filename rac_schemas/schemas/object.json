@@ -46,7 +46,6 @@
 			},
 			"extents": {
 				"type": ["array"],
-				"minItems": 1,
 				"items": {
 					"allOf": [{
 						"$ref": "base.json#/definitions/extent"

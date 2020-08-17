@@ -91,5 +91,6 @@
     }
   ],
   "agent_type": "person",
-  "type": "agent"
+  "type": "agent",
+  "group": "/agents_person/36"
 }

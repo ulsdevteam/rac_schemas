@@ -9,6 +9,7 @@
 		"title": "Terms",
 		"required": [
 			"external_identifiers",
+			"group",
 			"title",
 			"type",
 			"term_type"
@@ -62,6 +63,9 @@
 						"$ref": "base.json#/definitions/external_identifier"
 					}]
 				}
+			},
+			"group": {
+				"type": "string"
 			}
 		}
 	}]

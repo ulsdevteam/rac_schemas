@@ -9,6 +9,7 @@
 		"title": "Agents",
 		"required": [
 			"external_identifiers",
+			"group",
 			"title",
 			"type",
 			"agent_type"
@@ -102,6 +103,9 @@
 						"$ref": "base.json#/definitions/external_identifier"
 					}]
 				}
+			},
+			"group": {
+				"type": "string"
 			}
 		}
 	}]

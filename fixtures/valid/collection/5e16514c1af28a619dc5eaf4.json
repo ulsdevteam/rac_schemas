@@ -165,5 +165,5 @@
   "type": "collection",
   "formats": ["documents", "moving image"],
   "online": true,
-  "top_collection": "/repositories/2/resources/49"
+  "group": "/repositories/2/resources/49"
 }

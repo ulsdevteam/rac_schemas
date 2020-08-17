@@ -98,5 +98,6 @@
     }
   ],
   "agent_type": "organization",
-  "type": "agent"
+  "type": "agent",
+  "group": "/agents_person/15"
 }

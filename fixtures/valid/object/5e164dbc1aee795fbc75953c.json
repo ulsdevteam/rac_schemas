@@ -276,5 +276,5 @@
   "type": "object",
   "formats": ["audio"],
   "online": false,
-  "top_collection": "/repositories/2/resources/40"
+  "group": "/repositories/2/resources/40"
 }

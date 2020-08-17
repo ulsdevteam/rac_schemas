@@ -195,5 +195,5 @@
   "type": "object",
   "formats": ["documents"],
   "online": true,
-  "top_collection": "/repositories/2/resources/40"
+  "group": "/repositories/2/resources/40"
 }

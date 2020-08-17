@@ -12,9 +12,9 @@
 			"extents",
 			"external_identifiers",
 			"formats",
+			"group",
 			"online",
 			"title",
-			"top_collection",
 			"type"
 		],
 		"properties": {
@@ -135,8 +135,8 @@
 			"online": {
 				"type": "boolean"
 			},
-			"top_collection": {
-				"type": ["string", "null"]
+			"group": {
+				"type": "string"
 			},
 			"external_identifiers": {
 				"type": "array",

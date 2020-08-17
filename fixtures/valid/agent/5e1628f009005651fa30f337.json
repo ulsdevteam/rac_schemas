@@ -84,5 +84,6 @@
     }
   ],
   "agent_type": "family",
-  "type": "agent"
+  "type": "agent",
+  "group": "/agents_family/28"
 }

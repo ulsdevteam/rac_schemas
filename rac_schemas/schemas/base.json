@@ -48,14 +48,11 @@
 				"type": {
 					"$id": "#/definitions/date/properties/type",
 					"type": "string",
-					"items": {
-						"type": "string",
-						"enum": [
-							"bulk",
-							"inclusive",
-							"single"
-						]
-					},
+					"enum": [
+						"bulk",
+						"inclusive",
+						"single"
+					],
 					"title": "Date Type",
 					"description": "The type of date being described",
 					"minLength": 1,
@@ -67,32 +64,28 @@
 				"label": {
 					"$id": "#/definitions/date/properties/label",
 					"type": "string",
-					"items": {
-						"type": "string",
-						"enum": [
-							"agent_relation",
-							"broadcast",
-							"copyright",
-							"creation",
-							"deaccession",
-							"digitized",
-							"existence",
-							"event",
-							"issued",
-							"modified",
-							"other",
-							"publication",
-							"record_keeping",
-							"usage"
-						]
-					},
+					"enum": [
+						"agent_relation",
+						"broadcast",
+						"copyright",
+						"creation",
+						"deaccession",
+						"digitized",
+						"existence",
+						"event",
+						"issued",
+						"modified",
+						"other",
+						"publication",
+						"record_keeping",
+						"usage"
+					],
 					"title": "Date label",
 					"description": "Textual indication of the reason for recording the date",
 					"minLength": 1,
 					"examples": [
 						"publication"
-					],
-					"pattern": "^(.*)$"
+					]
 				},
 				"source": {
 					"type": "string",
@@ -152,14 +145,13 @@
 			"properties": {
 				"source": {
 					"type": "string",
-					"minItems": 1,
 					"title": "External Identifier Source",
 					"examples": [
 						"wikidata",
 						"archivesspace"
 					],
 					"pattern": "^(.*)$",
-					"allOf": [{
+					"oneOf": [{
 						"$ref": "#/definitions/source"
 					}]
 				},
@@ -200,6 +192,7 @@
 					"type": "string",
 					"title": "Language Identifier",
 					"description": "ISO language identifier",
+					"minLength": 1,
 					"maxLength": 3,
 					"examples": [
 						"epo"
@@ -628,22 +621,18 @@
 		"source": {
 			"$id": "#/definitions/source",
 			"type": "string",
-			"items": {
-				"type": "string",
-				"enum": [
-					"archivesspace",
-					"cartographer",
-					"wikidata",
-					"wikipedia"
-				]
-			},
+			"enum": [
+				"archivesspace",
+				"cartographer",
+				"wikidata",
+				"wikipedia"
+			],
 			"title": "Sources",
 			"description": "Source of item",
 			"minLength": 1,
 			"examples": [
 				"cartographer"
-			],
-			"pattern": "^(.*)$"
+			]
 		},
 		"subnote": {
 			"$id": "#/definitions/subnote",

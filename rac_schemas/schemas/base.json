@@ -496,7 +496,6 @@
 			"title": "Rights Statements",
 			"required": [
 				"begin",
-				"end",
 				"rights_granted",
 				"rights_type",
 				"type"
@@ -548,7 +547,7 @@
 				},
 				"end": {
 					"$id": "#/definitions/rights_statement/properties/end",
-					"type": "date",
+					"type": ["date", "null"],
 					"title": "Rights End Date",
 					"examples": [
 						"2019-08-23"

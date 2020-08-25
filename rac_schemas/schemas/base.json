@@ -51,7 +51,8 @@
 					"enum": [
 						"bulk",
 						"inclusive",
-						"single"
+						"single",
+						"range"
 					],
 					"title": "Date Type",
 					"description": "The type of date being described",

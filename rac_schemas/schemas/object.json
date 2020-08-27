@@ -8,6 +8,7 @@
 		"type": "object",
 		"title": "Archival Object",
 		"required": [
+			"category",
 			"dates",
 			"extents",
 			"external_identifiers",
@@ -18,6 +19,14 @@
 			"type"
 		],
 		"properties": {
+			"category": {
+				"$id": "#/object/properties/category",
+				"type": "string",
+				"title": "Object Category",
+				"enum": [
+					"collections"
+				]
+			},
 			"title": {
 				"$id": "#/object/properties/title",
 				"type": "string",

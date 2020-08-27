@@ -8,6 +8,7 @@
 		"type": "object",
 		"title": "Collection",
 		"required": [
+			"category",
 			"creators",
 			"dates",
 			"extents",
@@ -20,6 +21,14 @@
 			"type"
 		],
 		"properties": {
+			"category": {
+				"$id": "#/collection/properties/category",
+				"type": "string",
+				"title": "Collection Category",
+				"enum": [
+					"collections"
+				]
+			},
 			"title": {
 				"$id": "#/collection/properties/title",
 				"type": "string",

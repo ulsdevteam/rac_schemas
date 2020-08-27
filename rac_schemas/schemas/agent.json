@@ -8,6 +8,7 @@
 		"type": "object",
 		"title": "Agents",
 		"required": [
+			"category",
 			"external_identifiers",
 			"group",
 			"title",
@@ -22,6 +23,15 @@
 					"family",
 					"organization",
 					"person"
+				]
+			},
+			"category": {
+				"$id": "#/collection/properties/category",
+				"type": "string",
+				"title": "Agent Category",
+				"enum": [
+					"people",
+					"organizations"
 				]
 			},
 			"type": {

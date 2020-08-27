@@ -14,7 +14,6 @@
             "type": "collection"
         }
     ],
-    "category": "collections",
     "children": [
         {
             "external_identifiers": [
@@ -251,6 +250,6 @@
     "rights": [],
     "terms": [],
     "title": "Research",
-    "type": "object",
+    "type": "collection",
     "uri": "/collections/3pnr9kariwnqpin5fohkv2hzs2"
 }

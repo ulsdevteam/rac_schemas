@@ -26,7 +26,7 @@
 				"type": "string",
 				"title": "Collection Category",
 				"enum": [
-					"collections"
+					"collection"
 				]
 			},
 			"title": {

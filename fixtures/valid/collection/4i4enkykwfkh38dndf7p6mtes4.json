@@ -110,7 +110,10 @@
     "formats": [
         "documents"
     ],
-    "group": "/collections/z96u8h8tuefmbjixtxjta2iun5",
+    "group": {
+        "identifier": "/collections/z96u8h8tuefmbjixtxjta2iun5",
+        "title": "Moore, Stanford"
+    },
     "languages": [
         {
             "expression": "English",

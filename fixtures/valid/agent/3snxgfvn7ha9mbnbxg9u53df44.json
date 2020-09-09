@@ -10,7 +10,12 @@
         }
     ],
     "families": [],
-    "group": "/agents/3snxgfvn7ha9mbnbxg9u53df44",
+    "group": {
+        "creators": [],
+        "dates": [],
+        "identifier": "/agents/3snxgfvn7ha9mbnbxg9u53df44",
+        "title": "United Nations"
+    },
     "notes": [],
     "organizations": [
         {

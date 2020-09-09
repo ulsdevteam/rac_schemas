@@ -10,7 +10,10 @@
         }
     ],
     "families": [],
-    "group": "/agents/3gj3qien7hjv7z6shbdzjcinr2",
+    "group": {
+      "identifier": "/agents/3gj3qien7hjv7z6shbdzjcinr2",
+      "title": "Columbia University"
+    },
     "notes": [],
     "organizations": [
         {

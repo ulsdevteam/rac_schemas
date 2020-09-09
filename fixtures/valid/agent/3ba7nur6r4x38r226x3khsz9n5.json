@@ -19,7 +19,21 @@
         }
     ],
     "families": [],
-    "group": "/agents/3ba7nur6r4x38r226x3khsz9n5",
+    "group": {
+      "creators": [],
+      "dates": [
+        {
+            "begin": "1915",
+            "end": null,
+            "expression": "1915-",
+            "label": "existence",
+            "source": "archivesspace",
+            "type": "single"
+        }
+      ],
+      "identifier": "/agents/3ba7nur6r4x38r226x3khsz9n5",
+      "title": "Rockefeller, David"
+    },
     "notes": [],
     "organizations": [],
     "people": [

@@ -111,7 +111,10 @@
 				}
 			},
 			"group": {
-				"type": "string"
+				"type": "object",
+				"allOf": [{
+					"$ref": "base.json#/definitions/group"
+				}]
 			}
 		}
 	}]

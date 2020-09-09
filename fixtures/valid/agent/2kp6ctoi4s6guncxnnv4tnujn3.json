@@ -10,7 +10,12 @@
         }
     ],
     "families": [],
-    "group": "/agents/2kp6ctoi4s6guncxnnv4tnujn3",
+    "group": {
+        "creators": [],
+        "dates": [],
+        "identifier": "/agents/2kp6ctoi4s6guncxnnv4tnujn3",
+        "title": "Morrow, Hugh"
+    },
     "notes": [],
     "organizations": [],
     "people": [

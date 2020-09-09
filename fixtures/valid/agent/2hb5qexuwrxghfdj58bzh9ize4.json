@@ -10,7 +10,12 @@
         }
     ],
     "families": [],
-    "group": "/agents/2hb5qexuwrxghfdj58bzh9ize4",
+    "group": {
+        "creators": [],
+        "dates": [],
+        "identifier": "/agents/2hb5qexuwrxghfdj58bzh9ize4",
+        "title": "Rockefeller Foundation. Paris (France)"
+    },
     "notes": [],
     "organizations": [
         {

@@ -5,7 +5,10 @@
             "source": "archivesspace"
         }
     ],
-    "group": "/terms/3cn36ebmekt6g8jcc53x7qtx24",
+    "group": {
+        "identifier": "/terms/3cn36ebmekt6g8jcc53x7qtx24",
+        "title": "Philanthropy -- New York (N.Y.)"
+    },
     "term_type": "topical",
     "title": "Philanthropy -- New York (N.Y.)",
     "type": "term",

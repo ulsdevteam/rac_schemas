@@ -168,6 +168,49 @@
 				}
 			}
 		},
+		"group": {
+			"$id": "#/definitions/group",
+			"type": "object",
+			"title": "Group",
+			"required": [
+				"identifier",
+				"title"
+			],
+			"properties": {
+				"creators": {
+					"$id": "#/definitions/group/properties/creators",
+					"type": "array",
+					"title": "Group Creators",
+					"items": {
+						"allOf": [{
+							"$ref": "base.json#/definitions/reference"
+						}]
+					}
+				},
+				"dates": {
+					"$id": "#/definitions/group/properties/dates",
+					"type": "array",
+					"title": "Group Dates",
+					"items": {
+						"allOf": [{
+							"$ref": "base.json#/definitions/date"
+						}]
+					}
+				},
+				"identifier": {
+					"$id": "#/definitions/group/properties/identifier",
+					"type": "string",
+					"title": "Group Identifier",
+					"pattern": "^(.*)$"
+				},
+				"title": {
+					"$id": "#/definitions/group/properties/title",
+					"type": "string",
+					"title": "Group Title",
+					"pattern": "^(.*)$"
+				}
+			}
+		},
 		"language": {
 			"$id": "#/definitions/language",
 			"type": "object",

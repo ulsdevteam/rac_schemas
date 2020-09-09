@@ -177,7 +177,10 @@
     ],
     "families": [],
     "formats": [],
-    "group": "/collections/z96u8h8tuefmbjixtxjta2iun5",
+    "group": {
+        "identifier": "/collections/z96u8h8tuefmbjixtxjta2iun5",
+        "title": "Research"
+    },
     "languages": [
         {
             "expression": "English",

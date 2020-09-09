@@ -67,7 +67,10 @@
     "formats": [
         "documents"
     ],
-    "group": "/collections/z96u8h8tuefmbjixtxjta2iun5",
+    "group": {
+        "identifier":"/collections/z96u8h8tuefmbjixtxjta2iun5",
+        "title": "Literature Notes \u2013 H and Divinyl Sulfone"
+    },
     "languages": [
         {
             "expression": "English",

@@ -1,0 +1,19 @@
+{
+    "creator": [
+        {
+          "relator": null,
+          "role": "creator",
+          "external_identifiers": [
+              {
+                "identifier": "/agents/corporate_entities/42",
+                "source": "archivesspace"
+              }
+          ],
+          "title": "Rockefeller Foundation. Paris (France)",
+          "type": "organization",
+          "identifier": "2hb5qexuwrxghfdj58bzh9ize4"
+        }
+    ],
+    "dates": [],
+    "identifier": "/agents/2hb5qexuwrxghfdj58bzh9ize4"
+}

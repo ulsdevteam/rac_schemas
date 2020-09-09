@@ -179,7 +179,10 @@
     "formats": [
         "documents"
     ],
-    "group": "/collections/z96u8h8tuefmbjixtxjta2iun5",
+    "group": {
+        "identifier": "/collections/3pnr9kariwnqpin5fohkv2hzs2",
+        "title": "Research"
+    },
     "languages": [
         {
             "expression": "English",

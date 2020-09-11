@@ -8,6 +8,7 @@
 		"type": "object",
 		"title": "Terms",
 		"required": [
+			"category",
 			"external_identifiers",
 			"group",
 			"title",
@@ -15,6 +16,14 @@
 			"term_type"
 		],
 		"properties": {
+			"category": {
+				"$id": "#/term/properties/category",
+				"type": "string",
+				"title": "Term Category",
+				"enum": [
+					"subject"
+				]
+			},
 			"title": {
 				"$id": "#/term/properties/title",
 				"type": "string",

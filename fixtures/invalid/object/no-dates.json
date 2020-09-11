@@ -58,7 +58,11 @@
     "formats": [
         "documents"
     ],
-    "group": "/collections/z96u8h8tuefmbjixtxjta2iun5",
+    "group": {
+        "category": "collection",
+        "identifier": "/collections/z96u8h8tuefmbjixtxjta2iun5",
+        "title": "Research"
+    },
     "languages": [
         {
             "expression": "English",

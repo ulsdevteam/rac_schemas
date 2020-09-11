@@ -1,6 +1,9 @@
 {
     "external_identifiers": [],
-    "group": "/terms/2bk72dmpsqwnuw8d82mqnynuv2",
+    "group": {
+        "identifier": "/terms/2bk72dmpsqwnuw8d82mqnynuv2",
+        "title": "Governors -- Election -- New York (State) -- 1962"
+    },
     "term_type": "topical",
     "title": "Governors -- Election -- New York (State) -- 1962",
     "type": "term",

@@ -1,5 +1,5 @@
 {
-    "category": "organization",
+    "category": "foo",
     "creator": [
         {
           "relator": null,
@@ -16,5 +16,6 @@
         }
     ],
     "dates": [],
+    "identifier": "/agents/2hb5qexuwrxghfdj58bzh9ize4",
     "title": "Rockefeller Foundation. Paris (France)"
 }

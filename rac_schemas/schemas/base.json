@@ -184,7 +184,8 @@
 					"enum": [
 						"collection",
 						"organization",
-						"person"
+						"person",
+						"subject"
 					]
 				},
 				"creators": {

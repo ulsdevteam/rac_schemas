@@ -177,6 +177,16 @@
 				"title"
 			],
 			"properties": {
+				"category": {
+					"$id": "#/definitions/group/properties/category",
+					"type": "string",
+					"title": "Group Category",
+					"enum": [
+						"collection",
+						"organization",
+						"person"
+					]
+				},
 				"creators": {
 					"$id": "#/definitions/group/properties/creators",
 					"type": "array",

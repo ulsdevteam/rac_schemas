@@ -5,7 +5,10 @@
             "source": "archivesspace"
         }
     ],
-    "group": "/terms/2bk72dmpsqwnuw8d82mqnynuv2",
+    "group": {
+        "identifier": "/terms/2bk72dmpsqwnuw8d82mqnynuv2",
+        "title": "Governors -- Election -- New York (State) -- 1962"
+    },
     "title": "Governors -- Election -- New York (State) -- 1962",
     "type": "term",
     "uri": "/terms/2bk72dmpsqwnuw8d82mqnynuv2"

@@ -273,7 +273,7 @@
 					"enum": [
 						"accessrestrict",
 						"accruals",
-						"acquinfo",
+						"acqinfo",
 						"altformavail",
 						"appraisal",
 						"arrangement",

@@ -139,7 +139,7 @@
                 }
             ],
             "title": "Other Finding Aids",
-            "type": "multipart"
+            "type": "otherfindaid"
         }
     ],
     "online": false,

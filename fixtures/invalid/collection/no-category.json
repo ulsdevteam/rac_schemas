@@ -203,7 +203,7 @@
                 }
             ],
             "title": "Arrangement:",
-            "type": "multipart"
+            "type": "arrangement"
         },
         {
             "source": "archivesspace",
@@ -217,7 +217,7 @@
                 }
             ],
             "title": "Summary:",
-            "type": "multipart"
+            "type": "abstract"
         }
     ],
     "online": false,

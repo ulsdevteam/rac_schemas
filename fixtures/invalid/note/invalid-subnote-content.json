@@ -1,0 +1,14 @@
+{
+    "source": "archivesspace",
+    "subnotes": [
+        {
+            "content": [
+              {"key": "value"}
+            ],
+            "items": [],
+            "type": "text"
+        }
+    ],
+    "title": "Conditions Governing Access",
+    "type": "accessrestrict"
+}

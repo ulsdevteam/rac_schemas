@@ -148,7 +148,7 @@
                 }
             ],
             "title": "Arrangement",
-            "type": "multipart"
+            "type": "arrangement"
         },
         {
             "source": "archivesspace",
@@ -162,7 +162,7 @@
                 }
             ],
             "title": "Related Archival Materials",
-            "type": "multipart"
+            "type": "relatedmaterial"
         },
         {
             "source": "archivesspace",
@@ -176,7 +176,7 @@
                 }
             ],
             "title": "Scope and Contents",
-            "type": "multipart"
+            "type": "scopecontent"
         },
         {
             "source": "archivesspace",
@@ -190,7 +190,7 @@
                 }
             ],
             "title": "Biographical / Historical",
-            "type": "multipart"
+            "type": "bioghist"
         },
         {
             "source": "archivesspace",
@@ -204,7 +204,7 @@
                 }
             ],
             "title": "Preferred Citation",
-            "type": "multipart"
+            "type": "prefercite"
         },
         {
             "source": "archivesspace",
@@ -218,7 +218,7 @@
                 }
             ],
             "title": "File Plan",
-            "type": "multipart"
+            "type": "fileplan"
         },
         {
             "source": "archivesspace",
@@ -232,7 +232,7 @@
                 }
             ],
             "title": "Conditions Governing Access",
-            "type": "multipart"
+            "type": "accessrestrict"
         }
     ],
     "online": false,

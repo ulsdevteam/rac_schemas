@@ -271,6 +271,7 @@
 					"type": "string",
 					"minLength": 1,
 					"enum": [
+						"abstract",
 						"accessrestrict",
 						"accruals",
 						"acqinfo",

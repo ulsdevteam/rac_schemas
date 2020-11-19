@@ -139,6 +139,7 @@
             "type": "organization"
         }
     ],
+    "parent": "/collections/3pnr9kariwnqpin5fohkv2hzs2",
     "people": [
         {
             "external_identifiers": [
@@ -154,6 +155,7 @@
             "type": "person"
         }
     ],
+    "position": 7,
     "rights": [],
     "terms": [],
     "title": "Moore, Stanford",

@@ -237,6 +237,7 @@
             "type": "organization"
         }
     ],
+    "parent": "/collections/z96u8h8tuefmbjixtxjta2iun5",
     "people": [
         {
             "external_identifiers": [
@@ -252,6 +253,7 @@
             "type": "person"
         }
     ],
+    "position": 1,
     "rights": [],
     "terms": [],
     "type": "collection",

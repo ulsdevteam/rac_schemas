@@ -14,6 +14,7 @@
             "type": "collection"
         }
     ],
+    "category": "collections",
     "children": [
         {
             "external_identifiers": [
@@ -221,6 +222,7 @@
         }
     ],
     "online": false,
+    "parent": "/collections/z96u8h8tuefmbjixtxjta2iun5",
     "organizations": [
         {
             "external_identifiers": [
@@ -236,7 +238,6 @@
             "type": "organization"
         }
     ],
-    "parent": "/collections/z96u8h8tuefmbjixtxjta2iun5",
     "people": [
         {
             "external_identifiers": [
@@ -252,7 +253,6 @@
             "type": "person"
         }
     ],
-    "position": 1,
     "rights": [],
     "terms": [],
     "title": "Research",

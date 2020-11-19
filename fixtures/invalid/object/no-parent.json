@@ -3,14 +3,27 @@
         {
             "external_identifiers": [
                 {
-                    "identifier": "/repositories/2/archival_objects/2",
+                    "identifier": "/repositories/2/archival_objects/117",
                     "source": "archivesspace"
                 }
             ],
-            "identifier": "n4z5jafejmf3zbuvydxz76iz95",
+            "identifier": "kvipspf37873ga9urxf36dbc35",
+            "level": "file",
+            "order": null,
+            "title": "Informal Progress Reports",
+            "type": "collection"
+        },
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/2/archival_objects/3",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "3pnr9kariwnqpin5fohkv2hzs2",
             "level": "series",
             "order": null,
-            "title": "Laboratory Administration",
+            "title": "Research",
             "type": "collection"
         },
         {
@@ -27,12 +40,12 @@
             "type": "collection"
         }
     ],
-    "category": "collection",
+    "category": "collections",
     "dates": [
         {
-            "begin": "1941",
-            "end": "1944",
-            "expression": "1941\u20131944",
+            "begin": "1943",
+            "end": "1943",
+            "expression": "1943",
             "label": "creation",
             "source": "archivesspace",
             "type": "inclusive"
@@ -46,7 +59,7 @@
     ],
     "external_identifiers": [
         {
-            "identifier": "/repositories/2/archival_objects/42",
+            "identifier": "/repositories/2/archival_objects/210",
             "source": "archivesspace"
         }
     ],
@@ -57,7 +70,7 @@
     "group": {
         "category": "collection",
         "identifier": "/collections/z96u8h8tuefmbjixtxjta2iun5",
-        "title": "F"
+        "title": "Research"
     },
     "languages": [
         {
@@ -68,13 +81,12 @@
     "notes": [],
     "online": false,
     "organizations": [],
-    "parent": "/collections/z96u8h8tuefmbjixtxjta2iun5",
     "people": [],
-    "position": 9,
+    "position": 0,
     "rights": [],
     "terms": [],
-    "title": "F",
-    "tree_position": 25,
+    "title": "May \u2013 June",
+    "tree_position": 9,
     "type": "object",
-    "uri": "/objects/2q6w8fjw9zp5ic69owfzhd6352"
+    "uri": "/objects/2dtie45rkows3ikkqyum4mhs84"
 }

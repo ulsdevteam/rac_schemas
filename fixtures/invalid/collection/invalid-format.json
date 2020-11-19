@@ -222,6 +222,7 @@
         }
     ],
     "online": false,
+    "parent": "/collections/z96u8h8tuefmbjixtxjta2iun5",
     "organizations": [
         {
             "external_identifiers": [
@@ -252,6 +253,7 @@
             "type": "person"
         }
     ],
+    "position": 4,
     "rights": [],
     "terms": [],
     "title": "Research",

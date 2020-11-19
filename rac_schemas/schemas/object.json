@@ -14,6 +14,8 @@
 			"external_identifiers",
 			"formats",
 			"group",
+			"parent",
+			"position",
 			"online",
 			"title",
 			"type"
@@ -141,6 +143,12 @@
 							}
 						]
 					}
+			},
+			"parent": {
+				"type": ["string", "null"]
+			},
+			"position": {
+				"type": "number"
 			},
 			"online": {
 				"type": "boolean"

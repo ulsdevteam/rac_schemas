@@ -52,6 +52,7 @@ class TestSchemas(unittest.TestCase):
         for object_type in listdir(join(fixtures_dir, "invalid")):
             for f in listdir(join(fixtures_dir, "invalid", object_type)):
                 with open(join(fixtures_dir, "invalid", object_type, f), "r") as df:
+                    print(f)
                     data = json.load(df)
                     with self.assertRaises(
                             ValidationError,

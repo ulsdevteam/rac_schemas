@@ -1,7 +1,7 @@
 import argparse
 import os
 
-from json_schema_for_humans.generate import GenerationConfiguration, generate_from_filename
+from json_schema_for_humans.generate import generate_from_filename
 
 class DocumentGenerator:
     '''Generates HTML documentation based on JSON schema files.'''

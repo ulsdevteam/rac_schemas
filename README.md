@@ -44,6 +44,19 @@ All schemas are located in the `schemas/` subdirectory of the `rac_schemas/` dir
 
 `rac_schemas` comes with unit tests as well as linting. The easiest way to make sure all tests pass is to run `tox` from the root of the repository. This will execute all tests, and will also run `autopep8` and `flake8` linters against the codebase.
 
-### License
+## Documentation
+
+Automatically generated HTML documentation in the `docs/` directory based upon `.json` files in the `schemas/` subdirectory of the `rac_schemas/` directory.
+
+### Requirements
+
+*   Python 3.4 or higher
+*   [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans)
+
+## Usage
+
+Running `generate_docs.py` will iterate over the `schemas/` subdirectory and write updated docs files to the `docs/` directory.
+
+## License
 
 Code is released under an MIT license. See`LICENSE.md`.

@@ -13,12 +13,14 @@ class DocumentGenerator:
         args:
             directory(str): a string representation of the full filepath of the directory containing schema files
         """
-        filename = [file for file in os.listdir(json_directory) if if file.endswith(".json")]
-        html_file = "{}.html".format(filename.split(".")[0])
-        generate_from_filename(
-            os.path.join(
-                json_directory, filename), os.path.join(
-                html_directory, html_file))
+        filenames = [file for file in os.listdir(
+            json_directory) if file.endswith(".json")]
+        for schema in filenames:
+            html_file = "{}.html".format(schema.split(".")[0])
+            generate_from_filename(
+                os.path.join(
+                    json_directory, schema), os.path.join(
+                    html_directory, html_file))
 
 
 parser = argparse.ArgumentParser(

@@ -13,9 +13,9 @@ class DocumentGenerator:
         json_directory = os.path.join(
             project_directory, "rac_schemas", "schemas")
         html_directory = os.path.join(project_directory, "docs")
-        filenames = [file for file in os.listdir(
+        json_files = [file for file in os.listdir(
             json_directory) if file.endswith(".json")]
-        for schema in filenames:
+        for schema in json_files:
             html_file = "{}.html".format(schema.split(".")[0])
             generate_from_filename(
                 os.path.join(

@@ -48,6 +48,10 @@ All schemas are located in the `schemas/` subdirectory of the `rac_schemas/` dir
 
 Automatically generated HTML documentation in the `docs/` directory based upon `.json` files in the `schemas/` subdirectory of the `rac_schemas/` directory.
 
+A simplified overview of the data model is below:
+
+![Simplified data model overwiew](Simplified_Data_Model.png "Data Model Overview")
+
 ### Requirements
 
 *   Python 3.4 or higher

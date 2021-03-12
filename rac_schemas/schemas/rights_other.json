@@ -1,58 +1,58 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "rights_statement.json",
+	"$id": "rights_other.json",
 	"type": "object",
-	"title": "RAC JSON Schema",
-  "allOf": [{
-    "$id": "#/rights_other",
-    "type": "object",
+	"title": "RAC Rights Other Basis Schema",
+	"allOf": [{
+		"$id": "#/rights_other",
+		"type": "object",
 		"title": "PREMIS Other Basis Information",
-    "required": [
-      "other_basis",
-    ],
-    "properties": {
-      "other_identifier": {
-        "$id": "#/rights_other/properties/other_identifier",
-        "type": "string",
-        "title": "Other Documentation Identifier",
+		"required": [
+			"other_basis",
+		],
+		"properties": {
+			"other_identifier": {
+				"$id": "#/rights_other/properties/other_identifier",
+				"type": "string",
+				"title": "Other Documentation Identifier",
 				"minLength": 1,
-        "maxLength": 250
-      },
-      "other_basis": {
-        "$id": "#/rights_other/properties/other_basis",
-        "type": "string",
-        "title": "Other Rights Basis",
-        "enum": [
-          "donor",
-          "policy",
-        ]
-      },
-      "start_date": {
-        "$id": "#/rights_other/properties/start_date",
-        "type": ["string", "null"],
-        "title": "Other Basis Begin Date",
-        "examples": [
-          "2019-08-23"
-        ]
-      },
-      "end_date": {
-        "$id": "#/rights_other/properties/end_date",
-        "type": ["string", "null"],
-        "title": "Other Basis End Date",
-        "examples": [
-          "2019-08-23",
-          "open"
-        ]
-      },
-      "other_note": {
-        "$id": "#/rights_other/properties/other_note",
-        "type": "array",
-        "title": "Other Basis Note",
-        "items": {
-          "type": "string",
-          "maxLength": 2500
-        }
-      }
-    }
-  }]
+				"maxLength": 250
+			},
+			"other_basis": {
+				"$id": "#/rights_other/properties/other_basis",
+				"type": "string",
+				"title": "Other Rights Basis",
+				"enum": [
+					"donor",
+					"policy",
+				]
+			},
+			"start_date": {
+				"$id": "#/rights_other/properties/start_date",
+				"type": ["string", "null"],
+				"title": "Other Basis Begin Date",
+				"examples": [
+					"2019-08-23"
+				]
+			},
+			"end_date": {
+				"$id": "#/rights_other/properties/end_date",
+				"type": ["string", "null"],
+				"title": "Other Basis End Date",
+				"examples": [
+					"2019-08-23",
+					"open"
+				]
+			},
+			"other_note": {
+				"$id": "#/rights_other/properties/other_note",
+				"type": "array",
+				"title": "Other Basis Note",
+				"items": {
+					"type": "string",
+					"maxLength": 2500
+				}
+			}
+		}
+	}]
 }

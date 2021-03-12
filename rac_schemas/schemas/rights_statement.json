@@ -3,70 +3,70 @@
 	"$id": "rights_statement.json",
 	"type": "object",
 	"title": "RAC JSON Schema",
-  "allOf": [{
-    "$id": "#/rights_statement",
-    "type": "object",
+	"allOf": [{
+		"$id": "#/rights_statement",
+		"type": "object",
 		"title": "PREMIS Rights Statement",
-    "required": [
-      "basis_information",
-      "rights_basis",
-      "rights_granted"
-    ],
-    "properties": {
-      "rights_identifier": {
-        "$id": "#/rights_statement/properties/rights_identifier",
-        "type": "string",
-        "title": "Rights Statement Identifier",
-        "minLength": 1,
-        "maxLength": 250
-      },
-      "rights_basis": {
-        "$id": "#/rights_statement/properties/rights_basis",
-        "type": "string",
-        "title": "Rights Basis Declaration",
-        "minLength": 1,
-        "enum": [
-          "copyright",
-          "license",
-          "other",
-          "statute"
-        ],
-        "examples": [
-          "other"
-        ]
-      },
-      "rights_granted": {
-        "type": "array",
-        "items": {
-          "allOf": [{
-            "$ref": "rights_granted.json#/rights_granted"
-          }]
-        }
-      },
-      "if": {
-        "properties": { "rights_basis": { "const": "copyright" } }
-      },
-      "then": {
-        "properties": { "basis_information": { "allOf": [ { "$ref": "rights_copyright.json#/rights_copyright" } ] } }
-      },
-      "if": {
-        "properties": { "rights_basis": { "const": "license" } }
-      },
-      "then": {
-        "properties": { "basis_information": { "allOf": [ { "$ref": "rights_license.json#/rights_license" } ] } }
-      },
-      "if": {
-        "properties": { "rights_basis": { "const": "other" } }
-      },
-      "then": {
-        "properties": { "basis_information": { "allOf": [ { "$ref": "rights_other.json#/rights_other" } ] } }
-      },
-      "if": {
-        "properties": { "rights_basis": { "const": "statute" } }
-      },
-      "then": {
-        "properties": { "basis_information": { "allOf": [ { "$ref": "rights_statute.json#/rights_statute" } ] } }
-      }
-    }
-  }]
+		"required": [
+			"basis_information",
+			"rights_basis",
+			"rights_granted"
+		],
+		"properties": {
+			"rights_identifier": {
+				"$id": "#/rights_statement/properties/rights_identifier",
+				"type": "string",
+				"title": "Rights Statement Identifier",
+				"minLength": 1,
+				"maxLength": 250
+			},
+			"rights_basis": {
+				"$id": "#/rights_statement/properties/rights_basis",
+				"type": "string",
+				"title": "Rights Basis Declaration",
+				"minLength": 1,
+				"enum": [
+					"copyright",
+					"license",
+					"other",
+					"statute"
+				],
+				"examples": [
+					"other"
+				]
+			},
+			"rights_granted": {
+				"type": "array",
+				"items": {
+					"allOf": [{
+						"$ref": "rights_granted.json#/rights_granted"
+					}]
+				}
+			},
+			"if": {
+				"properties": { "rights_basis": { "const": "copyright" } }
+			},
+			"then": {
+				"properties": { "basis_information": { "allOf": [ { "$ref": "rights_copyright.json#/rights_copyright" } ] } }
+			},
+			"if": {
+				"properties": { "rights_basis": { "const": "license" } }
+			},
+			"then": {
+				"properties": { "basis_information": { "allOf": [ { "$ref": "rights_license.json#/rights_license" } ] } }
+			},
+			"if": {
+				"properties": { "rights_basis": { "const": "other" } }
+			},
+			"then": {
+				"properties": { "basis_information": { "allOf": [ { "$ref": "rights_other.json#/rights_other" } ] } }
+			},
+			"if": {
+				"properties": { "rights_basis": { "const": "statute" } }
+			},
+			"then": {
+				"properties": { "basis_information": { "allOf": [ { "$ref": "rights_statute.json#/rights_statute" } ] } }
+			}
+		}
+	}]
 }

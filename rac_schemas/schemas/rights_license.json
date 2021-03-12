@@ -31,7 +31,7 @@
       },
       "start_date": {
         "$id": "#/rights_license/properties/start_date",
-        "type": ["string", "null"]
+        "type": ["string", "null"],
         "title": "License Begin Date",
         "examples": [
           "2019-08-23"

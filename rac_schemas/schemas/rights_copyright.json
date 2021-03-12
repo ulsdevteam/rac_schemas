@@ -18,7 +18,7 @@
         "title": "Copyright Documentation Identifier",
 				"minLength": 1,
         "maxLength": 250
-      }
+      },
       "copyright_status": {
         "$id": "#/rights_copyright/properties/copyright_status",
         "type": "string",

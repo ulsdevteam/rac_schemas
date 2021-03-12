@@ -50,8 +50,6 @@
         "$id": "#/rights_granted/properties/grant_restriction",
         "type": "string",
         "title": "Rights Granted Restriction Statement",
-        "minLength": 1,
-        "default": "",
         "enum": [
           "allow",
 					"conditional",

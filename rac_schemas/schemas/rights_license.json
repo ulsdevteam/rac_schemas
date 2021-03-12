@@ -1,0 +1,60 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "rights_statement.json",
+	"type": "object",
+	"title": "RAC JSON Schema",
+  "allOf": [{
+    "$id": "#/rights_license",
+    "type": "object",
+		"title": "PREMIS License Information",
+    "properties": {
+      "license_identifier": {
+        "$id": "#/rights_license/properties/license_identifier",
+        "type": "string",
+        "title": "License Documentation Identifier",
+				"minLength": 1,
+        "maxLength": 250
+      },
+      "license_terms": {
+        "$id": "#/rights_license/properties/license_terms",
+        "type": "string",
+        "title": "License Terms",
+        "maxLength": 2500,
+        },
+      "determination_date": {
+        "$id": "#/rights_license/properties/determination_date",
+        "type": ["string", "null"],
+        "title": "License Determination Date",
+        "examples": [
+          "2019-08-23"
+        ]
+      },
+      "start_date": {
+        "$id": "#/rights_license/properties/start_date",
+        "type": ["string", "null"]
+        "title": "License Begin Date",
+        "examples": [
+          "2019-08-23"
+        ]
+      },
+      "end_date": {
+        "$id": "#/rights_license/properties/end_date",
+        "type": ["string", "null"],
+        "title": "License End Date",
+        "examples": [
+          "2019-08-23",
+          "open"
+        ]
+      },
+      "license_note": {
+        "$id": "#/rights_license/properties/license_note",
+        "type": "array",
+        "title": "License Note",
+        "items": {
+          "type": "string",
+          "maxLength": 2500
+        }
+      }
+    }
+  }]
+}

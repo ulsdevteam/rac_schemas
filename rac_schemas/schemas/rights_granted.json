@@ -1,0 +1,87 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "rights_granted.json",
+	"type": "object",
+	"title": "RAC JSON Schema",
+  "allOf": [{
+    "$id": "#/rights_granted",
+    "type": "object",
+		"title": "Rights Granted Statement",
+    "properties": {
+      "act": {
+        "$id": "#/rights_granted/properties/act",
+        "type": "string",
+        "title": "Rights Granted Act",
+        "enum": [
+          "delete",
+          "disseminate",
+          "modify",
+          "migrate",
+          "publish",
+          "replicate",
+          "use"
+          ],
+        "examples": [
+          "disseminate"
+        ]
+      },
+      "start_date": {
+        "$id": "#/rights_granted/properties/start_date",
+        "type": "string",
+        "format": "date",
+        "title": "Rights Granted Start Date",
+        "minLength": 1,
+        "examples": [
+          "2019-08-23"
+        ]
+      },
+      "end_date": {
+        "$id": "#/rights_granted/properties/end_date",
+        "type": ["string", "null"],
+        "title": "Rights Granted End Date",
+        "minLength": 1,
+        "examples": [
+          "2019-08-23",
+					"unknown",
+					"null"
+        ]
+      },
+      "grant_restriction": {
+        "$id": "#/rights_granted/properties/grant_restriction",
+        "type": "string",
+        "title": "Rights Granted Restriction Statement",
+        "minLength": 1,
+        "default": "",
+        "enum": [
+          "allow",
+					"conditional",
+          "disallow"
+        ],
+        "examples": [
+          "allow"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "granted_note": {
+				"$id": "#/rights_granted/properties/granted_note",
+				"type": "array",
+				"title": "Rights Granted Note",
+				"items": {
+					"type": "string",
+					"maxLength": 2500
+				}
+      }
+    },
+		{
+			"if": {
+				"properties": { "grant_restriction": { "const": "conditional" } }
+			},
+			"then": {
+				"required": [ "act", "grant_restriction", "granted_note" ]
+			},
+			"else": {
+				"required": [ "act", "grant_restriction" ]
+			}
+		}
+  }]
+}

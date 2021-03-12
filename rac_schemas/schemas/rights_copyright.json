@@ -3,80 +3,75 @@
 	"$id": "rights_copyright.json",
 	"type": "object",
 	"title": "RAC Copyright Information Schema",
-	"allOf": [{
-		"$id": "#/rights_copyright",
-		"type": "object",
-		"title": "PREMIS Copyright Information",
-		"required": [
+	"required": [
 			"copyright_status",
 			"copyright_jurisdiction"
-		],
-		"properties": {
-			"copyright_identifier": {
-				"$id": "#/rights_copyright/properties/copyright_identifier",
+	],
+	"properties": {
+		"copyright_identifier": {
+			"$id": "#/copyright_identifier",
+			"type": "string",
+			"title": "Copyright Documentation Identifier",
+			"minLength": 1,
+			"maxLength": 250
+		},
+		"copyright_status": {
+			"$id": "#/copyright_status",
+			"type": "string",
+			"title": "Copyright Status",
+			"minLength": 1,
+			"enum": [
+				"copyrighted",
+				"public domain",
+				"unknown"
+			],
+			"examples": [
+				"public domain"
+			]
+		},
+		"copyright_jurisdiction": {
+			"$id": "#/copyright_jurisdiction",
+			"type": "string",
+			"title": "Copyright Jurisdiction",
+			"minLength": 1,
+			"examples": [
+				"FR"
+			],
+			"pattern": "^[A-Z]{2}$"
+		},
+		"determination_date": {
+			"$id": "#/determination_date",
+			"type": ["string", "null"],
+			"title": "Copyright Determination Date",
+			"examples": [
+				"2019-08-23"
+			]
+		},
+		"start_date": {
+			"$id": "#/start_date",
+			"type": ["string", "null"],
+			"title": "Copyright Begin Date",
+			"examples": [
+				"2019-08-23"
+			]
+		},
+		"end_date": {
+			"$id": "#/end_date",
+			"type": ["string", "null"],
+			"title": "Copyright End Date",
+			"examples": [
+				"2019-08-23",
+				"open"
+			]
+		},
+		"copyright_note": {
+			"$id": "#/copyright_note",
+			"type": "array",
+			"title": "Copyright Note",
+			"items": {
 				"type": "string",
-				"title": "Copyright Documentation Identifier",
-				"minLength": 1,
-				"maxLength": 250
-			},
-			"copyright_status": {
-				"$id": "#/rights_copyright/properties/copyright_status",
-				"type": "string",
-				"title": "Copyright Status",
-				"minLength": 1,
-				"enum": [
-					"copyrighted",
-					"public domain",
-					"unknown"
-				],
-				"examples": [
-					"public domain"
-				]
-			},
-			"copyright_jurisdiction": {
-				"$id": "#/rights_copyright/properties/copyright_jurisdiction",
-				"type": "string",
-				"title": "Copyright Jurisdiction",
-				"minLength": 1,
-				"examples": [
-					"FR"
-				],
-				"pattern": "^[A-Z]{2}$"
-			},
-			"determination_date": {
-				"$id": "#/rights_copyright/properties/determination_date",
-				"type": ["string", "null"],
-				"title": "Copyright Determination Date",
-				"examples": [
-					"2019-08-23"
-				]
-			},
-			"start_date": {
-				"$id": "#/rights_copyright/properties/start_date",
-				"type": ["string", "null"],
-				"title": "Copyright Begin Date",
-				"examples": [
-					"2019-08-23"
-				]
-			},
-			"end_date": {
-				"$id": "#/rights_copyright/properties/end_date",
-				"type": ["string", "null"],
-				"title": "Copyright End Date",
-				"examples": [
-					"2019-08-23",
-					"open"
-				]
-			},
-			"copyright_note": {
-				"$id": "#/rights_copyright/properties/copyright_note",
-				"type": "array",
-				"title": "Copyright Note",
-				"items": {
-					"type": "string",
-					"maxLength": 2500
-				}
+				"maxLength": 2500
 			}
 		}
-	}]
+	}
 }

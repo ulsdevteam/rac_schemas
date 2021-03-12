@@ -3,72 +3,67 @@
 	"$id": "rights_statute.json",
 	"type": "object",
 	"title": "RAC Rights Statute Schema",
-	"allOf": [{
-		"$id": "#/rights_statute",
-		"type": "object",
-		"title": "PREMIS Statute Information",
-		"required": [
+	"required": [
 			"statute_jurisdiction",
 			"statute_citation",
 		],
-		"properties": {
-			"statute_identifier": {
-				"$id": "#/rights_statute/properties/statute_identifier",
+	"properties": {
+		"statute_identifier": {
+			"$id": "#/statute_identifier",
+			"type": "string",
+			"title": "Statute Documentation Identifier",
+			"minLength": 1,
+			"maxLength": 250
+		},
+		"statute_jurisdiction": {
+			"$id": "#/statute_jurisdiction",
+			"type": "string",
+			"title": "Statute Jurisdiction",
+			"minLength": 1,
+			"examples": [
+				"EN"
+			],
+			"pattern": "^[A-Z]{2}$"
+		},
+		"statute_citation": {
+			"$id": "#/statute_citation",
+			"type": "string",
+			"title": "Statute Citation",
+			"maxLength": 2500,
+		},
+		"determination_date": {
+			"$id": "#/determination_date",
+			"type": ["string", "null"],
+			"title": "Statute Determination Date",
+			"examples": [
+				"2019-08-23"
+			]
+		},
+		"start_date": {
+			"$id": "#/start_date",
+			"type": ["string", "null"],
+			"title": "Statute Begin Date",
+			"examples": [
+				"2019-08-23"
+			]
+		},
+		"end_date": {
+			"$id": "#/end_date",
+			"type": ["string", "null"],
+			"title": "Statute End Date",
+			"examples": [
+				"2019-08-23",
+				"open"
+			]
+		},
+		"statute_note": {
+			"$id": "#/statute_note",
+			"type": "array",
+			"title": "Statute Note",
+			"items": {
 				"type": "string",
-				"title": "Statute Documentation Identifier",
-				"minLength": 1,
-				"maxLength": 250
-			},
-			"statute_jurisdiction": {
-				"$id": "#/rights_statute/properties/statute_jurisdiction",
-				"type": "string",
-				"title": "Statute Jurisdiction",
-				"minLength": 1,
-				"examples": [
-					"EN"
-				],
-				"pattern": "^[A-Z]{2}$"
-			},
-			"statute_citation": {
-				"$id": "#/rights_statute/properties/statute_citation",
-				"type": "string",
-				"title": "Statute Citation",
-				"maxLength": 2500,
-			},
-			"determination_date": {
-				"$id": "#/rights_statute/properties/determination_date",
-				"type": ["string", "null"],
-				"title": "Statute Determination Date",
-				"examples": [
-					"2019-08-23"
-				]
-			},
-			"start_date": {
-				"$id": "#/rights_statute/properties/start_date",
-				"type": ["string", "null"],
-				"title": "Statute Begin Date",
-				"examples": [
-					"2019-08-23"
-				]
-			},
-			"end_date": {
-				"$id": "#/rights_statute/properties/end_date",
-				"type": ["string", "null"],
-				"title": "Statute End Date",
-				"examples": [
-					"2019-08-23",
-					"open"
-				]
-			},
-			"statute_note": {
-				"$id": "#/rights_statute/properties/statute_note",
-				"type": "array",
-				"title": "Statute Note",
-				"items": {
-					"type": "string",
-					"maxLength": 2500
-				}
+				"maxLength": 2500
 			}
 		}
-	}]
+	}
 }

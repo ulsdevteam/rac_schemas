@@ -22,7 +22,6 @@
 				"$id": "#/properties/rights_basis",
 				"type": "string",
 				"title": "Rights Basis Declaration",
-				"minLength": 1,
 				"enum": [
 					"copyright",
 					"license",

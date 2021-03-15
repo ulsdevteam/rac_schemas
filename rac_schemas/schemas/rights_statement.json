@@ -42,31 +42,13 @@
 						"$ref": "rights_granted.json"
 					}]
 				}
-			},
-			"if": {
-				"properties": { "rights_basis": { "const": "copyright" } }
-			},
-			"then": {
-				"properties": { "basis_information": { "allOf": [ { "$ref": "rights_copyright.json" } ] } }
-			},
-			"if": {
-				"properties": { "rights_basis": { "const": "license" } }
-			},
-			"then": {
-				"properties": { "basis_information": { "allOf": [ { "$ref": "rights_license.json" } ] } }
-			},
-			"if": {
-				"properties": { "rights_basis": { "const": "other" } }
-			},
-			"then": {
-				"properties": { "basis_information": { "allOf": [ { "$ref": "rights_other.json" } ] } }
-			},
-			"if": {
-				"properties": { "rights_basis": { "const": "statute" } }
-			},
-			"then": {
-				"properties": { "basis_information": { "allOf": [ { "$ref": "rights_statute.json" } ] } }
 			}
-		}
+		},
+		"oneOf": [
+			{ "allOf": [ { "$ref": "rights_copyright.json" } ] },
+			{ "allOf": [ { "$ref": "rights_license.json" } ] },
+			{ "allOf": [ { "$ref": "rights_other.json" } ] },
+			{ "allOf": [ { "$ref": "rights_statute.json" } ] }
+		]
 	}]
 }

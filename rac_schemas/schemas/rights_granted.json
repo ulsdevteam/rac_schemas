@@ -53,8 +53,7 @@
 			],
 			"examples": [
 				"allow"
-			],
-			"pattern": "^(.*)$"
+			]
 		},
 		"granted_note": {
 			"$id": "#/granted_note",

@@ -3,9 +3,13 @@
 	"$id": "rights_granted.json",
 	"type": "object",
 	"title": "RAC Rights Granted Schema",
+	"required": [
+		"act",
+		"grant_restriction"
+	]
 	"properties": {
 		"act": {
-			"$id": "#/act",
+			"$id": "#/properties/act",
 			"type": "string",
 			"title": "Rights Granted Act",
 			"enum": [
@@ -21,29 +25,8 @@
 				"disseminate"
 			]
 		},
-		"start_date": {
-			"$id": "#/start_date",
-			"type": "string",
-			"format": "date",
-			"title": "Rights Granted Start Date",
-			"minLength": 1,
-			"examples": [
-				"2019-08-23"
-			]
-		},
-		"end_date": {
-			"$id": "#/end_date",
-			"type": ["string", "null"],
-			"title": "Rights Granted End Date",
-			"minLength": 1,
-			"examples": [
-				"2019-08-23",
-				"unknown",
-				"null"
-			]
-		},
 		"grant_restriction": {
-			"$id": "#/grant_restriction",
+			"$id": "#/properties/grant_restriction",
 			"type": "string",
 			"title": "Rights Granted Restriction Statement",
 			"enum": [
@@ -54,24 +37,6 @@
 			"examples": [
 				"allow"
 			]
-		},
-		"granted_note": {
-			"$id": "#/granted_note",
-			"type": "array",
-			"title": "Rights Granted Note",
-			"items": {
-				"type": "string",
-				"maxLength": 2500
-			}
 		}
-	},
-	"if": {
-		"properties": { "grant_restriction": { "const": "conditional" } }
-	},
-	"then": {
-		"required": [ "act", "grant_restriction", "granted_note" ]
-	},
-	"else": {
-		"required": [ "act", "grant_restriction" ]
 	}
 }

@@ -8,20 +8,18 @@
 		"type": "object",
 		"title": "PREMIS Rights Statement",
 		"required": [
-			"basis_information",
 			"rights_basis",
 			"rights_granted"
 		],
 		"properties": {
 			"rights_identifier": {
-				"$id": "#/rights_statement/properties/rights_identifier",
+				"$id": "#/properties/rights_identifier",
 				"type": "string",
 				"title": "Rights Statement Identifier",
-				"minLength": 1,
-				"maxLength": 250
+				"minLength": 1
 			},
 			"rights_basis": {
-				"$id": "#/rights_statement/properties/rights_basis",
+				"$id": "#/properties/rights_basis",
 				"type": "string",
 				"title": "Rights Basis Declaration",
 				"minLength": 1,
@@ -42,6 +40,31 @@
 						"$ref": "rights_granted.json"
 					}]
 				}
+			},
+			"start_date": {
+				"$id": "#/properties/start_date",
+				"type": ["string", "null"],
+				"title": "Rights Begin Date",
+				"examples": [
+					"2019-08-23"
+				]
+			},
+			"end_date": {
+				"$id": "#/properties/end_date",
+				"type": ["string", "null"],
+				"title": "Rights End Date",
+				"examples": [
+					"2019-08-23",
+					"open"
+				]
+			},
+			"note": {
+				"$id": "#/note",
+				"type": "array",
+				"title": "Rights Note",
+				"items": {
+					"type": "string"
+				}
 			}
 		},
 		"oneOf": [
@@ -49,6 +72,15 @@
 			{ "allOf": [ { "$ref": "rights_license.json" } ] },
 			{ "allOf": [ { "$ref": "rights_other.json" } ] },
 			{ "allOf": [ { "$ref": "rights_statute.json" } ] }
-		]
+		],
+		"if": {
+			"rights_granted.json#/properties/grant_restriction": { "const": "conditional" }
+		},
+		"then": {
+			"required": [ "rights_basis", "rights_granted", "note" ]
+		},
+		"else": {
+			"required": [ "rights_basis", "rights_granted" ]
+		}
 	}]
 }

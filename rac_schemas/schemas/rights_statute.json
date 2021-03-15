@@ -9,14 +9,13 @@
 		],
 	"properties": {
 		"statute_identifier": {
-			"$id": "#/statute_identifier",
+			"$id": "#/properties/statute_identifier",
 			"type": "string",
 			"title": "Statute Documentation Identifier",
-			"minLength": 1,
-			"maxLength": 250
+			"minLength": 1
 		},
 		"statute_jurisdiction": {
-			"$id": "#/statute_jurisdiction",
+			"$id": "#/properties/statute_jurisdiction",
 			"type": "string",
 			"title": "Statute Jurisdiction",
 			"minLength": 1,
@@ -26,44 +25,17 @@
 			"pattern": "^[A-Z]{2}$"
 		},
 		"statute_citation": {
-			"$id": "#/statute_citation",
+			"$id": "#/properties/statute_citation",
 			"type": "string",
-			"title": "Statute Citation",
-			"maxLength": 2500,
+			"title": "Statute Citation"
 		},
 		"determination_date": {
-			"$id": "#/determination_date",
+			"$id": "#/properties/determination_date",
 			"type": ["string", "null"],
 			"title": "Statute Determination Date",
 			"examples": [
 				"2019-08-23"
 			]
-		},
-		"start_date": {
-			"$id": "#/start_date",
-			"type": ["string", "null"],
-			"title": "Statute Begin Date",
-			"examples": [
-				"2019-08-23"
-			]
-		},
-		"end_date": {
-			"$id": "#/end_date",
-			"type": ["string", "null"],
-			"title": "Statute End Date",
-			"examples": [
-				"2019-08-23",
-				"open"
-			]
-		},
-		"statute_note": {
-			"$id": "#/statute_note",
-			"type": "array",
-			"title": "Statute Note",
-			"items": {
-				"type": "string",
-				"maxLength": 2500
-			}
 		}
 	}
 }

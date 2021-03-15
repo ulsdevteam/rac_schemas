@@ -8,46 +8,19 @@
 	],
 	"properties": {
 		"other_identifier": {
-			"$id": "#/other_identifier",
+			"$id": "#/properties/other_identifier",
 			"type": "string",
 			"title": "Other Documentation Identifier",
-			"minLength": 1,
-			"maxLength": 250
+			"minLength": 1
 		},
 		"other_basis": {
-			"$id": "#/other_basis",
+			"$id": "#/properties/other_basis",
 			"type": "string",
 			"title": "Other Rights Basis",
 			"enum": [
 				"donor",
 				"policy",
 			]
-		},
-		"start_date": {
-			"$id": "#/start_date",
-			"type": ["string", "null"],
-			"title": "Other Basis Begin Date",
-			"examples": [
-				"2019-08-23"
-			]
-		},
-		"end_date": {
-			"$id": "#/end_date",
-			"type": ["string", "null"],
-			"title": "Other Basis End Date",
-			"examples": [
-				"2019-08-23",
-				"open"
-			]
-		},
-		"other_note": {
-			"$id": "#/other_note",
-			"type": "array",
-			"title": "Other Basis Note",
-			"items": {
-				"type": "string",
-				"maxLength": 2500
-			}
 		}
 	}
 }

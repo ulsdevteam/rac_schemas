@@ -9,14 +9,13 @@
 	],
 	"properties": {
 		"copyright_identifier": {
-			"$id": "#/copyright_identifier",
+			"$id": "#/properties/copyright_identifier",
 			"type": "string",
 			"title": "Copyright Documentation Identifier",
-			"minLength": 1,
-			"maxLength": 250
+			"minLength": 1
 		},
 		"copyright_status": {
-			"$id": "#/copyright_status",
+			"$id": "#/properties/copyright_status",
 			"type": "string",
 			"title": "Copyright Status",
 			"minLength": 1,
@@ -30,7 +29,7 @@
 			]
 		},
 		"copyright_jurisdiction": {
-			"$id": "#/copyright_jurisdiction",
+			"$id": "#/properties/copyright_jurisdiction",
 			"type": "string",
 			"title": "Copyright Jurisdiction",
 			"minLength": 1,
@@ -40,38 +39,12 @@
 			"pattern": "^[A-Z]{2}$"
 		},
 		"determination_date": {
-			"$id": "#/determination_date",
+			"$id": "#/properties/determination_date",
 			"type": ["string", "null"],
 			"title": "Copyright Determination Date",
 			"examples": [
 				"2019-08-23"
 			]
-		},
-		"start_date": {
-			"$id": "#/start_date",
-			"type": ["string", "null"],
-			"title": "Copyright Begin Date",
-			"examples": [
-				"2019-08-23"
-			]
-		},
-		"end_date": {
-			"$id": "#/end_date",
-			"type": ["string", "null"],
-			"title": "Copyright End Date",
-			"examples": [
-				"2019-08-23",
-				"open"
-			]
-		},
-		"copyright_note": {
-			"$id": "#/copyright_note",
-			"type": "array",
-			"title": "Copyright Note",
-			"items": {
-				"type": "string",
-				"maxLength": 2500
-			}
 		}
 	}
 }

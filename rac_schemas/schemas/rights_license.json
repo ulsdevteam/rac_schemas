@@ -5,51 +5,23 @@
 	"title": "RAC Rights License Schema",
 	"properties": {
 		"license_identifier": {
-			"$id": "#/license_identifier",
+			"$id": "#/properties/license_identifier",
 			"type": "string",
 			"title": "License Documentation Identifier",
 			"minLength": 1,
-			"maxLength": 250
 		},
 		"license_terms": {
-			"$id": "#/license_terms",
+			"$id": "#/properties/license_terms",
 			"type": "string",
 			"title": "License Terms",
-			"maxLength": 2500,
 		},
 		"determination_date": {
-			"$id": "#/determination_date",
+			"$id": "#/properties/determination_date",
 			"type": ["string", "null"],
 			"title": "License Determination Date",
 			"examples": [
 				"2019-08-23"
 			]
-		},
-		"start_date": {
-			"$id": "#/start_date",
-			"type": ["string", "null"],
-			"title": "License Begin Date",
-			"examples": [
-				"2019-08-23"
-			]
-		},
-		"end_date": {
-			"$id": "#/end_date",
-			"type": ["string", "null"],
-			"title": "License End Date",
-			"examples": [
-				"2019-08-23",
-				"open"
-			]
-		},
-		"license_note": {
-			"$id": "#/license_note",
-			"type": "array",
-			"title": "License Note",
-			"items": {
-				"type": "string",
-				"maxLength": 2500
-			}
 		}
 	}
 }

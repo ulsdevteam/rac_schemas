@@ -8,12 +8,6 @@
 			"copyright_jurisdiction"
 	],
 	"properties": {
-		"copyright_identifier": {
-			"$id": "#/properties/copyright_identifier",
-			"type": "string",
-			"title": "Copyright Documentation Identifier",
-			"minLength": 1
-		},
 		"copyright_status": {
 			"$id": "#/properties/copyright_status",
 			"type": "string",

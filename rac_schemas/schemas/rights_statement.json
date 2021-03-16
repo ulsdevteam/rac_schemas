@@ -67,10 +67,10 @@
 			}
 		},
 		"oneOf": [
-			{ "allOf": [ { "$ref": "rights_copyright.json" } ] },
-			{ "allOf": [ { "$ref": "rights_license.json" } ] },
-			{ "allOf": [ { "$ref": "rights_other.json" } ] },
-			{ "allOf": [ { "$ref": "rights_statute.json" } ] }
+			{ "allOf": [ { "$ref": "rights_copyright.json#/properties" } ] },
+			{ "allOf": [ { "$ref": "rights_license.json#/properties" } ] },
+			{ "allOf": [ { "$ref": "rights_other.json#/properties" } ] },
+			{ "allOf": [ { "$ref": "rights_statute.json#/properties" } ] }
 		],
 		"if": {
 			"rights_granted.json#/properties/grant_restriction": { "const": "conditional" }

@@ -7,12 +7,6 @@
 		"other_basis"
 	],
 	"properties": {
-		"other_identifier": {
-			"$id": "#/properties/other_identifier",
-			"type": "string",
-			"title": "Other Documentation Identifier",
-			"minLength": 1
-		},
 		"other_basis": {
 			"$id": "#/properties/other_basis",
 			"type": "string",

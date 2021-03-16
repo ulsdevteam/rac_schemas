@@ -8,12 +8,6 @@
 			"statute_citation"
 		],
 	"properties": {
-		"statute_identifier": {
-			"$id": "#/properties/statute_identifier",
-			"type": "string",
-			"title": "Statute Documentation Identifier",
-			"minLength": 1
-		},
 		"statute_jurisdiction": {
 			"$id": "#/properties/statute_jurisdiction",
 			"type": "string",

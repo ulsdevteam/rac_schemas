@@ -6,7 +6,7 @@
 	"required": [
 		"act",
 		"grant_restriction"
-	]
+	],
 	"properties": {
 		"act": {
 			"$id": "#/properties/act",

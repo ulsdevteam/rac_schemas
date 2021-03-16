@@ -4,7 +4,7 @@
 	"type": "object",
 	"title": "RAC Rights Other Basis Schema",
 	"required": [
-		"other_basis",
+		"other_basis"
 	],
 	"properties": {
 		"other_identifier": {
@@ -19,7 +19,7 @@
 			"title": "Other Rights Basis",
 			"enum": [
 				"donor",
-				"policy",
+				"policy"
 			]
 		}
 	}

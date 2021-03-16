@@ -5,7 +5,7 @@
 	"title": "RAC Rights Statute Schema",
 	"required": [
 			"statute_jurisdiction",
-			"statute_citation",
+			"statute_citation"
 		],
 	"properties": {
 		"statute_identifier": {

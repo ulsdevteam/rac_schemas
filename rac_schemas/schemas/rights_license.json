@@ -8,7 +8,7 @@
 			"$id": "#/properties/license_identifier",
 			"type": "string",
 			"title": "License Documentation Identifier",
-			"minLength": 1,
+			"minLength": 1
 		},
 		"license_terms": {
 			"$id": "#/properties/license_terms",

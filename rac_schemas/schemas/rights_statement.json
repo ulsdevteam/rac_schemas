@@ -58,18 +58,27 @@
 				]
 			},
 			"note": {
-				"$id": "#/note",
+				"$id": "#/properties/note",
 				"type": "array",
 				"title": "Rights Note",
 				"items": {
 					"type": "string"
 				}
+			},
+			"other_basis": {
+				"$id": "#/properties/other_basis",
+				"type": "string",
+				"title": "Other Rights Basis",
+				"enum": [
+					"donor",
+					"policy"
+				]
 			}
 		},
 		"oneOf": [
 			{ "allOf": [ { "$ref": "rights_copyright.json#/properties" } ] },
 			{ "allOf": [ { "$ref": "rights_license.json#/properties" } ] },
-			{ "allOf": [ { "$ref": "rights_other.json#/properties" } ] },
+			{ "allOf": [ { "$ref": "#/properties/other_basis" } ] },
 			{ "allOf": [ { "$ref": "rights_statute.json#/properties" } ] }
 		],
 		"if": {

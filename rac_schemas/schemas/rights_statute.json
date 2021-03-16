@@ -14,9 +14,9 @@
 			"title": "Statute Jurisdiction",
 			"minLength": 1,
 			"examples": [
-				"EN"
+				"en"
 			],
-			"pattern": "^[A-Z]{2}$"
+			"pattern": "^[a-z]{2}$"
 		},
 		"statute_citation": {
 			"$id": "#/properties/statute_citation",

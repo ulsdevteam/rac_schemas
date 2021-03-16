@@ -13,7 +13,7 @@
 		"license_terms": {
 			"$id": "#/properties/license_terms",
 			"type": "string",
-			"title": "License Terms",
+			"title": "License Terms"
 		},
 		"determination_date": {
 			"$id": "#/properties/determination_date",

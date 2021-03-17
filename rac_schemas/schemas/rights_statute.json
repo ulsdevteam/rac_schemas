@@ -14,7 +14,7 @@
 			"title": "Statute Jurisdiction",
 			"minLength": 1,
 			"examples": [
-				"en"
+				"us"
 			],
 			"pattern": "^[a-z]{2}$"
 		},

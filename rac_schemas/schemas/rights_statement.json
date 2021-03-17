@@ -36,7 +36,7 @@
 				"type": "array",
 				"items": {
 					"allOf": [{
-						"$ref": "rights_granted.json"
+						"$ref": "rights_granted.json#/"
 					}]
 				}
 			},
@@ -76,10 +76,10 @@
 			}
 		},
 		"oneOf": [
-			{ "allOf": [ { "$ref": "rights_copyright.json#/properties" } ] },
-			{ "allOf": [ { "$ref": "rights_license.json#/properties" } ] },
+			{ "allOf": [ { "$ref": "rights_copyright.json#/" } ] },
+			{ "allOf": [ { "$ref": "rights_license.json#/" } ] },
 			{ "allOf": [ { "$ref": "#/properties/other_basis" } ] },
-			{ "allOf": [ { "$ref": "rights_statute.json#/properties" } ] }
+			{ "allOf": [ { "$ref": "rights_statute.json#/" } ] }
 		],
 		"if": {
 			"rights_granted.json#/properties/grant_restriction": { "const": "conditional" }

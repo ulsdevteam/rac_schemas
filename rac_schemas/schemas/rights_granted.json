@@ -38,5 +38,8 @@
 				"allow"
 			]
 		}
-	}
+	},
+	"allOf": [ { "$ref": "rights_statement.json#/properties/start_date" } ],
+	"allOf": [ { "$ref": "rights_statement.json#/properties/end_date" } ],
+	"allOf": [ { "$ref": "rights_statement.json#/properties/note" } ]
 }

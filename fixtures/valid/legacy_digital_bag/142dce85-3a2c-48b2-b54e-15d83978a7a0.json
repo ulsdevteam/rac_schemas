@@ -3,9 +3,8 @@
     "origin": "legacy_digital",
     "rights_statements": [
         {
-            "determination_date": "2018-09-18",
+            "start_date": "2006-07-01",
             "end_date": "2047-06-29",
-            "copyright_jurisdiction": "us",
             "note": "Work for hire, under copyright until 40 years after creation.",
             "rights_basis": "copyright",
             "rights_granted": [
@@ -14,14 +13,17 @@
                     "grant_restriction": "disallow"
                 }
             ],
-            "start_date": "2006-07-01",
-            "copyright_status": "copyrighted"
+            "copyright_basis": {
+              "copyright_status": "copyrighted",
+              "determination_date": "2018-09-18",
+              "copyright_jurisdiction": "us"
+            }
         },
         {
             "end_date": "2017-06-30",
             "note": "Records embargoed for 10 years after date of creation.",
-            "rights_basis": "donor",
             "rights_basis": "other",
+            "other_basis": "donor",
             "rights_granted": [
                 {
                     "act": "disseminate",

@@ -24,7 +24,7 @@
 				"minItems": 1,
 				"items": {
 					"allOf": [{
-						"$ref": "rights_statement.json#"
+						"$ref": "base.json#/definitions/rights_statement"
 					}]
 				}
 			}

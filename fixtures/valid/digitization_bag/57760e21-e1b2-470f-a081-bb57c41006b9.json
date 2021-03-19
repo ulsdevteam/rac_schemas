@@ -3,29 +3,38 @@
     "origin": "digitization",
     "rights_statements": [
         {
-            "determination_date": "2018-09-18",
+            "start_date": "2006-07-01",
             "end_date": "2047-06-29",
-            "copyright_jurisdiction": "us",
             "note": "Work for hire, under copyright until 40 years after creation.",
             "rights_basis": "copyright",
             "rights_granted": [
                 {
                     "act": "publish",
-                    "restriction": "disallow"
+                    "start_date": "2006-07-01",
+                    "end_date": "2047-06-29",
+                    "grant_restriction": "disallow",
+                    "note": [
+                      "Available to publish.",
+                      "Basis expires 2047."
+                    ]
                 }
             ],
-            "start_date": "2006-07-01",
-            "copyright_status": "copyrighted"
+            "copyright_basis": {
+              "copyright_status": "copyrighted",
+              "copyright_jurisdiction": "us",
+              "determination_date": "2018-09-18"
+            }
         },
         {
             "end_date": "2017-06-30",
             "note": "Records embargoed for 10 years after date of creation.",
-            "rights_basis": "donor",
+            "other_basis": "donor",
             "rights_basis": "other",
             "rights_granted": [
                 {
                     "act": "disseminate",
-                    "grant_restriction": "allow"
+                    "grant_restriction": "allow",
+                    "end_date": "open"
                 },
                 {
                     "act": "disseminate",

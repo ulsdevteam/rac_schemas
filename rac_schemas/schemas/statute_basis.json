@@ -1,35 +1,9 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "rights_statute.json",
+	"$id": "statute_basis.json",
 	"type": "object",
-	"title": "RAC Rights Statute Schema",
-	"required": [
-			"statute_jurisdiction",
-			"statute_citation"
-		],
-	"properties": {
-		"statute_jurisdiction": {
-			"$id": "#/properties/statute_jurisdiction",
-			"type": "string",
-			"title": "Statute Jurisdiction",
-			"minLength": 1,
-			"examples": [
-				"us"
-			],
-			"pattern": "^[a-z]{2}$"
-		},
-		"statute_citation": {
-			"$id": "#/properties/statute_citation",
-			"type": "string",
-			"title": "Statute Citation"
-		},
-		"determination_date": {
-			"$id": "#/properties/determination_date",
-			"type": ["string", "null"],
-			"title": "Statute Determination Date",
-			"examples": [
-				"2019-08-23"
-			]
-		}
-	}
+	"title": "Statute Basis Schema",
+	"allOf": [{
+		"$ref": "base.json#/definitions/statute_basis"
+	}]
 }

@@ -609,18 +609,7 @@
 				{ "allOf": [ { "$ref": "base.json#/definitions/license_basis" } ] },
 				{ "allOf": [ { "$ref": "base.json#/definitions/rights_statement/properties/other_basis" } ] },
 				{ "allOf": [ { "$ref": "base.json#/definitions/statute_basis" } ] }
-			],
-			"allOf": [{
-				"if": {
-					"base.json#/definitions/rights_granted/properties/grant_restriction": { "const": "conditional" }
-				},
-				"then": {
-					"required": [ "rights_basis", "rights_granted", "note" ]
-				},
-				"else": {
-					"required": [ "rights_basis", "rights_granted" ]
-				}
-			}]
+			]
 		},
 		"rights_granted":{
 			"$id": "#/definitions/rights_granted",
@@ -679,13 +668,19 @@
 				},
 				"note": {
 					"$id": "#/definitions/rights_granted/properties/note",
-					"type": "array",
+					"title": "Granted Note",
 					"items": {
 						"allOf": [{
 							"$ref": "base.json#/definitions/rights_statement/properties/note"
 						}]
 					}
 				}
+			},
+			"if": {
+				"properties": { "grant_restriction": { "const": "conditional" } }
+			},
+			"then": {
+				"dependencies": { "grant_restriction": ["note"] }
 			}
 		},
 		"copyright_basis": {

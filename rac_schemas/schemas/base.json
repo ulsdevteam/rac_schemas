@@ -568,20 +568,13 @@
 				},
 				"start_date": {
 					"$id": "#/definitions/rights_statement/properties/start_date",
-					"type": ["string", "null"],
-					"title": "Rights Begin Date",
-					"examples": [
-						"2019-08-23"
-					]
+					"title": "Rights Start Date",
+					"$ref": "base.json#/definitions/rights_dates/properties/date"
 				},
 				"end_date": {
 					"$id": "#/definitions/rights_statement/properties/end_date",
-					"type": ["string", "null"],
 					"title": "Rights End Date",
-					"examples": [
-						"2019-08-23",
-						"open"
-					]
+					"$ref": "base.json#/definitions/rights_dates/properties/date"
 				},
 				"note": {
 					"$id": "#/definitions/rights_statement/properties/note",
@@ -598,18 +591,73 @@
 					]
 				}
 			},
-			"if": {
-				"properties": { "rights_basis": { "const": "other" } }
-			},
-			"then": {
-				"dependencies": { "rights_basis": ["other_basis"] }
-			},
-			"oneOf": [
-				{ "allOf": [ { "$ref": "base.json#/definitions/copyright_basis" } ] },
-				{ "allOf": [ { "$ref": "base.json#/definitions/license_basis" } ] },
-				{ "allOf": [ { "$ref": "base.json#/definitions/rights_statement/properties/other_basis" } ] },
-				{ "allOf": [ { "$ref": "base.json#/definitions/statute_basis" } ] }
+			"allOf": [
+				{
+					"if": {
+						"properties": { "rights_basis": { "const": "other" } }
+					},
+					"then": {
+						"dependencies": { "rights_basis": ["other_basis"] }
+					}
+				},
+				{
+					"if": {
+						"properties": { "rights_basis": { "const": "copyright" } }
+					},
+					"then": {
+						"dependencies": { "rights_basis": { "$ref": "base.json#/definitions/copyright_basis" } }
+					}
+				},
+				{
+					"if": {
+						"properties": { "rights_basis": { "const": "license" } }
+					},
+					"then": {
+						"dependencies": { "rights_basis": { "$ref": "base.json#/definitions/license_basis" } }
+					}
+				},
+				{
+					"if": {
+						"properties": { "rights_basis": { "const": "statute" } }
+					},
+					"then": {
+						"dependencies": { "rights_basis": { "$ref": "base.json#/definitions/statute_basis" } }
+					}
+				}
 			]
+		},
+		"rights_dates": {
+			"$id": "#/definitions/rights_dates",
+			"title": "Rights date object",
+			"type": "object",
+			"properties": {
+				"date": {
+					"$id": "#/definitions/rights_dates/properties/date",
+					"title": "Date",
+					"type": ["string", "null"],
+					"examples": [
+						"2019-08-23",
+						"open",
+						"null"
+					]
+				}
+			}
+		},
+		"rights_jurisdiction": {
+			"$id": "#/definitions/rights_jurisdiction",
+			"title": "Rights country jurisdiction",
+			"type": "object",
+			"properties": {
+				"country": {
+					"$id": "#/definitions/rights_jurisdiction/properties/country",
+					"title": "Country",
+					"minLength": 1,
+					"examples": [
+						"fr"
+					],
+					"pattern": "^[a-z]{2}$"
+				}
+			}
 		},
 		"rights_granted":{
 			"$id": "#/definitions/rights_granted",
@@ -652,19 +700,11 @@
 				},
 				"start_date": {
 					"$id": "#/definitions/rights_granted/properties/start_date",
-					"items": {
-						"allOf": [{
-							"$ref": "base.json#/definitions/rights_statement/properties/start_date"
-						}]
-					}
+					"$ref": "base.json#/definitions/rights_dates/properties/date"
 				},
-				"start_date": {
+				"end_date": {
 					"$id": "#/definitions/rights_granted/properties/end_date",
-					"items": {
-						"allOf": [{
-							"$ref": "base.json#/definitions/rights_statement/properties/end_date"
-						}]
-					}
+					"$ref": "base.json#/definitions/rights_dates/properties/date"
 				},
 				"note": {
 					"$id": "#/definitions/rights_granted/properties/note",
@@ -707,21 +747,13 @@
 				},
 				"copyright_jurisdiction": {
 					"$id": "#/definitions/copyright_basis/properties/copyright_jurisdiction",
-					"type": "string",
 					"title": "Copyright Jurisdiction",
-					"minLength": 1,
-					"examples": [
-						"fr"
-					],
-					"pattern": "^[a-z]{2}$"
+					"$ref": "base.json#/definitions/rights_jurisdiction/properties/country"
 				},
 				"determination_date": {
 					"$id": "#/definitions/copyright_basis/properties/determination_date",
-					"type": ["string", "null"],
 					"title": "Copyright Determination Date",
-					"examples": [
-						"2019-08-23"
-					]
+					"$ref": "base.json#/definitions/rights_dates/properties/date"
 				}
 			}
 		},
@@ -729,23 +761,18 @@
 			"$id": "#/definitions/license_basis",
 			"title": "PREMIS license basis",
 			"type": "object",
-			"anyOf": [{
-				"properties": {
-					"license_terms": {
-						"$id": "/definitions/license_basis/properties/license_terms",
-						"type": "string",
-						"title": "License Terms"
-					},
-					"determination_date": {
-						"$id": "/definitions/license_basis/properties/determination_date",
-						"type": ["string", "null"],
-						"title": "License Determination Date",
-						"examples": [
-							"2019-08-23"
-						]
-					}
+			"properties": {
+				"license_terms": {
+					"$id": "#/definitions/license_basis/properties/license_terms",
+					"type": "string",
+					"title": "License Terms"
+				},
+				"determination_date": {
+					"$id": "#/definitions/license_basis/properties/determination_date",
+					"title": "License Basis Determination Date",
+					"$ref": "base.json#/definitions/rights_dates/properties/date"
 				}
-			}]
+			}
 		},
 		"statute_basis": {
 			"$id": "#/definitions/statute_basis",
@@ -757,13 +784,8 @@
 			"properties": {
 				"statute_jurisdiction": {
 					"$id": "#/definitions/statute_basis/properties/statute_jurisdiction",
-					"type": "string",
 					"title": "Statute Jurisdiction",
-					"minLength": 1,
-					"examples": [
-						"us"
-					],
-					"pattern": "^[a-z]{2}$"
+					"$ref": "base.json#/definitions/rights_jurisdiction/properties/country"
 				},
 				"statute_citation": {
 					"$id": "#/definitions/statute_basis/properties/statute_citation",
@@ -772,11 +794,8 @@
 				},
 				"determination_date": {
 					"$id": "#/definitions/statute_basis/properties/determination_date",
-					"type": ["string", "null"],
 					"title": "Statute Determination Date",
-					"examples": [
-						"2019-08-23"
-					]
+					"$ref": "base.json#/definitions/rights_dates/properties/date"
 				}
 			}
 		}

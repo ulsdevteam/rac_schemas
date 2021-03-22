@@ -7,17 +7,16 @@
             "end_date": "2047-06-29",
             "note": "Work for hire, under copyright until 40 years after creation.",
             "rights_basis": "copyright",
+            "other_basis": "donor",
             "rights_granted": [
                 {
                     "act": "publish",
                     "grant_restriction": "disallow"
                 }
             ],
-            "copyright_basis": {
-              "copyright_status": "copyrighted",
-              "determination_date": "2018-09-18",
-              "copyright_jurisdiction": "us"
-            }
+            "copyright_status": "copyrighted",
+            "determination_date": "2018-09-18",
+            "copyright_jurisdiction": "us"
         },
         {
             "end_date": "2017-06-30",

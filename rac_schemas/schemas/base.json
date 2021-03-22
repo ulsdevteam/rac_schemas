@@ -569,17 +569,20 @@
 				"start_date": {
 					"$id": "#/definitions/rights_statement/properties/start_date",
 					"title": "Rights Start Date",
-					"$ref": "base.json#/definitions/rights_dates/properties/date"
+					"$ref": "base.json#/definitions/rights_date/properties/date"
 				},
 				"end_date": {
 					"$id": "#/definitions/rights_statement/properties/end_date",
 					"title": "Rights End Date",
-					"$ref": "base.json#/definitions/rights_dates/properties/date"
+					"$ref": "base.json#/definitions/rights_date/properties/date"
 				},
-				"note": {
-					"$id": "#/definitions/rights_statement/properties/note",
-					"type": "string",
-					"title": "Rights Note"
+				"basis_note": {
+					"$id": "#/definitions/rights_statement/properties/basis_note",
+					"title": "Rights Statement Note",
+					"type": "array",
+					"items": {
+						"$ref": "base.json#/definitions/rights_note/properties/content"
+					}
 				},
 				"other_basis": {
 					"$id": "#/definitions/rights_statement/properties/other_basis",
@@ -626,13 +629,13 @@
 				}
 			]
 		},
-		"rights_dates": {
-			"$id": "#/definitions/rights_dates",
+		"rights_date": {
+			"$id": "#/definitions/rights_date",
 			"title": "Rights date object",
 			"type": "object",
 			"properties": {
 				"date": {
-					"$id": "#/definitions/rights_dates/properties/date",
+					"$id": "#/definitions/rights_date/properties/date",
 					"title": "Date",
 					"type": ["string", "null"],
 					"examples": [
@@ -651,6 +654,7 @@
 				"country": {
 					"$id": "#/definitions/rights_jurisdiction/properties/country",
 					"title": "Country",
+					"type": "string",
 					"minLength": 1,
 					"examples": [
 						"fr"
@@ -659,7 +663,23 @@
 				}
 			}
 		},
-		"rights_granted":{
+		"rights_note": {
+			"$id": "#/definitions/rights_note",
+			"title": "Generic Rights Note",
+			"type": "object",
+			"required": [ "content" ],
+			"properties": {
+				"content": {
+					"$id": "#/definitions/rights_note/properties/content",
+					"type": "string",
+					"minLength": 1,
+					"examples": [
+						"This is a note field."
+					]
+				}
+			}
+		},
+		"rights_granted": {
 			"$id": "#/definitions/rights_granted",
 			"title": "PREMIS rights granted",
 			"type": "object",
@@ -700,19 +720,18 @@
 				},
 				"start_date": {
 					"$id": "#/definitions/rights_granted/properties/start_date",
-					"$ref": "base.json#/definitions/rights_dates/properties/date"
+					"$ref": "base.json#/definitions/rights_date/properties/date"
 				},
 				"end_date": {
 					"$id": "#/definitions/rights_granted/properties/end_date",
-					"$ref": "base.json#/definitions/rights_dates/properties/date"
+					"$ref": "base.json#/definitions/rights_date/properties/date"
 				},
-				"note": {
-					"$id": "#/definitions/rights_granted/properties/note",
-					"title": "Granted Note",
+				"granted_note": {
+					"$id": "#/definitions/rights_granted/properties/granted_note",
+					"title": "Rights Granted Note",
+					"type": "array",
 					"items": {
-						"allOf": [{
-							"$ref": "base.json#/definitions/rights_statement/properties/note"
-						}]
+						"$ref": "base.json#/definitions/rights_note/properties/content"
 					}
 				}
 			},
@@ -753,7 +772,7 @@
 				"determination_date": {
 					"$id": "#/definitions/copyright_basis/properties/determination_date",
 					"title": "Copyright Determination Date",
-					"$ref": "base.json#/definitions/rights_dates/properties/date"
+					"$ref": "base.json#/definitions/rights_date/properties/date"
 				}
 			}
 		},
@@ -770,7 +789,7 @@
 				"determination_date": {
 					"$id": "#/definitions/license_basis/properties/determination_date",
 					"title": "License Basis Determination Date",
-					"$ref": "base.json#/definitions/rights_dates/properties/date"
+					"$ref": "base.json#/definitions/rights_date/properties/date"
 				}
 			}
 		},
@@ -795,7 +814,7 @@
 				"determination_date": {
 					"$id": "#/definitions/statute_basis/properties/determination_date",
 					"title": "Statute Determination Date",
-					"$ref": "base.json#/definitions/rights_dates/properties/date"
+					"$ref": "base.json#/definitions/rights_date/properties/date"
 				}
 			}
 		}

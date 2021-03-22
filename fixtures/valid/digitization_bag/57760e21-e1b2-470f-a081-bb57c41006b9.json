@@ -5,7 +5,7 @@
         {
             "start_date": "2006-07-01",
             "end_date": "2047-06-29",
-            "note": "Work for hire, under copyright until 40 years after creation.",
+            "basis_note": ["Work for hire, under copyright until 40 years after creation."],
             "rights_basis": "copyright",
             "rights_granted": [
                 {
@@ -13,7 +13,7 @@
                     "start_date": "2006-07-01",
                     "end_date": "2047-06-29",
                     "grant_restriction": "disallow",
-                    "note": [
+                    "granted_note": [
                       "Available to publish.",
                       "Basis expires 2047."
                     ]
@@ -25,7 +25,7 @@
         },
         {
             "end_date": "2017-06-30",
-            "note": "Records embargoed for 10 years after date of creation.",
+            "basis_note": ["Records embargoed for 10 years after date of creation."],
             "other_basis": "donor",
             "rights_basis": "other",
             "rights_granted": [

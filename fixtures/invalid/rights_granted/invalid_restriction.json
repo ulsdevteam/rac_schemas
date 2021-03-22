@@ -1,0 +1,7 @@
+{
+  "act": "delete",
+  "grant_restriction": "alloww",
+  "start_date": "2020-01-01",
+  "end_date": "open",
+  "granted_note": ["test"]
+}

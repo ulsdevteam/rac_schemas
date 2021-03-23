@@ -1,0 +1,6 @@
+{
+  "act": "delete",
+  "grant_restriction": "conditional",
+  "start_date": "2020-01-01",
+  "end_date": "open"
+}

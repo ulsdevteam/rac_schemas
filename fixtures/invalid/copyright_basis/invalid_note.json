@@ -4,5 +4,5 @@
   "jurisdiction": "us",
   "determination_date": "2020-01-02",
   "start_date": "1990",
-  "basis_note": "This is a basis note."
+  "basis_note": ["This is a basis note."]
 }

@@ -3,8 +3,5 @@
   "determination_date": "2020-01-04",
   "start_date": "1990",
   "end_date": "2099",
-  "basis_note": [
-    "Note 1",
-    "Note 2"
-  ]
+  "basis_note": "Records are embargoed for 10 years."
 }

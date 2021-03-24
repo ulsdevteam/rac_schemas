@@ -1,5 +1,4 @@
 {
-  "rights_identifier": "a23438bc",
   "rights_basis": "statute",
   "rights_granted": [
     {
@@ -7,16 +6,11 @@
       "grant_restriction": "allow",
       "start_date": "2000-01-19",
       "end_date": "open",
-      "granted_note": [
-        "Open to widely disseminate."
-      ]
+      "granted_note": "Open to widely disseminate."
     }
   ],
   "start_date": "2019-03-07",
   "end_date": null,
   "determination_date": "2021-03-22",
-  "basis_note": [
-    "This is a rights basis note.",
-    "This is a second rights basis note."
-  ]
+  "basis_note": "The records are covered by a US state statute."
 }

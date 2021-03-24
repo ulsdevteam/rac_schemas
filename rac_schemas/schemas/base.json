@@ -537,12 +537,6 @@
 				"rights_granted"
 			],
 			"properties": {
-				"rights_identifier": {
-					"$id": "#/definitions/rights_statement/properties/rights_identifier",
-					"type": "string",
-					"title": "Rights Statement Identifier",
-					"minLength": 1
-				},
 				"rights_granted": {
 					"type": "array",
 					"items": {
@@ -608,16 +602,12 @@
 				"basis_note": {
 					"$id": "#/definitions/rights_basis_information/properties/basis_note",
 					"title": "Rights Basis Note",
-					"type": "array",
-					"items": {
-						"type": "string",
-						"minLength": 1
-					},
+					"type": "string",
 					"examples": [
 						"Ipsum Lorem",
 						"This is a rights basis note"
 						],
-					"minItems": 1
+					"minLength": 1
 				}
 			}
 		},
@@ -784,11 +774,8 @@
 				"granted_note": {
 					"$id": "#/definitions/rights_granted/properties/granted_note",
 					"title": "Rights Granted Note",
-					"type": "array",
-					"items": {
-						"type": "string",
-						"minLength": 1
-					}
+					"type": "string",
+					"minLength": 1
 				}
 			},
 			"if": {

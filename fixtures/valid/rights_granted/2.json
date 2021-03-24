@@ -2,5 +2,5 @@
   "act": "disseminate",
   "grant_restriction": "disallow",
   "start_date": "2020-01-01",
-  "granted_note": ["RAC may not disseminate these items."]
+  "granted_note": "RAC may not disseminate these items."
 }

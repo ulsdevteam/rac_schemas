@@ -3,5 +3,5 @@
   "grant_restriction": "allow",
   "start_date": "2020-01-01",
   "end_date": "open",
-  "granted_note": ["RAC may delete items."]
+  "granted_note": "RAC may delete items."
 }

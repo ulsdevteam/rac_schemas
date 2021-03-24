@@ -5,8 +5,5 @@
   "determination_date": "2021-3-24",
   "start_date": null,
   "end_date": null,
-  "basis_note": [
-    "This statute applies until 2099",
-    "This is a state statute"
-  ]
+  "basis_note": "This statute applies until 2099"
 }

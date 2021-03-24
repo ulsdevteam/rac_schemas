@@ -1,0 +1,22 @@
+{
+  "rights_identifier": "123456789",
+  "rights_basis": "other",
+  "other_basis": "donor",
+  "rights_granted": [
+    {
+      "act": "disseminate",
+      "grant_restriction": "allow",
+      "start_date": "2000-01-19",
+      "end_date": "open",
+      "granted_note": [
+        "Open to widely disseminate."
+      ]
+    }
+  ],
+  "end_date": 2020,
+  "determination_date": "2021-03-22",
+  "basis_note": [
+    "This is a rights basis note.",
+    "This is a second rights basis note."
+  ]
+}

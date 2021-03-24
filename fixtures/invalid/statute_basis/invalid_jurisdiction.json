@@ -1,4 +1,7 @@
 {
-  "statute_jurisdiction": "US",
-  "statute_citation": "Covered by statute 1003A"
+  "rights_basis": "statute",
+  "jurisdiction": "US",
+  "statute_citation": "Covered by statute 1003A",
+  "start_date": "1990",
+  "end_date": "2099"
 }

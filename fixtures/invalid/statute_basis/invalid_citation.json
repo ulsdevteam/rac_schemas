@@ -1,4 +1,7 @@
 {
-  "statute_jurisdiction": "us",
-  "statute_citation": 2021
+  "rights_basis": "statute",
+  "jurisdiction": "us",
+  "statute_citation": 2021,
+  "start_date": "1990",
+  "end_date": "2099"
 }

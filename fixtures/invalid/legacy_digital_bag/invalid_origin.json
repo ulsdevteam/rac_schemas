@@ -1,0 +1,27 @@
+{
+    "identifier": "0ba6a0fd-e17c-4377-9166-d928a957fb6e",
+    "origin": null,
+    "rights_statements": [
+      {
+        "start_date": "2006-07-01",
+        "end_date": "2047-06-29",
+        "basis_note": ["Work for hire, under copyright until 40 years after creation."],
+        "rights_basis": "copyright",
+        "rights_granted": [
+            {
+                "act": "publish",
+                "start_date": "2006-07-01",
+                "end_date": "2047-06-29",
+                "grant_restriction": "disallow",
+                "granted_note": [
+                  "Available to publish.",
+                  "Basis expires 2047."
+                ]
+            }
+        ],
+        "copyright_status": "copyrighted",
+        "jurisdiction": "us",
+        "determination_date": "2018-09-18"
+    }
+  ]
+}

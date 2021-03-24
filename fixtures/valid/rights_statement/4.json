@@ -1,5 +1,5 @@
 {
-  "rights_identifier": "A123BV3",
+  "rights_identifier": "A123BV4",
   "start_date": "2006-07-01",
   "end_date": "2047-06-29",
   "rights_basis": "statute",
@@ -19,5 +19,5 @@
   ],
   "determination_date": "2021-09-18",
   "statute_citation": "42 U.S.C. § 405(a).",
-  "statute_jurisdiction": "us"
+  "jurisdiction": "us"
 }

@@ -1,3 +1,11 @@
 {
-  "copyright_status": "copyrighted"
+  "rights_basis": "copyright",
+  "copyright_status": "copyrighted",
+  "determination_date": "2020-01-02",
+  "start_date": "1990",
+  "end_date": "2099",
+  "basis_note": [
+    "This is note 1.",
+    "This is note 2"
+  ]
 }

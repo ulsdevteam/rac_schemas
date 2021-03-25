@@ -461,213 +461,6 @@
 				}
 			}
 		},
-		"rights_granted": {
-			"$id": "#/definitions/rights_granted",
-			"type": "object",
-			"title": "Rights Granted",
-			"required": [
-				"act",
-				"begin",
-				"end",
-				"restriction"
-			],
-			"properties": {
-				"act": {
-					"$id": "#/definitions/rights_granted/items/properties/act",
-					"type": "string",
-					"items": {
-						"type": "string",
-						"enum": [
-							"delete",
-							"disseminate",
-							"modify",
-							"migrate",
-							"replicate",
-							"use"
-						]
-					},
-					"title": "The Act Schema",
-					"minLength": 1,
-					"examples": [
-						"disseminate"
-					],
-					"pattern": "^(.*)$"
-				},
-				"begin": {
-					"$id": "#/definitions/rights_granted/items/properties/begin",
-					"type": "string",
-					"title": "Rights Granted Begin Date",
-					"minLength": 1,
-					"examples": [
-						"2019-08-23"
-					],
-					"pattern": "^(.*)$"
-				},
-				"end": {
-					"$id": "#/definitions/rights_granted/items/properties/end",
-					"type": "string",
-					"title": "Rights Granted End Date",
-					"minLength": 1,
-					"examples": [
-						"2019-08-23"
-					],
-					"pattern": "^(.*)$"
-				},
-				"restriction": {
-					"$id": "#/definitions/rights_granted/items/properties/restriction",
-					"type": "string",
-					"minLength": 1,
-					"items": {
-						"type": "string",
-						"enum": [
-							"allow",
-							"disallow"
-						]
-					},
-					"title": "The Restriction Schema",
-					"default": "",
-					"examples": [
-						"allow"
-					],
-					"pattern": "^(.*)$"
-				},
-				"notes": {
-					"type": "array",
-					"items": {
-						"allOf": [{
-							"$ref": "#/definitions/note"
-						}]
-					}
-				}
-			}
-		},
-		"rights_statement": {
-			"$id": "#/definitions/rights_statement",
-			"type": "object",
-			"title": "Rights Statements",
-			"required": [
-				"begin",
-				"rights_granted",
-				"rights_type",
-				"type"
-			],
-			"properties": {
-				"type": {
-					"$id": "#/definitions/rights_statement/properties/type",
-					"type": "string",
-					"minLength": 1,
-					"enum": [
-						"rights_statement"
-					]
-				},
-				"determination_date": {
-					"$id": "#/definitions/rights_statement/properties/determination_date",
-					"type": ["date", "null"],
-					"title": "Rights Statement Determination Date",
-					"examples": [
-						"2019-08-23"
-					],
-					"pattern": "^(.*)$"
-				},
-				"rights_type": {
-					"$id": "#/definitions/rights_statement/properties/rights_type",
-					"type": "string",
-					"items": {
-						"type": "string",
-						"enum": [
-							"copyright",
-							"license",
-							"other",
-							"statute"
-						]
-					},
-					"title": "Rights Type",
-					"minLength": 1,
-					"examples": [
-						"other"
-					],
-					"pattern": "^(.*)$"
-				},
-				"begin": {
-					"$id": "#/definitions/rights_statement/properties/begin",
-					"type": "date",
-					"title": "Rights Begin Date",
-					"examples": [
-						"2019-08-23"
-					]
-				},
-				"end": {
-					"$id": "#/definitions/rights_statement/properties/end",
-					"type": ["date", "null"],
-					"title": "Rights End Date",
-					"examples": [
-						"2019-08-23"
-					]
-				},
-				"copyright_status": {
-					"$id": "#/definitions/rights_statement/properties/copyright_status",
-					"type": "string",
-					"items": {
-						"type": "string",
-						"enum": [
-							"copyrighted",
-							"public domain",
-							"unknown"
-						]
-					},
-					"title": "Copyright Status",
-					"minLength": 1,
-					"examples": [
-						"public domain"
-					],
-					"pattern": "^(.*)$"
-				},
-				"other_basis": {
-					"$id": "#/definitions/rights_statement/properties/other_basis",
-					"type": ["string", "null"],
-					"title": "Other Basis",
-					"minLength": 1,
-					"examples": [
-						"adipisicing"
-					],
-					"pattern": "^(.*)$"
-				},
-				"jurisdiction": {
-					"$id": "#/definitions/rights_statement/properties/jurisdiction",
-					"type": "string",
-					"items": {
-						"type": "string",
-						"enum": [
-							"CN",
-							"FR",
-							"US"
-						]
-					},
-					"title": "Rights Jurisdiction",
-					"minLength": 1,
-					"examples": [
-						"FR"
-					],
-					"pattern": "^(.*)$"
-				},
-				"rights_notes": {
-					"type": "array",
-					"items": {
-						"allOf": [{
-							"$ref": "#/definitions/note"
-						}]
-					}
-				},
-				"rights_granted": {
-					"type": "array",
-					"items": {
-						"allOf": [{
-							"$ref": "#/definitions/rights_granted"
-						}]
-					}
-				}
-			}
-		},
 		"source": {
 			"$id": "#/definitions/source",
 			"type": "string",
@@ -736,72 +529,260 @@
 				}
 			}
 		},
-		"source_rights_statement": {
+		"rights_statement": {
+			"$id": "#/definitions/rights_statement",
+			"title": "RAC PREMIS rights statement",
 			"type": "object",
-			"items": {
-				"properties": {
-					"rights_basis": {
-						"type": "string"
-					},
-					"determination_date": {
-						"type": ["date", "null"]
-					},
-					"jurisdiction": {
-						"type": ["string", "null"]
-					},
-					"start_date": {
-						"type": "date"
-					},
-					"end_date": {
-						"type": "date"
-					},
-					"note": {
-						"type": "string"
-					},
-					"status": {
-						"type": ["string", "null"]
-					},
-					"terms": {
-						"type": ["string", "null"]
-					},
-					"citation": {
-						"type": ["string", "null"]
-					},
-					"other_rights_basis": {
-						"type": ["string", "null"]
-					},
-					"rights_granted": {
-						"type": "array",
-						"items": {
-							"properties": {
-								"act": {
-									"enum": [
-										"publish",
-										"disseminate",
-										"replicate",
-										"migrate",
-										"modify",
-										"use",
-										"delete"]
-								},
-								"start_date": {
-									"type": ["date", "null"]
-								},
-								"end_date": {
-									"type": "date"
-								},
-								"note": {
-									"type": "string"
-								},
-								"restriction": {
-									"enum": ["allow", "disallow", "conditional"]
-								}
-							},
-							"required": ["act", "restriction"]
-						}
+			"required": [
+				"rights_granted"
+			],
+			"properties": {
+				"rights_granted": {
+					"type": "array",
+					"items": {
+						"allOf": [{
+							"$ref": "base.json#/definitions/rights_granted"
+						}]
 					}
+				}
+			},
+			"oneOf": [
+				{ "$ref": "base.json#/definitions/copyright_basis" },
+				{ "$ref": "base.json#/definitions/license_basis" },
+				{ "$ref": "base.json#/definitions/statute_basis" },
+				{ "$ref": "base.json#/definitions/other_basis" }
+			]
+		},
+		"rights_basis_information": {
+			"type": "object",
+			"$id": "#/definitions/rights_basis_information",
+			"title": "Rights Basis Information Object",
+			"required": [
+				"rights_basis"
+			],
+			"properties": {
+				"rights_basis": {
+					"$id": "#/definitions/rights_basis_information/properties/rights_basis",
+					"title": "Rights Basis Choice",
+					"type": "string"
 				},
-				"required": ["rights_granted"]
+				"start_date": {
+					"$id": "#/definitions/rights_statement/properties/start_date",
+					"title": "Rights Start Date",
+					"type": ["string", "null"],
+					"examples": [
+						"2019-08-23",
+						"open",
+						"null"
+					],
+					"minLength": 1
+				},
+				"end_date": {
+					"$id": "#/definitions/rights_statement/properties/end_date",
+					"title": "Rights End Date",
+					"type": ["string", "null"],
+					"examples": [
+						"2019-08-23",
+						"open",
+						"null"
+					],
+					"minLength": 1
+				},
+				"determination_date": {
+					"$id": "#/definitions/rights_basis_information/properties/determination_date",
+					"title": "Rights Basis Determination Date",
+					"type": ["string", "null"],
+					"examples": [
+						"2019-08-23",
+						"open",
+						"null"
+					],
+					"minLength": 1
+				},
+				"basis_note": {
+					"$id": "#/definitions/rights_basis_information/properties/basis_note",
+					"title": "Rights Basis Note",
+					"type": "string",
+					"examples": [
+						"Ipsum Lorem",
+						"This is a rights basis note"
+						],
+					"minLength": 1
+				}
+			}
+		},
+		"other_basis": {
+			"$id": "#/definitions/other_basis",
+			"title": "PREMIS Other Basis",
+			"type": "object",
+			"allOf": [
+				{ "$ref": "base.json#/definitions/rights_basis_information" },
+				{
+					"properties": {
+						"rights_basis": { "enum": [ "other"] },
+						"other_basis": {
+							"type": "string",
+							"title": "Other Basis Designation",
+							"enum": [
+								"donor",
+								"policy"
+							]
+						}
+					},
+					"required": [ "other_basis" ]
+				}
+			]
+		},
+		"license_basis": {
+			"$id": "#/definitions/license_basis",
+			"title": "PREMIS License Basis",
+			"type": "object",
+			"allOf": [
+				{ "$ref": "base.json#/definitions/rights_basis_information" },
+				{
+					"properties": {
+						"rights_basis": { "enum": [ "license"] },
+						"license_terms": {
+							"type": "string",
+							"title": "Terms of License Agreement",
+							"minLength": 1
+						}
+					},
+					"required": [ "license_terms" ]
+				}
+			]
+		},
+		"statute_basis": {
+			"$id": "#/definitions/statute_basis",
+			"title": "PREMIS Statute Basis",
+			"type": "object",
+			"allOf": [
+				{ "$ref": "base.json#/definitions/rights_basis_information" },
+				{
+					"properties": {
+						"rights_basis": { "enum": [ "statute"] },
+						"jurisdiction": {
+							"type": "string",
+							"title": "Rights Basis Statute Jurisdiction",
+							"examples": [
+								"fr"
+							],
+							"pattern": "^[a-z]{2}$"
+						},
+						"statute_citation": {
+							"type": "string",
+							"title": "Statute Citation",
+							"minLength": 1
+						}
+					},
+					"required": [ "jurisdiction", "statute_citation" ]
+				}
+			]
+		},
+		"copyright_basis": {
+			"$id": "#/definitions/copyright_basis",
+			"title": "PREMIS Copyright Basis",
+			"type": "object",
+			"allOf": [
+				{ "$ref": "base.json#/definitions/rights_basis_information" },
+				{
+					"properties": {
+						"rights_basis": { "enum": [ "copyright"] },
+						"jurisdiction": {
+							"type": "string",
+							"title": "Rights Basis Copyright Jurisdiction",
+							"examples": [
+								"fr"
+							],
+							"pattern": "^[a-z]{2}$"
+						},
+						"copyright_status": {
+							"type": "string",
+							"title": "PREMIS Copyright Status",
+							"enum": [
+								"copyrighted",
+								"public domain",
+								"unknown"
+							]
+						}
+					},
+					"required": [ "jurisdiction", "copyright_status" ]
+				}
+			]
+		},
+		"rights_granted": {
+			"$id": "#/definitions/rights_granted",
+			"title": "PREMIS rights granted",
+			"type": "object",
+			"required": [
+				"act",
+				"grant_restriction"
+			],
+			"properties": {
+				"act": {
+					"$id": "#/definitions/rights_granted/properties/act",
+					"type": "string",
+					"title": "Rights Granted Act",
+					"enum": [
+						"delete",
+						"disseminate",
+						"modify",
+						"migrate",
+						"publish",
+						"replicate",
+						"use"
+					],
+					"examples": [
+						"disseminate"
+					]
+				},
+				"grant_restriction": {
+					"$id": "#/definitions/rights_granted/properties/grant_restriction",
+					"type": "string",
+					"title": "Rights Granted Restriction Statement",
+					"enum": [
+						"allow",
+						"conditional",
+						"disallow"
+					],
+					"examples": [
+						"allow"
+					]
+				},
+				"start_date": {
+					"$id": "#/definitions/rights_granted/properties/start_date",
+					"title": "Rights Granted Start Date",
+					"type": ["string", "null"],
+					"examples": [
+						"2019-08-23",
+						"open",
+						"null"
+					],
+					"minLength": 1
+				},
+				"end_date": {
+					"$id": "#/definitions/rights_granted/properties/end_date",
+					"title": "Rights Granted End Date",
+					"type": ["string", "null"],
+					"examples": [
+						"2019-08-23",
+						"open",
+						"null"
+					],
+					"minLength": 1
+				},
+				"granted_note": {
+					"$id": "#/definitions/rights_granted/properties/granted_note",
+					"title": "Rights Granted Note",
+					"type": "string",
+					"minLength": 1
+				}
+			},
+			"if": {
+				"properties": { "grant_restriction": { "const": "conditional" } }
+			},
+			"then": {
+				"dependencies": { "grant_restriction": ["granted_note"] }
 			}
 		}
 	}

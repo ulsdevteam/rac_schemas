@@ -1,0 +1,21 @@
+{
+  "start_date": "2006-07-01",
+  "end_date": "2047-06-29",
+  "basis_note": "The RAC does not make available materials on living Rockefeller family members.",
+  "rights_basis": "other",
+  "other_basis": "donor",
+  "rights_granted": [
+    {
+      "act": "publish",
+      "grant_restriction": "disallow",
+      "start_date": "2003-04-07",
+      "end_date": "2050-04-06",
+      "granted_note": "Records copyrighted for 40 years."
+    },
+    {
+      "act": "delete",
+      "grant_restriction": "disallow"
+    }
+  ],
+  "determination_date": "2018-09-18"
+}

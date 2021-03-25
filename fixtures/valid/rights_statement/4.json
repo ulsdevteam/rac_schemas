@@ -1,0 +1,23 @@
+{
+  "rights_identifier": "A123BV4",
+  "start_date": "2006-07-01",
+  "end_date": "2047-06-29",
+  "rights_basis": "statute",
+  "rights_granted": [
+    {
+      "act": "migrate",
+      "grant_restriction": "disallow",
+      "start_date": "2003-04-07",
+      "end_date": "open"
+    },
+    {
+      "act": "replicate",
+      "grant_restriction": "disallow",
+      "start_date": null,
+      "end_date": "open"
+    }
+  ],
+  "determination_date": "2021-09-18",
+  "statute_citation": "42 U.S.C. § 405(a).",
+  "jurisdiction": "us"
+}

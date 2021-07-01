@@ -642,13 +642,13 @@
 				{
 					"properties": {
 						"rights_basis": { "enum": [ "license"] },
-						"license_terms": {
+						"terms": {
 							"type": "string",
 							"title": "Terms of License Agreement",
 							"minLength": 1
 						}
 					},
-					"required": [ "license_terms" ]
+					"required": [ "terms" ]
 				}
 			]
 		},

@@ -1,0 +1,132 @@
+{
+    "url": "http://localhost:8000/api/transfers/5/",
+    "identifier": "110f12ef-74fa-47a3-9a4b-95051d28cc49",
+    "organization": "http://localhost:8000/api/orgs/2/",
+    "origin": "aurora",
+    "bag_it_name": "annual",
+    "process_status": 40,
+    "file_size": "7730266",
+    "file_type": "OTHER",
+    "appraisal_note": null,
+    "additional_error_info": null,
+    "metadata": {
+        "source_organization": "Donor Organization",
+        "title": "Annual Reports",
+        "record_creators": [
+            {
+                "name": "Office of Important Affairs",
+                "type": "organization"
+            }
+        ],
+        "internal_sender_description": "Annual Reports detailing the activities of the foundation.",
+        "date_start": "2001-06-30T20:00:00-04:00",
+        "date_end": "2002-06-29T20:00:00-04:00",
+        "record_type": "annual reports",
+        "language": [
+            "eng"
+        ],
+        "bag_count": "",
+        "bag_group_identifier": "",
+        "payload_oxum": "7723143.6",
+        "bagit_profile_identifier": "http://localhost:8000/api/bagit_profiles/2/",
+        "bagging_date": "2017-12-11T15:18:47.349913-05:00",
+        "origin": "aurora"
+    },
+    "rights_statements": [
+        {
+            "rights_basis": "copyright",
+            "determination_date": "2021-07-09",
+            "jurisdiction": "us",
+            "start_date": "2001-06-30",
+            "end_date": "2042-06-29",
+            "basis_note": "Work for hire, under copyright until 40 years after creation.",
+            "copyright_status": "copyrighted",
+            "terms": null,
+            "statute_citation": null,
+            "other_basis": null,
+            "rights_granted": [
+                {
+                    "act": "publish",
+                    "start_date": "2001-06-30",
+                    "end_date": "2042-06-29",
+                    "note": "Records under copyright may not be republished without permission from the copyright holder.",
+                    "grant_restriction": "disallow"
+                }
+            ]
+        },
+        {
+            "rights_basis": "other",
+            "determination_date": null,
+            "jurisdiction": null,
+            "start_date": "2001-06-30",
+            "end_date": "2012-06-29",
+            "basis_note": "Records embargoed for 10 years after date of creation.",
+            "copyright_status": null,
+            "terms": null,
+            "statute_citation": null,
+            "other_basis": "donor",
+            "rights_granted": [
+                {
+                    "act": "disseminate",
+                    "start_date": "2011-06-30",
+                    "end_date": "2002-06-29",
+                    "note": "Records are open for research after expiration of embargo period.",
+                    "grant_restriction": "allow"
+                },
+                {
+                    "act": "disseminate",
+                    "start_date": "2001-06-30",
+                    "end_date": "2012-06-29",
+                    "note": "Records are open for research after expiration of embargo period.",
+                    "grant_restriction": "disallow"
+                }
+            ]
+        }
+    ],
+    "events": [
+        {
+            "url": "http://localhost:8000/api/events/21/",
+            "type": "Accept",
+            "summary": "Transfer passed all validation",
+            "object": "http://localhost:8000/api/transfers/5/",
+            "result": {
+                "name": "Transfer staged for appraisal"
+            },
+            "endTime": "2021-07-12 17:10:33.580541+00:00"
+        },
+        {
+            "url": "http://localhost:8000/api/events/20/",
+            "type": "Accept",
+            "summary": "Transfer passed BagIt Profile and datatype validation",
+            "object": "http://localhost:8000/api/transfers/5/",
+            "result": {
+                "name": "Transfer staged for appraisal"
+            },
+            "endTime": "2021-07-12 17:10:33.576254+00:00"
+        },
+        {
+            "url": "http://localhost:8000/api/events/19/",
+            "type": "Accept",
+            "summary": "Transfer passed BagIt validation",
+            "object": "http://localhost:8000/api/transfers/5/",
+            "result": {
+                "name": "Transfer staged for BagIt Profile validation"
+            },
+            "endTime": "2021-07-12 17:10:33.464188+00:00"
+        },
+        {
+            "url": "http://localhost:8000/api/events/18/",
+            "type": "Accept",
+            "summary": "Transfer saved",
+            "object": "http://localhost:8000/api/transfers/5/",
+            "result": {
+                "name": "Transfer staged for BagIt validation"
+            },
+            "endTime": "2021-07-12 17:10:33.372003+00:00"
+        }
+    ],
+    "archivesspace_identifier": null,
+    "archivesspace_parent_identifier": null,
+    "created_time": "2021-07-12T13:10:33.140661-04:00",
+    "modified_time": "2021-07-12T13:10:33.639318-04:00"
+}

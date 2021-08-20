@@ -19,7 +19,7 @@
         },
         {
             "end_date": "2017-06-30",
-            "note": "Records embargoed for 10 years after date of creation.",
+            "basis_note": "Records embargoed for 10 years after date of creation.",
             "rights_basis": "other",
             "other_basis": "donor",
             "rights_granted": [

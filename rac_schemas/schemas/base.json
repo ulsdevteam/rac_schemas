@@ -611,7 +611,6 @@
 				}
 			}
 		},
-		"additionalProperties": false,
 		"other_basis": {
 			"$id": "#/definitions/other_basis",
 			"title": "PREMIS Other Basis",
@@ -775,11 +774,9 @@
 				"granted_note": {
 					"$id": "#/definitions/rights_granted/properties/granted_note",
 					"title": "Rights Granted Note",
-					"type": ["string", "null"],
-					"minLength": 1
+					"type": ["string", "null"]
 				}
 			},
-			"additionalProperties": false,
 			"if": {
 				"properties": { "grant_restriction": { "const": "conditional" } }
 			},

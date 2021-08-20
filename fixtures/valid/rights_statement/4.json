@@ -8,13 +8,15 @@
       "act": "migrate",
       "grant_restriction": "disallow",
       "start_date": "2003-04-07",
-      "end_date": "open"
+      "end_date": "open",
+      "granted_note": ""
     },
     {
       "act": "replicate",
       "grant_restriction": "disallow",
       "start_date": null,
-      "end_date": "open"
+      "end_date": "open",
+      "granted_note": null
     }
   ],
   "determination_date": "2021-09-18",

@@ -14,3 +14,4 @@
 # testing environments
 .tox/
 .pytest_cache/
+.coverage

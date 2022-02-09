@@ -48,7 +48,8 @@
         }
     ],
     "people": [],
-    "authorized_name": "Rockefeller Foundation. Paris (France)",
+    "title": "Rockefeller Foundation. Paris (France)",
+    "authorized_name": 123,
     "type": "agent",
     "uri": "/agents/2hb5qexuwrxghfdj58bzh9ize4"
 }

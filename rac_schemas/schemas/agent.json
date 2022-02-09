@@ -8,6 +8,7 @@
 		"type": "object",
 		"title": "Agents",
 		"required": [
+			"authorized_name",
 			"category",
 			"external_identifiers",
 			"group",
@@ -48,6 +49,17 @@
 				"description": "Title for Agent",
 				"examples": [
 					"Lawson Foundation"
+				],
+				"pattern": "^(.*)$"
+			},
+			"authorized_name": {
+				"$id": "#/agent/properties/authorized_name",
+				"type": "string",
+				"title": "Agent Authorized Name",
+				"description": "Authorized Name for Agent",
+				"examples": [
+					"Lawson Foundation",
+					"Rockefeller, Nelson"
 				],
 				"pattern": "^(.*)$"
 			},

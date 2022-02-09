@@ -8,11 +8,11 @@
 		"type": "object",
 		"title": "Agents",
 		"required": [
+			"authorized_name",
 			"category",
 			"external_identifiers",
 			"group",
 			"title",
-			"authorized_name",
 			"type",
 			"agent_type"
 		],

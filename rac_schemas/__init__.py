@@ -1,7 +1,8 @@
 import json
-import jsonschema
 import re
 from pathlib import Path
+
+import jsonschema
 
 from .exceptions import ValidationError
 

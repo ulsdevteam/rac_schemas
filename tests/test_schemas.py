@@ -3,12 +3,12 @@ import unittest
 from os import listdir
 from os.path import abspath, dirname, join
 
-from rac_schemas import handle_schema_filename, is_valid
-from rac_schemas.exceptions import ValidationError
+from rac_schema_validator import is_valid
+from rac_schema_validator.exceptions import ValidationError
 
 base_path = dirname(dirname(abspath(__file__)))
 
-schemas_dir = join(base_path, "rac_schemas", "schemas")
+schemas_dir = join(base_path, "schemas")
 fixtures_dir = join(base_path, "fixtures")
 
 
@@ -24,44 +24,29 @@ class TestSchemas(unittest.TestCase):
             with open(join(schemas_dir, f)) as sf:
                 json.load(sf)
 
-    def test_schema_filename(self):
-        """Ensures that schema filenames are parsed properly."""
-        for filename in ["schema.json", "schema"]:
-            processed = handle_schema_filename(filename)
-            self.assertEqual(
-                processed, "schema.json",
-                "Filename was not processed correctly. Expecting `schema.json` but got `{}`".format(processed))
-
-    def test_missing_schema(self):
-        """Ensures correct exception is raised when schema is missing."""
-        for filename in ["missing.json", "not_there", "also-missing"]:
-            with self.assertRaises(FileNotFoundError):
-                is_valid({}, filename)
-
     def test_validation(self):
         """Validates fixtures against schemas.
 
         Uses a variety of fixtures to ensure that validation (and invalidation)
         takes place as expected.
         """
-        for object_type in listdir(join(fixtures_dir, "valid")):
-            for f in listdir(join(fixtures_dir, "valid", object_type)):
-                with open(join(fixtures_dir, "valid", object_type, f), "r") as df:
-                    data = json.load(df)
-                    is_valid(data, object_type)
-        for object_type in listdir(join(fixtures_dir, "invalid")):
-            for f in listdir(join(fixtures_dir, "invalid", object_type)):
-                with open(join(fixtures_dir, "invalid", object_type, f), "r") as df:
-                    print(f)
-                    data = json.load(df)
-                    with self.assertRaises(
-                            ValidationError,
-                            msg="{} was not marked as invalid.".format(join(fixtures_dir, "invalid", object_type, f))):
-                        is_valid(data, object_type)
-
-    def test_input(self):
-        """Checks TypeError exception is raised when input data is not a dict."""
-        for data in ["string", ["this", "is", "a", "list"]]:
-            for schema in listdir(schemas_dir):
-                with self.assertRaises(TypeError):
-                    is_valid(data, schema)
+        with open(join(schemas_dir, 'base.json'), 'r') as base_file:
+            base_schema = json.load(base_file)
+            for object_type in listdir(join(fixtures_dir, "valid")):
+                with open(join(schemas_dir, f'{object_type}.json'), 'r') as object_file:
+                    object_schema = json.load(object_file)
+                    for f in listdir(join(fixtures_dir, "valid", object_type)):
+                        with open(join(fixtures_dir, "valid", object_type, f), "r") as df:
+                            data = json.load(df)
+                            is_valid(data, object_schema, base_schema)
+            for object_type in listdir(join(fixtures_dir, "invalid")):
+                with open(join(schemas_dir, f'{object_type}.json'), 'r') as object_file:
+                    object_schema = json.load(object_file)
+                    for f in listdir(
+                            join(fixtures_dir, "invalid", object_type)):
+                        with open(join(fixtures_dir, "invalid", object_type, f), "r") as df:
+                            data = json.load(df)
+                            with self.assertRaises(
+                                    ValidationError,
+                                    msg="{} was not marked as invalid.".format(join(fixtures_dir, "invalid", object_type, f))):
+                                is_valid(data, object_schema, base_schema)

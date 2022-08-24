@@ -1,1 +1,1 @@
-jsonschema~=4.0
+rac_schema_validator~=0.1

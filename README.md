@@ -1,44 +1,30 @@
 # rac_schemas
 
-JSON schemas and validation helpers.
+Rockefeller Archive Center JSON Schemas.
 
 ## Requirements
-*   Python 3.4 or higher
-*   [jsonschema](https://python-jsonschema.readthedocs.io/en/stable/)
-*   [tox](https://tox.readthedocs.io/) (for running tests)
-*   [pre-commit](https://pre-commit.com/) (for running linters before committing)
-    *   After installing pre-commit, install the git-hook scripts:
-
-    ```
-    $ pre-commit install
-    ```
+- Python 3.9 or higher
+- [rac-schema-validator](https://pypi.org/project/rac-schema-validator/)
+- [tox](https://tox.readthedocs.io/) (for running tests)
+- [pre-commit](https://pre-commit.com/) (for running linters before committing)
 
 ## Installation
 
-The recommended way to install this package is using `pip`:
+After installing pre-commit, install the git-hook scripts:
 
 ```
-pip install rac_schemas
+$ pre-commit install
 ```
 
 ## Usage
 
-This library has one main public method, `is_valid()`, which takes a dict as the first argument and a schema filename as the second.
-
-```
-from rac_schemas import is_valid
-
-data = {"key": "value" ... }
-is_valid(data, "object.json")
-```
-
-`rac_schemas` will attempt to add an appropriate extension to schema filenames in cases where it is either missing or incorrect. For example, if either `schema` and `schema.org` as schema filenames, `rac_schemas` will attempt to open `schema.json`.
-
-Invalid data will raise a `jsonschema.exceptions.ValidationError`, and an invalid schema filename will raise a `FileNotFoundError`.
+These schemas are intended for use with the validators from `rac-schema-validators`
+but they are also valid JSONSchema files and can be used with other JSONSchema
+validators.
 
 ### Available schemas
 
-All schemas are located in the `schemas/` subdirectory of the `rac_schemas/` directory.
+All schemas are located in the `schemas/` directory.
 
 #### Tests
 
@@ -54,7 +40,7 @@ A simplified overview of the data model is below:
 
 ### Requirements
 
-*   Python 3.4 or higher
+*   Python 3.9 or higher
 *   [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans)
 
 ## Usage

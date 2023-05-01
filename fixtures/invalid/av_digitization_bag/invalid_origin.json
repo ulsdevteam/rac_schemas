@@ -1,0 +1,42 @@
+{
+    "identifier": "4c50bbba-5698-4add-893a-27be921f0345.json",
+    "origin": "digitization",
+    "rights_statements": [
+      {
+          "start_date": "2006-07-01",
+          "end_date": "2047-06-29",
+          "basis_note": "Work for hire, under copyright until 40 years after creation.",
+          "rights_basis": "copyright",
+          "rights_granted": [
+              {
+                  "act": "publish",
+                  "start_date": "2006-07-01",
+                  "end_date": "2047-06-29",
+                  "grant_restriction": "disallow",
+                  "granted_note": "Basis expires 2047."
+              }
+          ],
+          "copyright_status": "copyrighted",
+          "jurisdiction": "us",
+          "determination_date": "2018-09-18"
+      },
+      {
+          "end_date": "2017-06-30",
+          "basis_note": "Records embargoed for 10 years after date of creation.",
+          "other_basis": "donor",
+          "rights_basis": "other",
+          "rights_granted": [
+              {
+                  "act": "disseminate",
+                  "grant_restriction": "allow",
+                  "end_date": "open"
+              },
+              {
+                  "act": "disseminate",
+                  "grant_restriction": "disallow"
+              }
+          ],
+          "start_date": "2006-07-01"
+      }
+    ]
+}

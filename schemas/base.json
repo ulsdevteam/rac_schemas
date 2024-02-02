@@ -422,8 +422,7 @@
 					"description": "Reference title",
 					"examples": [
 						"Correspondence, 1925-1930"
-					],
-					"pattern": "^(.*)$"
+					]
 				},
 				"type": {
 					"$id": "#/definitions/reference/properties/type",
@@ -469,7 +468,8 @@
 				"archivesspace",
 				"cartographer",
 				"wikidata",
-				"wikipedia"
+				"wikipedia",
+				"local"
 			],
 			"title": "Sources",
 			"description": "Source of item",

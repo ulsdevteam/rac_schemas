@@ -216,8 +216,7 @@
 				"title": {
 					"$id": "#/definitions/group/properties/title",
 					"type": "string",
-					"title": "Group Title",
-					"pattern": "^(.*)$"
+					"title": "Group Title"
 				}
 			}
 		},

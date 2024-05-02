@@ -35,8 +35,7 @@
 				"title": "Collection Title",
 				"examples": [
 					"John D. Rockefeller papers"
-				],
-				"pattern": "^(.*)$"
+				]
 			},
 			"type": {
 				"$id": "#/collection/properties/type",

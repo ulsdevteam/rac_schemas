@@ -89,5 +89,12 @@
     "title": "May \u2013 June",
     "tree_position": 9,
     "type": "object",
+    "files": [
+      {
+        "title": "Board Reports",
+        "manifest": "https://www.manifest_uri.com",
+        "download": "https://www.download_uri.com"
+      }
+    ],
     "uri": "/objects/2dtie45rkows3ikkqyum4mhs84"
 }

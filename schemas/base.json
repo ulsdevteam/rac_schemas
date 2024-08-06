@@ -102,6 +102,44 @@
 				}
 			}
 		},
+		"files": {
+			"$id": "#/definitions/files",
+			"type": "object",
+			"title": "Files",
+			"properties": {
+				"title": {
+					"$id": "#/definitions/files/properties/title",
+					"type": ["string", "null"],
+					"title": "File Title",
+					"description": "Title of the file",
+					"examples": [
+						"Board Reports"
+					]
+				},
+				"manifest": {
+					"$id": "#/definitions/files/properties/manifest",
+					"type": ["string"],
+					"title": "Manifest URI",
+					"description": "URI for a IIIF Manifest",
+					"examples": [
+						"https://wwww.manifest_uri.com/1234"
+					]
+				},
+				"download": {
+					"$id": "#/definitions/files/properties/download",
+					"type": ["string"],
+					"title": "Download URI",
+					"description": "URI to download the file object",
+					"examples": [
+						"https://wwww.download_uri.com/1234"
+					]
+				}
+			},
+			"oneOf": [
+				{ "required": [ "manifest" ] },
+				{ "required": [ "download" ] }
+			]
+		},
 		"extent": {
 			"$id": "#/definitions/extent",
 			"type": "object",

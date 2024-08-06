@@ -12,6 +12,7 @@
 			"dates",
 			"extents",
 			"external_identifiers",
+			"files",
 			"formats",
 			"group",
 			"parent",
@@ -167,7 +168,16 @@
 						"$ref": "base.json#/definitions/external_identifier"
 					}]
 				}
-			}
+			},
+			"files": {
+				"type": ["array"],
+				"minItems": 0,
+				"items": {
+					"allOf": [{
+						"$ref": "base.json#/definitions/files"
+					}]
+				}
+			},
 		}
 	}]
 }

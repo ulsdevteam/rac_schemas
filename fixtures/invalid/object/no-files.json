@@ -3,14 +3,14 @@
         {
             "external_identifiers": [
                 {
-                    "identifier": "/repositories/2/archival_objects/121",
+                    "identifier": "/repositories/2/archival_objects/117",
                     "source": "archivesspace"
                 }
             ],
-            "identifier": "gqgra5uovf4h3nk84s9y69kvt4",
+            "identifier": "kvipspf37873ga9urxf36dbc35",
             "level": "file",
             "order": null,
-            "title": "Stein, William H.",
+            "title": "Informal Progress Reports",
             "type": "collection"
         },
         {
@@ -43,9 +43,9 @@
     "category": "collection",
     "dates": [
         {
-            "begin": "1941",
-            "end": "1944",
-            "expression": "1941\u20131944",
+            "begin": "1943",
+            "end": "1943",
+            "expression": "1943",
             "label": "creation",
             "source": "archivesspace",
             "type": "inclusive"
@@ -59,7 +59,7 @@
     ],
     "external_identifiers": [
         {
-            "identifier": "/repositories/2/archival_objects/228",
+            "identifier": "/repositories/2/archival_objects/210",
             "source": "archivesspace"
         }
     ],
@@ -69,8 +69,8 @@
     ],
     "group": {
         "category": "collection",
-        "identifier":"/collections/z96u8h8tuefmbjixtxjta2iun5",
-        "title": "Literature Notes \u2013 H and Divinyl Sulfone"
+        "identifier": "/collections/z96u8h8tuefmbjixtxjta2iun5",
+        "title": "May \u2013 June"
     },
     "languages": [
         {
@@ -83,17 +83,11 @@
     "organizations": [],
     "parent": "/collections/z96u8h8tuefmbjixtxjta2iun5",
     "people": [],
-    "position": 105,
+    "position": 0,
     "rights": [],
     "terms": [],
-    "title": "Literature Notes \u2013 H and Divinyl Sulfone",
-    "tree_position": 6,
+    "title": "May \u2013 June",
+    "tree_position": 9,
     "type": "object",
-    "files": [
-      {
-        "title": "Board Reports",
-        "manifest": "https://www.manifest_uri.com"
-      }
-    ],
-    "uri": "/objects/2iqgin43r8ova7te3he9dvjrd5"
+    "uri": "/objects/2dtie45rkows3ikkqyum4mhs84"
 }

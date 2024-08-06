@@ -76,5 +76,11 @@
     "title": "M",
     "tree_position": 7,
     "type": "object",
+    "files": [
+      {
+        "title": "Board Reports",
+        "download": "https://www.download_uri.com"
+      }
+    ],
     "uri": "/objects/2o7yiw24fsvnaq5own2q7krh52"
 }

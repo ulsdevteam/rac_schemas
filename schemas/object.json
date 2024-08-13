@@ -177,7 +177,7 @@
 						"$ref": "base.json#/definitions/files"
 					}]
 				}
-			},
+			}
 		}
 	}]
 }

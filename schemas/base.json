@@ -106,10 +106,13 @@
 			"$id": "#/definitions/files",
 			"type": "object",
 			"title": "Files",
+			"required": [
+				"title"
+			],
 			"properties": {
 				"title": {
 					"$id": "#/definitions/files/properties/title",
-					"type": ["string", "null"],
+					"type": "string",
 					"title": "File Title",
 					"description": "Title of the file",
 					"examples": [

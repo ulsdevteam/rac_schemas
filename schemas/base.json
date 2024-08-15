@@ -121,7 +121,7 @@
 				},
 				"manifest": {
 					"$id": "#/definitions/files/properties/manifest",
-					"type": ["string"],
+					"type": "string",
 					"format": "uri",
 					"title": "Manifest URI",
 					"description": "URI for a IIIF Manifest",
@@ -131,7 +131,7 @@
 				},
 				"download": {
 					"$id": "#/definitions/files/properties/download",
-					"type": ["string"],
+					"type": "string",
 					"format": "uri",
 					"title": "Download URI",
 					"description": "URI to download the file object",

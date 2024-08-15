@@ -92,8 +92,8 @@
     "files": [
       {
         "title": "Board Reports",
-        "manifest": "https://www.manifest_uri.com",
-        "download": "https://www.download_uri.com"
+        "manifest": "https://www.manifest_uri.com/1",
+        "download": "https://www.download_uri.com/1"
       }
     ],
     "uri": "/objects/2dtie45rkows3ikkqyum4mhs84"

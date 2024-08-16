@@ -76,5 +76,16 @@
     "title": "F",
     "tree_position": 25,
     "type": "object",
+    "files": [
+      {
+        "title": "Board Reports",
+        "manifest": "https://www.manifest_uri.com/1",
+        "download": "https://www.download_uri.com/1"
+      },
+      {
+        "title": "Meeting Notes",
+        "manifest": "https://www.manifest_uri.com/2"
+      }
+    ],
     "uri": "/objects/2q6w8fjw9zp5ic69owfzhd6352"
 }

@@ -113,20 +113,18 @@
 			"properties": {
 				"value": {
 					"$id": "#definitions/extents/properties/value",
-					"type": "string",
+					"type": ["string", "null"],
 					"title": "Extent Value",
 					"description": "Floating point value of the extent",
-					"minLength": 1,
 					"examples": [
 						"3.7"
 					]
 				},
 				"type": {
 					"$id": "#definitions/extents/properties/type",
-					"type": "string",
+					"type": ["string", "null"],
 					"title": "Extent Type",
 					"description": "Records the type of the extent value",
-					"minLength": 1,
 					"examples": [
 						"record cartons"
 					],

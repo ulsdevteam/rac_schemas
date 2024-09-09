@@ -56,7 +56,7 @@
 				}
 			},
 			"extents": {
-				"type": ["array"],
+				"type": ["array", "null"],
 				"items": {
 					"allOf": [{
 						"$ref": "base.json#/definitions/extent"

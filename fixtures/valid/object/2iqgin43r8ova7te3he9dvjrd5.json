@@ -89,5 +89,11 @@
     "title": "Literature Notes \u2013 H and Divinyl Sulfone",
     "tree_position": 6,
     "type": "object",
+    "files": [
+      {
+        "title": "Board Reports",
+        "manifest": "https://www.manifest_uri.com/1"
+      }
+    ],
     "uri": "/objects/2iqgin43r8ova7te3he9dvjrd5"
 }

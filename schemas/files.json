@@ -1,0 +1,9 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "files.json",
+	"type": "object",
+	"title": "File schema",
+	"allOf": [{
+		"$ref": "base.json#/definitions/files"
+	}]
+}

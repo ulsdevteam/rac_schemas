@@ -47,7 +47,8 @@
 					"style_period",
 					"technique",
 					"temporal",
-					"topical"
+					"topical",
+					"uniform_title"
 				],
 				"title": "Term type",
 				"minLength": 1,

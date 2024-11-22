@@ -1,2 +1,2 @@
-rac-schema-validator~=0.1
+rac-schema-validator~=1.0
 json-schema-for-humans~=0.44

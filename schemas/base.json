@@ -1,11 +1,11 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "base.json",
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "urn:base",
 	"type": "object",
 	"title": "RAC JSON Schema",
-	"definitions": {
+	"$defs": {
 		"date": {
-			"$id": "#/definitions/date",
+			"$id": "/date",
 			"type": "object",
 			"title": "Dates",
 			"required": [
@@ -17,7 +17,7 @@
 			],
 			"properties": {
 				"begin": {
-					"$id": "#/definitions/date/properties/begin",
+					"$id": "/date/properties/begin",
 					"type": ["date", "null"],
 					"title": "Begin Date",
 					"description": "Begin date of the objects described",
@@ -26,7 +26,7 @@
 					]
 				},
 				"end": {
-					"$id": "#/definitions/date/properties/end",
+					"$id": "/date/properties/end",
 					"type": ["date", "null"],
 					"title": "End Date",
 					"description": "End date of the objects described",
@@ -35,7 +35,7 @@
 					]
 				},
 				"expression": {
-					"$id": "#/definitions/date/properties/expression",
+					"$id": "/date/properties/expression",
 					"type": "string",
 					"title": "Date Expression",
 					"description": "Human readable date expression",
@@ -46,7 +46,7 @@
 					"pattern": "^(.*)$"
 				},
 				"type": {
-					"$id": "#/definitions/date/properties/type",
+					"$id": "/date/properties/type",
 					"type": "string",
 					"enum": [
 						"bulk",
@@ -63,7 +63,7 @@
 					"pattern": "^(.*)$"
 				},
 				"label": {
-					"$id": "#/definitions/date/properties/label",
+					"$id": "/date/properties/label",
 					"type": "string",
 					"enum": [
 						"agent_relation",
@@ -97,13 +97,13 @@
 					],
 					"pattern": "^(.*)$",
 					"allOf": [{
-						"$ref": "#/definitions/source"
+						"$ref": "urn:base#/$defs/source"
 					}]
 				}
 			}
 		},
 		"files": {
-			"$id": "#/definitions/files",
+			"$id": "/files",
 			"type": "object",
 			"title": "Files",
 			"required": [
@@ -111,7 +111,7 @@
 			],
 			"properties": {
 				"title": {
-					"$id": "#/definitions/files/properties/title",
+					"$id": "/files/properties/title",
 					"type": "string",
 					"title": "File Title",
 					"description": "Title of the file",
@@ -120,7 +120,7 @@
 					]
 				},
 				"manifest": {
-					"$id": "#/definitions/files/properties/manifest",
+					"$id": "/files/properties/manifest",
 					"type": "string",
 					"format": "uri",
 					"title": "Manifest URI",
@@ -130,7 +130,7 @@
 					]
 				},
 				"download": {
-					"$id": "#/definitions/files/properties/download",
+					"$id": "/files/properties/download",
 					"type": "string",
 					"format": "uri",
 					"title": "Download URI",
@@ -146,7 +146,7 @@
 			]
 		},
 		"extent": {
-			"$id": "#/definitions/extent",
+			"$id": "/extent",
 			"type": "object",
 			"title": "Extents",
 			"required": [
@@ -155,7 +155,7 @@
 			],
 			"properties": {
 				"value": {
-					"$id": "#definitions/extents/properties/value",
+					"$id": "/extents/properties/value",
 					"type": "string",
 					"title": "Extent Value",
 					"description": "Floating point value of the extent",
@@ -165,7 +165,7 @@
 					]
 				},
 				"type": {
-					"$id": "#definitions/extents/properties/type",
+					"$id": "/extents/properties/type",
 					"type": "string",
 					"title": "Extent Type",
 					"description": "Records the type of the extent value",
@@ -178,7 +178,7 @@
 			}
 		},
 		"external_identifier": {
-			"$id": "#/definitions/external_identifier",
+			"$id": "/external_identifier",
 			"type": "object",
 			"title": "External Identifiers",
 			"required": [
@@ -195,11 +195,11 @@
 					],
 					"pattern": "^(.*)$",
 					"oneOf": [{
-						"$ref": "#/definitions/source"
+						"$ref": "urn:base#/$defs/source"
 					}]
 				},
 				"identifier": {
-					"$id": "#/definitions/external_identifier/properties/identifier",
+					"$id": "/external_identifier/properties/identifier",
 					"type": "string",
 					"minLength": 1,
 					"title": "External Identifiers ID",
@@ -211,7 +211,7 @@
 			}
 		},
 		"group": {
-			"$id": "#/definitions/group",
+			"$id": "/group",
 			"type": "object",
 			"title": "Group",
 			"required": [
@@ -220,7 +220,7 @@
 			],
 			"properties": {
 				"category": {
-					"$id": "#/definitions/group/properties/category",
+					"$id": "/group/properties/category",
 					"type": "string",
 					"title": "Group Category",
 					"enum": [
@@ -231,33 +231,33 @@
 					]
 				},
 				"creators": {
-					"$id": "#/definitions/group/properties/creators",
+					"$id": "/group/properties/creators",
 					"type": "array",
 					"title": "Group Creators",
 					"items": {
 						"allOf": [{
-							"$ref": "base.json#/definitions/reference"
+							"$ref": "urn:base#/$defs/reference"
 						}]
 					}
 				},
 				"dates": {
-					"$id": "#/definitions/group/properties/dates",
+					"$id": "/group/properties/dates",
 					"type": "array",
 					"title": "Group Dates",
 					"items": {
 						"allOf": [{
-							"$ref": "base.json#/definitions/date"
+							"$ref": "urn:base#/$defs/date"
 						}]
 					}
 				},
 				"identifier": {
-					"$id": "#/definitions/group/properties/identifier",
+					"$id": "/group/properties/identifier",
 					"type": "string",
 					"title": "Group Identifier",
 					"pattern": "^(.*)$"
 				},
 				"title": {
-					"$id": "#/definitions/group/properties/title",
+					"$id": "/group/properties/title",
 					"type": "string",
 					"title": "Group Title",
 					"pattern": "^(.*)$"
@@ -265,7 +265,7 @@
 			}
 		},
 		"language": {
-			"$id": "#/definitions/language",
+			"$id": "/language",
 			"type": "object",
 			"title": "Languages",
 			"required": [
@@ -274,7 +274,7 @@
 			],
 			"properties": {
 				"expression": {
-					"$id": "#/definitions/language/properties/expression",
+					"$id": "/language/properties/expression",
 					"type": "string",
 					"title": "Language Expression",
 					"minLength": 1,
@@ -285,7 +285,7 @@
 					"pattern": "^(.*)$"
 				},
 				"identifier": {
-					"$id": "#/definitions/language/properties/identifier",
+					"$id": "/language/properties/identifier",
 					"type": "string",
 					"title": "Language Identifier",
 					"description": "ISO language identifier",
@@ -299,7 +299,7 @@
 			}
 		},
 		"note": {
-			"$id": "#/definitions/note",
+			"$id": "/note",
 			"type": "object",
 			"title": "Notes",
 			"required": [
@@ -310,7 +310,7 @@
 			],
 			"properties": {
 				"type": {
-					"$id": "#/definitions/note/properties/type",
+					"$id": "/note/properties/type",
 					"type": "string",
 					"minLength": 1,
 					"enum": [
@@ -366,7 +366,7 @@
 					"pattern": "^(.*)$"
 				},
 				"title": {
-					"$id": "#/definitions/note/properties/title",
+					"$id": "/note/properties/title",
 					"type": "string",
 					"minLength": 1,
 					"title": "Note Title",
@@ -384,7 +384,7 @@
 					],
 					"pattern": "^(.*)$",
 					"allOf": [{
-						"$ref": "#/definitions/source"
+						"$ref": "urn:base#/$defs/source"
 					}]
 				},
 				"subnotes": {
@@ -392,14 +392,14 @@
 					"minItems": 1,
 					"items": {
 						"allOf": [{
-							"$ref": "#/definitions/subnote"
+							"$ref": "/subnote"
 						}]
 					}
 				}
 			}
 		},
 		"reference": {
-			"$id": "#/definitions/reference",
+			"$id": "/reference",
 			"type": "object",
 			"title": "References",
 			"required": [
@@ -411,12 +411,12 @@
 					"minItems": 1,
 					"items": {
 						"allOf": [{
-							"$ref": "#/definitions/external_identifier"
+							"$ref": "urn:base#/$defs/external_identifier"
 						}]
 					}
 				},
 				"level": {
-					"$id": "#/definitions/reference/properties/level",
+					"$id": "/reference/properties/level",
 					"type": ["string", "null"],
 					"title": "Level of description",
 					"description": "Records the level of description of ancestors",
@@ -427,7 +427,7 @@
 					"pattern": "^(.*)$"
 				},
 				"order": {
-					"$id": "#/definitions/reference/properties/order",
+					"$id": "/reference/properties/order",
 					"type": ["number", "null"],
 					"title": "Order value",
 					"description": "Helps set the order of references",
@@ -438,7 +438,7 @@
 					"pattern": "^(.*)$"
 				},
 				"relator": {
-					"$id": "#/definitions/reference/properties/relator",
+					"$id": "/reference/properties/relator",
 					"type": ["string", "null"],
 					"title": "Agent relator",
 					"description": "Relation of linked agent",
@@ -448,7 +448,7 @@
 					"pattern": "^(.*)$"
 				},
 				"role": {
-					"$id": "#/definitions/reference/properties/role",
+					"$id": "/reference/properties/role",
 					"type": ["string", "null"],
 					"title": "Agent relator",
 					"description": "Role of linked agent",
@@ -459,7 +459,7 @@
 					"pattern": "^(.*)$"
 				},
 				"title": {
-					"$id": "#/definitions/reference/properties/title",
+					"$id": "/reference/properties/title",
 					"type": ["string", "null"],
 					"title": "Title",
 					"description": "Reference title",
@@ -469,7 +469,7 @@
 					"pattern": "^(.*)$"
 				},
 				"type": {
-					"$id": "#/definitions/reference/properties/type",
+					"$id": "/reference/properties/type",
 					"type": ["string", "null"],
 					"title": "Type",
 					"description": "Reference type",
@@ -493,7 +493,7 @@
 					]
 				},
 				"uri": {
-					"$id": "#/definitions/reference/properties/uri",
+					"$id": "/reference/properties/uri",
 					"type": ["string", "null"],
 					"title": "URI",
 					"description": "Relative link",
@@ -505,7 +505,7 @@
 			}
 		},
 		"source": {
-			"$id": "#/definitions/source",
+			"$id": "/source",
 			"type": "string",
 			"enum": [
 				"archivesspace",
@@ -521,13 +521,13 @@
 			]
 		},
 		"subnote": {
-			"$id": "#/definitions/subnote",
+			"$id": "/subnote",
 			"type": "object",
 			"title": "Subnotes",
 			"required": ["type"],
 			"properties": {
 				"type": {
-					"$id": "#/definitions/subnote/properties/type",
+					"$id": "/subnote/properties/type",
 					"type": "string",
 					"enum": [
 						"definedlist",
@@ -542,11 +542,11 @@
 					"pattern": "^(.*)$"
 				},
 				"content": {
-					"$id": "#/definitions/subnote/properties/content",
+					"$id": "/subnote/properties/content",
 					"type": "array",
 					"title": "Subnote Content",
 					"items": {
-						"$id": "#/definitions/subnote/properties/content/items",
+						"$id": "/subnote/properties/content/items",
 						"type": ["string", "null"],
 						"title": "Content Items",
 						"examples": [
@@ -558,11 +558,11 @@
 					}
 				},
 				"items": {
-					"$id": "#/definitions/subnote/properties/items",
+					"$id": "/subnote/properties/items",
 					"type": "array",
 					"title": "Subnote Items",
 					"items": {
-						"$id": "#/definitions/subnote/properties/items/items",
+						"$id": "/subnote/properties/items/items",
 						"type": ["object", "null"],
 						"title": "Items Items",
 						"examples": [{
@@ -573,7 +573,7 @@
 			}
 		},
 		"rights_statement": {
-			"$id": "#/definitions/rights_statement",
+			"$id": "/rights_statement",
 			"title": "RAC PREMIS rights statement",
 			"type": "object",
 			"required": [
@@ -584,33 +584,33 @@
 					"type": "array",
 					"items": {
 						"allOf": [{
-							"$ref": "base.json#/definitions/rights_granted"
+							"$ref": "urn:base#/$defs/rights_granted"
 						}]
 					}
 				}
 			},
 			"oneOf": [
-				{ "$ref": "base.json#/definitions/copyright_basis" },
-				{ "$ref": "base.json#/definitions/license_basis" },
-				{ "$ref": "base.json#/definitions/statute_basis" },
-				{ "$ref": "base.json#/definitions/other_basis" }
+				{ "$ref": "urn:base#/$defs/copyright_basis" },
+				{ "$ref": "urn:base#/$defs/license_basis" },
+				{ "$ref": "urn:base#/$defs/statute_basis" },
+				{ "$ref": "urn:base#/$defs/other_basis" }
 			]
 		},
 		"rights_basis_information": {
 			"type": "object",
-			"$id": "#/definitions/rights_basis_information",
+			"$id": "/rights_basis_information",
 			"title": "Rights Basis Information Object",
 			"required": [
 				"rights_basis"
 			],
 			"properties": {
 				"rights_basis": {
-					"$id": "#/definitions/rights_basis_information/properties/rights_basis",
+					"$id": "/rights_basis_information/properties/rights_basis",
 					"title": "Rights Basis Choice",
 					"type": "string"
 				},
 				"start_date": {
-					"$id": "#/definitions/rights_statement/properties/start_date",
+					"$id": "/rights_statement/properties/start_date",
 					"title": "Rights Start Date",
 					"type": ["string", "null"],
 					"examples": [
@@ -621,7 +621,7 @@
 					"minLength": 1
 				},
 				"end_date": {
-					"$id": "#/definitions/rights_statement/properties/end_date",
+					"$id": "/rights_statement/properties/end_date",
 					"title": "Rights End Date",
 					"type": ["string", "null"],
 					"examples": [
@@ -632,7 +632,7 @@
 					"minLength": 1
 				},
 				"determination_date": {
-					"$id": "#/definitions/rights_basis_information/properties/determination_date",
+					"$id": "/rights_basis_information/properties/determination_date",
 					"title": "Rights Basis Determination Date",
 					"type": ["string", "null"],
 					"examples": [
@@ -643,7 +643,7 @@
 					"minLength": 1
 				},
 				"basis_note": {
-					"$id": "#/definitions/rights_basis_information/properties/basis_note",
+					"$id": "/rights_basis_information/properties/basis_note",
 					"title": "Rights Basis Note",
 					"type": "string",
 					"examples": [
@@ -655,11 +655,11 @@
 			}
 		},
 		"other_basis": {
-			"$id": "#/definitions/other_basis",
+			"$id": "/other_basis",
 			"title": "PREMIS Other Basis",
 			"type": "object",
 			"allOf": [
-				{ "$ref": "base.json#/definitions/rights_basis_information" },
+				{ "$ref": "urn:base#/$defs/rights_basis_information" },
 				{
 					"properties": {
 						"rights_basis": { "enum": [ "other"] },
@@ -677,11 +677,11 @@
 			]
 		},
 		"license_basis": {
-			"$id": "#/definitions/license_basis",
+			"$id": "/license_basis",
 			"title": "PREMIS License Basis",
 			"type": "object",
 			"allOf": [
-				{ "$ref": "base.json#/definitions/rights_basis_information" },
+				{ "$ref": "urn:base#/$defs/rights_basis_information" },
 				{
 					"properties": {
 						"rights_basis": { "enum": [ "license"] },
@@ -696,11 +696,11 @@
 			]
 		},
 		"statute_basis": {
-			"$id": "#/definitions/statute_basis",
+			"$id": "/statute_basis",
 			"title": "PREMIS Statute Basis",
 			"type": "object",
 			"allOf": [
-				{ "$ref": "base.json#/definitions/rights_basis_information" },
+				{ "$ref": "urn:base#/$defs/rights_basis_information" },
 				{
 					"properties": {
 						"rights_basis": { "enum": [ "statute"] },
@@ -723,11 +723,11 @@
 			]
 		},
 		"copyright_basis": {
-			"$id": "#/definitions/copyright_basis",
+			"$id": "/copyright_basis",
 			"title": "PREMIS Copyright Basis",
 			"type": "object",
 			"allOf": [
-				{ "$ref": "base.json#/definitions/rights_basis_information" },
+				{ "$ref": "urn:base#/$defs/rights_basis_information" },
 				{
 					"properties": {
 						"rights_basis": { "enum": [ "copyright"] },
@@ -754,7 +754,7 @@
 			]
 		},
 		"rights_granted": {
-			"$id": "#/definitions/rights_granted",
+			"$id": "/rights_granted",
 			"title": "PREMIS rights granted",
 			"type": "object",
 			"required": [
@@ -763,7 +763,6 @@
 			],
 			"properties": {
 				"act": {
-					"$id": "#/definitions/rights_granted/properties/act",
 					"type": "string",
 					"title": "Rights Granted Act",
 					"enum": [
@@ -780,7 +779,6 @@
 					]
 				},
 				"grant_restriction": {
-					"$id": "#/definitions/rights_granted/properties/grant_restriction",
 					"type": "string",
 					"title": "Rights Granted Restriction Statement",
 					"enum": [
@@ -793,7 +791,6 @@
 					]
 				},
 				"start_date": {
-					"$id": "#/definitions/rights_granted/properties/start_date",
 					"title": "Rights Granted Start Date",
 					"type": ["string", "null"],
 					"examples": [
@@ -804,7 +801,6 @@
 					"minLength": 1
 				},
 				"end_date": {
-					"$id": "#/definitions/rights_granted/properties/end_date",
 					"title": "Rights Granted End Date",
 					"type": ["string", "null"],
 					"examples": [
@@ -815,7 +811,7 @@
 					"minLength": 1
 				},
 				"granted_note": {
-					"$id": "#/definitions/rights_granted/properties/granted_note",
+					"$id": "/rights_granted/properties/granted_note",
 					"title": "Rights Granted Note",
 					"type": ["string", "null"]
 				}
@@ -824,7 +820,8 @@
 				"properties": { "grant_restriction": { "const": "conditional" } }
 			},
 			"then": {
-				"dependencies": { "grant_restriction": ["granted_note"] }
+				"properties": { "granted_note": {"pattern": ".*"} },
+				"required": ["granted_note"]
 			}
 		}
 	}

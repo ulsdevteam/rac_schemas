@@ -1,10 +1,10 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "collection.json",
 	"type": "object",
 	"title": "RAC JSON Schema",
 	"allOf": [{
-		"$id": "#/collection",
+		"$id": "/collection",
 		"type": "object",
 		"title": "Collection",
 		"required": [
@@ -22,7 +22,7 @@
 		],
 		"properties": {
 			"category": {
-				"$id": "#/collection/properties/category",
+				"$id": "/collection/properties/category",
 				"type": "string",
 				"title": "Collection Category",
 				"enum": [
@@ -30,7 +30,7 @@
 				]
 			},
 			"title": {
-				"$id": "#/collection/properties/title",
+				"$id": "/collection/properties/title",
 				"type": "string",
 				"title": "Collection Title",
 				"examples": [
@@ -38,7 +38,7 @@
 				]
 			},
 			"type": {
-				"$id": "#/collection/properties/type",
+				"$id": "/collection/properties/type",
 				"type": "string",
 				"enum": [
 					"collection"
@@ -49,7 +49,7 @@
 				"minItems": 1,
 				"items": {
 					"allOf": [{
-						"$ref": "base.json#/definitions/date"
+						"$ref": "urn:base#/$defs/date"
 					}]
 				}
 			},
@@ -58,7 +58,7 @@
 				"minItems": 1,
 				"items": {
 					"allOf": [{
-						"$ref": "base.json#/definitions/extent"
+						"$ref": "urn:base#/$defs/extent"
 					}]
 				}
 			},
@@ -66,7 +66,7 @@
 				"type": "array",
 				"items": {
 					"allOf": [{
-						"$ref": "base.json#/definitions/note"
+						"$ref": "urn:base#/$defs/note"
 					}]
 				}
 			},
@@ -74,7 +74,7 @@
 				"type": "array",
 				"items": {
 					"allOf": [{
-						"$ref": "base.json#/definitions/reference"
+						"$ref": "urn:base#/$defs/reference"
 					}]
 				}
 			},
@@ -82,7 +82,7 @@
 				"type": "array",
 				"items": {
 					"allOf": [{
-						"$ref": "base.json#/definitions/reference"
+						"$ref": "urn:base#/$defs/reference"
 					}]
 				}
 			},
@@ -90,7 +90,7 @@
 				"type": "array",
 				"items": {
 					"allOf": [{
-						"$ref": "base.json#/definitions/reference"
+						"$ref": "urn:base#/$defs/reference"
 					}]
 				}
 			},
@@ -98,7 +98,7 @@
 				"type": "array",
 				"items": {
 					"allOf": [{
-						"$ref": "base.json#/definitions/reference"
+						"$ref": "urn:base#/$defs/reference"
 					}]
 				}
 			},
@@ -106,7 +106,7 @@
 				"type": "array",
 				"items": {
 					"allOf": [{
-						"$ref": "base.json#/definitions/reference"
+						"$ref": "urn:base#/$defs/reference"
 					}]
 				}
 			},
@@ -115,7 +115,7 @@
 				"minItems": 1,
 				"items": {
 					"allOf": [{
-						"$ref": "base.json#/definitions/language"
+						"$ref": "urn:base#/$defs/language"
 					}]
 				}
 			},
@@ -123,7 +123,7 @@
 				"type": "array",
 				"items": {
 					"allOf": [{
-						"$ref": "base.json#/definitions/rights_statement"
+						"$ref": "urn:base#/$defs/rights_statement"
 					}]
 				}
 			},
@@ -131,7 +131,7 @@
 				"type": "array",
 				"items": {
 					"allOf": [{
-						"$ref": "base.json#/definitions/reference"
+						"$ref": "urn:base#/$defs/reference"
 					}]
 				}
 			},
@@ -164,7 +164,7 @@
 			"group": {
 				"type": "object",
 				"allOf": [{
-					"$ref": "base.json#/definitions/group"
+					"$ref": "urn:base#/$defs/group"
 				}]
 			},
 			"external_identifiers": {
@@ -172,7 +172,7 @@
 				"minItems": 1,
 				"items": {
 					"allOf": [{
-						"$ref": "base.json#/definitions/external_identifier"
+						"$ref": "urn:base#/$defs/external_identifier"
 					}]
 				}
 			}
